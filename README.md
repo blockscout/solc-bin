@@ -1,2 +1,2 @@
 # solc-bin
-`solc` binaries (with nightly versions) for linux-amd64
+The main purpose of the repo is to provide linux-amd64 binaries for blockscout/blockscout-rs.
