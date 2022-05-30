@@ -1,0 +1,35 @@
+name: build-solc
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget g++ clang libc6-dev libclang-dev pkg-config unzip
+      - name: Install z3
+        run: |
+          wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
+          unzip z3-4.8.17-x64-glibc-2.31.zip
+          sudo cp z3-4.8.17-x64-glibc-2.31/include/* /usr/include/
+          sudo cp z3-4.8.17-x64-glibc-2.31/bin/z3 /usr/bin/
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: ethereum/solidity
+          ref: 80d49f37028b13e162951b6b67b0a42f477ba93c
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          cmake .. -DCMAKE_BUILD_TYPE=Release
+          make -j4
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v0.8.14-test
+          files: build/solc/solc
