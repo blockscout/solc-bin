@@ -31,5 +31,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.8.14-nightly.2022.5.17+commit.80d49f37
+          tag_name: solc-v0.8.14+commit.80d49f37
           files: build/solc/solc
