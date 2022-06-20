@@ -21,15 +21,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 095cc6472834b6807a7f205f859914701476f5fd
+          ref: 1d4f565a64988a3400847d2655ca24f73f234bc6
       - name: Build
         run: |
           mkdir build
           cd build
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          make -j8
+          make -j2
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.8.15-nightly.2022.5.27+commit.095cc647
+          tag_name: solc-v0.5.0+commit.1d4f565a
           files: build/solc/solc
