@@ -12,14 +12,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip
 
-      
       - name: Compiler
         run: |
-          sudo apt-get install -y gcc-7
+          
+          sudo apt-get install -y gcc-8
 
-          alias gcc='gcc-7'
-          alias g++='g++-7'
-      
+          alias gcc='gcc-8'
+          alias g++='g++-8'
+          which gcc
+          which g++
+          gcc --version
+          g++ --version
+          
 
       # - name: Install z3
       #   run: |
