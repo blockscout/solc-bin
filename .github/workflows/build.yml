@@ -38,7 +38,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.8.2+commit.661d1103
+          tag_name: solc-v0.8.2-nightly.2021.3.2+commit.661d1103
           files: |
             build/solc/solc
             md5.hash
