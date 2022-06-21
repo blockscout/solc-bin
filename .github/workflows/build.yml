@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 582c754598828bd42f260051dc9f55b511b7044e
+          ref: 9fab9df18c1fe8a5fd8663b3187008b4bb7e5597
       - name: Build
         run: |
           mkdir build
@@ -38,7 +38,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.6.6-nightly.2020.4.7+commit.582c7545
+          tag_name: solc-v0.6.6-nightly.2020.4.8+commit.9fab9df1
           files: |
             build/solc/solc
             md5.hash
