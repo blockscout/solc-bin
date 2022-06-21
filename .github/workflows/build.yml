@@ -21,15 +21,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 2a2cea08dd92f88e69be057dd64ec41a294b27c2
+          ref: ff8898b8db83601d0a22f4bf16211e0cf6657322
       - name: Build
         run: |
           mkdir build
           cd build
           
           
-          CC="gcc-8" CXX="g++-8" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          CC="gcc-8" CXX="g++-8" make -j2
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          make -j2
           
       - name: Hash
         run: |
@@ -38,7 +38,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.5.9-nightly.2019.5.24+commit.2a2cea08
+          tag_name: solc-v0.5.10-nightly.2019.5.28+commit.ff8898b8
           files: |
             build/solc/solc
             md5.hash
