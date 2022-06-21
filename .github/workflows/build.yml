@@ -15,10 +15,10 @@ jobs:
       
       - name: Compiler
         run: |
-          sudo apt-get install -y gcc-8
+          sudo apt-get install -y gcc-7
 
-          alias gcc='gcc-8'
-          alias g++='g++-8'
+          alias gcc='gcc-7'
+          alias g++='g++-7'
       
 
       # - name: Install z3
