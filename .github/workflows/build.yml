@@ -10,7 +10,7 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip gcc-8 g++-8 gcc g++
+          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip gcc-8 g++-8 gcc g++ md5sum sha256sum
       # - name: Install z3
       #   run: |
       #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
@@ -31,8 +31,15 @@ jobs:
           CC="gcc-8" CXX="g++-8" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           CC="gcc-8" CXX="g++-8" make -j2
           
+      - name: Hash
+        run: |
+          md5sum solc | cut -d " " -f1 > md5.hash
+          sha256sum solc | cut -d " " -f1 > sha256.hash
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: solc-v0.5.4+commit.9549d8ff
-          files: build/solc/solc
+          files: |
+            build/solc/solc
+            md5.hash
+            sha256.hash
