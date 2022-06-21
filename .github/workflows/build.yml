@@ -17,8 +17,8 @@ jobs:
         run: |
           sudo apt-get install -y gcc-8
 
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 20
-          sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 20
+          alias gcc='gcc-8'
+          alias g++='g++-8'
       
 
       # - name: Install z3
