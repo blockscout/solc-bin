@@ -27,14 +27,12 @@ jobs:
           mkdir build
           cd build
           
-          
-          CC="gcc-8" CXX="g++-8" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          CC="gcc-8" CXX="g++-8" make -j2
-          
+          mkdir solc
+          touch solc/solc
       - name: Hash
         run: |
-          md5sum solc | cut -d " " -f1 > md5.hash
-          sha256sum solc | cut -d " " -f1 > sha256.hash
+          md5sum build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum build/solc/solc | cut -d " " -f1 > sha256.hash
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
