@@ -10,21 +10,7 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip
-
-      - name: Compiler
-        run: |
-          
-          sudo apt-get install -y gcc-8
-
-          alias gcc='gcc-8'
-          alias g++='g++-8'
-          which gcc
-          which g++
-          gcc --version
-          g++ --version
-          
-
+          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip gcc-8 gcc
       # - name: Install z3
       #   run: |
       #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
@@ -40,8 +26,11 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          make -j2
+          
+          
+          CC="gcc-8" CXX="g++-8" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          CC="gcc-8" CXX="g++-8" make -j2
+          
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
