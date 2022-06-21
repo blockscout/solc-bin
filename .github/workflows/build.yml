@@ -10,7 +10,7 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip gcc-8 gcc
+          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip gcc-8 g++-8 gcc g++
       # - name: Install z3
       #   run: |
       #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
