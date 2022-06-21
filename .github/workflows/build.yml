@@ -17,8 +17,6 @@ jobs:
         run: |
           sudo apt-get install -y gcc-8
 
-          sudo update-alternatives --remove-all gcc 
-          sudo update-alternatives --remove-all g++
           sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 20
           sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 20
       
@@ -33,7 +31,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 23d335f28e4055e67c3b22466ac7c4e41dc48344
+          ref: 9549d8fff7343908228c3e8bedc309d1b83fc204
       - name: Build
         run: |
           mkdir build
@@ -43,5 +41,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.5.8+commit.23d335f2
+          tag_name: solc-v0.5.4+commit.9549d8ff
           files: build/solc/solc
