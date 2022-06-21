@@ -10,7 +10,19 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget g++ clang libc6-dev libclang-dev pkg-config unzip
+          sudo apt-get install -y git cmake build-essential cvc4 libboost-all-dev wget libc6-dev libclang-dev pkg-config unzip
+
+      
+      - name: Compiler
+        run: |
+          sudo apt-get install -y gcc-8
+
+          sudo update-alternatives --remove-all gcc 
+          sudo update-alternatives --remove-all g++
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 20
+          sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 20
+      
+
       # - name: Install z3
       #   run: |
       #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
@@ -21,7 +33,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 80d49f37028b13e162951b6b67b0a42f477ba93c
+          ref: 9549d8fff7343908228c3e8bedc309d1b83fc204
       - name: Build
         run: |
           mkdir build
@@ -31,5 +43,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.8.14+commit.80d49f37
+          tag_name: solc-v0.5.4+commit.9549d8ff
           files: build/solc/solc
