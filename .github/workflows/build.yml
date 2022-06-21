@@ -28,7 +28,7 @@ jobs:
           cd build
           
           mkdir solc
-          touch solc/solc
+          echo "this is solc binary I'm not lying" > solc/solc
       - name: Hash
         run: |
           md5sum build/solc/solc | cut -d " " -f1 > md5.hash
