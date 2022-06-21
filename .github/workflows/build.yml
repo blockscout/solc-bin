@@ -21,22 +21,24 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 9549d8fff7343908228c3e8bedc309d1b83fc204
+          ref: 1d4f565a64988a3400847d2655ca24f73f234bc6
       - name: Build
         run: |
           mkdir build
           cd build
           
-          mkdir solc
-          echo "this is solc binary I'm not lying" > solc/solc
+          
+          CC="gcc-8" CXX="g++-8" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          CC="gcc-8" CXX="g++-8" make -j2
+          
       - name: Hash
         run: |
-          md5sum build/solc/solc | cut -d " " -f1 > md5.hash
-          sha256sum build/solc/solc | cut -d " " -f1 > sha256.hash
+          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: solc-v0.5.4+commit.9549d8ff
+          tag_name: solc-v0.5.0+commit.1d4f565a
           files: |
             build/solc/solc
             md5.hash
