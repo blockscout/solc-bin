@@ -1633,7 +1633,7 @@
             "prerelease": "nightly.2019.7.11",
             "build": "commit.88477bdb",
             "longVersion": "0.5.11-nightly.2019.7.11+commit.88477bdb",
-            "sha256": "﻿\u003c?xml version=\"1.0\" encoding=\"utf-8\"?\u003e\u003cError\u003e\u003cCode\u003eAuthenticationFailed\u003c/Code\u003e\u003cMessage\u003eServer failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.RequestId:38be219c-e01e-002c-4a45-86ceca000000Time:2022-06-22T14:35:36.1001699Z\u003c/Message\u003e\u003cAuthenticationErrorDetail\u003eSigned expiry time [Wed, 22 Jun 2022 14:35:36 GMT] must be after signed start time [Wed, 22 Jun 2022 14:35:36 GMT]\u003c/AuthenticationErrorDetail\u003e\u003c/Error\u003e",
+            "sha256": "f9fcbd5b64a283ad0bd473520a9ac4729a1b4075f59125c73d1c19a2bf037c85",
             "md5": "dd942d33feee4e34869c05e32e351739"
         },
         {
