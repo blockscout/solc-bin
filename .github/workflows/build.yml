@@ -24,12 +24,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
-          ref: 1d312c8e4073e2e7ce9a23a721013942e1e5c727
+          submodules: 'recursive'
+          ref: acd334c9d289a7cc4674dde2534d8728450cedde
       - name: Build
         run: |
           mkdir build
           cd build
           
+          
+          touch ../prerelease.txt
           
 
           
@@ -40,11 +43,12 @@ jobs:
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
           sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: solc-v0.5.0-nightly.2018.10.12+commit.1d312c8e
-          files: |
-            build/solc/solc
-            md5.hash
-            sha256.hash
+
+      # - name: Release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     tag_name: solc-v0.4.0+commit.acd334c9
+      #     files: |
+      #       build/solc/solc
+      #       md5.hash
+      #       sha256.hash
