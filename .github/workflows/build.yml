@@ -37,8 +37,8 @@ jobs:
           
 
           
-          CC="gcc-6" CXX="g++-6" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          CC="gcc-6" CXX="g++-6" make -j2
+          CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" CC="gcc-6" CXX="g++-6" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" CC="gcc-6" CXX="g++-6" make -j2
           
       - name: Hash
         run: |
