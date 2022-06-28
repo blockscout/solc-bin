@@ -37,8 +37,9 @@ jobs:
           
 
           
-          CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" CC="gcc-7" CXX="g++-7" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" CC="gcc-7" CXX="g++-7" make -j2
+          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
+          CC="gcc-7" CXX="g++-7" cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          CC="gcc-7" CXX="g++-7" make -j2
           
       - name: Hash
         run: |
