@@ -13,6 +13,7 @@ jobs:
           sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip
           
           sudo apt-get install -y libboost1.67-all-dev gcc-7 g++-7
+          sudo apt-get install -y python-sphinx libjsoncpp-dev
           
       # - name: Install z3
       #   run: |
