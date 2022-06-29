@@ -25,7 +25,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: e560f70d8e2c7c964df197cf0dd784325b0c6f2f
+          ref: c68bc34e9466ef22326dd9072d557c56160e9092
       - name: Build
         run: |
           mkdir build
@@ -38,15 +38,23 @@ jobs:
           sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
+
+          mkdir build_artifacts
+          mv solc/solc ../build_artifacts/solc-v0.5.9+commit.c68bc34e
       - name: Hash
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
           sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
-
+      - uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: ${{ secrets.ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.ACCESS_KEY }}
+          aws_bucket: ${{ secrets.BUCKET }}
+          source_dir: 'build_artifacts'
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
-      #     tag_name: solc-v0.5.9+commit.e560f70d
+      #     tag_name: solc-v0.5.9+commit.c68bc34e
       #     files: |
       #       build/solc/solc
       #       md5.hash
