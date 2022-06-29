@@ -10,9 +10,10 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip
+          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
           
-          sudo apt-get install -y libboost-all-dev gcc-8 g++-8 gcc g++
+          sudo apt-get install -y libboost1.67-all-dev gcc-7 g++-7
+          sudo apt-get install -y libjsoncpp-dev
           
       # - name: Install z3
       #   run: |
@@ -25,7 +26,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: c7dfd78e57c5ad7abd485dc1cc13d8f0ab09d431
+          ref: acd334c9d289a7cc4674dde2534d8728450cedde
       - name: Build
         run: |
           mkdir build
@@ -35,10 +36,9 @@ jobs:
           touch ../prerelease.txt
           
 
-          
+          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
-          
       - name: Hash
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
@@ -47,7 +47,7 @@ jobs:
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
-      #     tag_name: solc-v0.8.0+commit.c7dfd78e
+      #     tag_name: solc-v0.4.0+commit.acd334c9
       #     files: |
       #       build/solc/solc
       #       md5.hash
