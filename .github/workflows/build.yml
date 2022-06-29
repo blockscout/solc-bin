@@ -25,7 +25,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: c68bc34e9466ef22326dd9072d557c56160e9092
+          ref: e560f70d8e2c7c964df197cf0dd784325b0c6f2f
       - name: Build
         run: |
           mkdir build
@@ -40,7 +40,7 @@ jobs:
           make -j2
 
           mkdir build_artifacts
-          mv solc/solc ../build_artifacts/solc-v0.5.9+commit.c68bc34e
+          mv solc/solc ../build_artifacts/solc-v0.5.9+commit.e560f70d
       - name: Hash
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
@@ -54,7 +54,7 @@ jobs:
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
-      #     tag_name: solc-v0.5.9+commit.c68bc34e
+      #     tag_name: solc-v0.5.9+commit.e560f70d
       #     files: |
       #       build/solc/solc
       #       md5.hash
