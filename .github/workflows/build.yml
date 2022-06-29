@@ -25,7 +25,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: 661d11035b871aa1624bf568e3d476ef1bf25895
+          ref: a4f2e591fe55900f86ab72fad37d03af7dfa638e
       - name: Build
         run: |
           mkdir build
@@ -46,7 +46,7 @@ jobs:
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
-      #     tag_name: solc-v0.8.2+commit.661d1103
+      #     tag_name: solc-v0.8.5+commit.a4f2e591
       #     files: |
       #       build/solc/solc
       #       md5.hash
