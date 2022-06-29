@@ -12,8 +12,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
           
-          sudo apt-get install -y libboost1.67-all-dev gcc-7 g++-7
-          sudo apt-get install -y libjsoncpp-dev
+          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
           
       # - name: Install z3
       #   run: |
@@ -26,7 +25,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: 1d4f565a64988a3400847d2655ca24f73f234bc6
+          ref: 9549d8fff7343908228c3e8bedc309d1b83fc204
       - name: Build
         run: |
           mkdir build
@@ -47,7 +46,7 @@ jobs:
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
-      #     tag_name: solc-v0.5.0+commit.1d4f565a
+      #     tag_name: solc-v0.5.4+commit.9549d8ff
       #     files: |
       #       build/solc/solc
       #       md5.hash
