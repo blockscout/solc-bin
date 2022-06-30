@@ -39,7 +39,7 @@ jobs:
           mkdir solc
           echo "this is solc binary I swear" > solc/solc
 
-
+          mkdir ../solc-v0.5.9+commit.e560f70d
           mv solc/solc ../solc-v0.5.9+commit.e560f70d/solc
       - name: Hash
         run: |
