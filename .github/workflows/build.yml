@@ -7,19 +7,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # - name: Prerequisites
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
-      #     
-      #     sudo apt-get install -y libboost-all-dev gcc-8 g++-8
-      #     
-      # - name: Install z3
-      #   run: |
-      #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
-      #     unzip z3-4.8.17-x64-glibc-2.31.zip
-      #     sudo cp z3-4.8.17-x64-glibc-2.31/include/* /usr/include/
-      #     sudo cp z3-4.8.17-x64-glibc-2.31/bin/z3 /usr/bin/
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
+          
+          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
+          
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -34,30 +28,20 @@ jobs:
           
           touch ../prerelease.txt
           
-
           
           mkdir solc
           echo "this is solc binary I swear" > solc/solc
-
-          mkdir ../solc-v0.5.9+commit.e560f70d
-          mv solc/solc ../solc-v0.5.9+commit.e560f70d/solc
       - name: Hash
         run: |
-          md5sum -b build/solc/solc | cut -d " " -f1 > ./solc-v0.5.9+commit.e560f70d/md5.hash
-          sha256sum -b build/solc/solc | cut -d " " -f1 > ./solc-v0.5.9+commit.e560f70d/sha256.hash
+          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
       - name: Upload file to bucket
-        uses: koraykoska/s3-upload-github-action@master
-        env:
-          FILE: solc-v0.5.9+commit.e560f70d/
-          S3_ENDPOINT: 'https://storage.googleapis.com'
-          S3_BUCKET: ${{ secrets.BUCKET }}
-          S3_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
-          S3_SECRET_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     tag_name: solc-v0.5.9+commit.e560f70d
-      #     files: |
-      #       build/solc/solc
-      #       md5.hash
-      #       sha256.hash
+        run: |
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          mkdir ~/.aws
+          echo "[default]\naws_access_key_id = ${{ secrets.ACCESS_KEY_ID }}\naws_secret_access_key = ${{ secrets.ACCESS_KEY }}\n" > ~/.aws/credentials  
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/sha256.hash
