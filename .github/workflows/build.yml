@@ -12,14 +12,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli
           
-          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
+          sudo apt-get install -y libboost1.67-all-dev gcc-7 g++-7
+          sudo apt-get install -y libjsoncpp-dev
           
       - name: Checkout
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: e14f27147bd4ffc63e2bf46a68e0d271fad0ed79
+          ref: acd334c9d289a7cc4674dde2534d8728450cedde
       - name: Build
         run: |
           mkdir build
@@ -40,6 +41,7 @@ jobs:
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.8.15+commit.e14f2714/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.8.15+commit.e14f2714/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.8.15+commit.e14f2714/sha256.hash
+          aws configure set region ""
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/sha256.hash
