@@ -40,15 +40,15 @@ jobs:
           echo "this is solc binary I swear" > solc/solc
 
 
-          mv solc/solc ../solc-v0.5.9+commit.e560f70d
+          mv solc/solc ../solc-v0.5.9+commit.e560f70d/solc
       - name: Hash
         run: |
-          md5sum -b build/solc/solc | cut -d " " -f1 > ./build_artifacts/solc-v0.5.9+commit.e560f70d.md5
-          sha256sum -b build/solc/solc | cut -d " " -f1 > ./build_artifacts/solc-v0.5.9+commit.e560f70d.sha256
+          md5sum -b build/solc/solc | cut -d " " -f1 > ./solc-v0.5.9+commit.e560f70d/md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > ./solc-v0.5.9+commit.e560f70d/sha256.hash
       - name: Upload file to bucket
         uses: koraykoska/s3-upload-github-action@master
         env:
-          FILE: ./solc-v0.5.9+commit.e560f70d
+          FILE: solc-v0.5.9+commit.e560f70d/
           S3_ENDPOINT: 'https://storage.googleapis.com'
           S3_BUCKET: ${{ secrets.BUCKET }}
           S3_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
