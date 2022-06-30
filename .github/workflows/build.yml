@@ -19,12 +19,14 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: a6d0067bde88371db0184546f833f3f150bc7f78
+          ref: 0bbfe45376768007a38bfd65f8ea449935306037
       - name: Build
         run: |
           mkdir build
           cd build
           
+          
+          touch ../prerelease.txt
           
 
           sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
@@ -39,6 +41,6 @@ jobs:
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
           aws configure set region ""
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.6.8-nightly.2020.5.14+commit.a6d0067b/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.6.8-nightly.2020.5.14+commit.a6d0067b/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.6.8-nightly.2020.5.14+commit.a6d0067b/sha256.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.6.8+commit.0bbfe453/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.6.8+commit.0bbfe453/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.6.8+commit.0bbfe453/sha256.hash
