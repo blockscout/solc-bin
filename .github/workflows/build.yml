@@ -7,13 +7,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Prerequisites
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
-          
-          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
-          
+      # - name: Prerequisites
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
+      #     
+      #     sudo apt-get install -y libboost-all-dev gcc-8 g++-8
+      #     
       # - name: Install z3
       #   run: |
       #     wget https://github.com/Z3Prover/z3/releases/download/z3-4.8.17/z3-4.8.17-x64-glibc-2.31.zip
@@ -40,8 +40,7 @@ jobs:
           echo "this is solc binary I swear" > solc/solc
 
 
-          mkdir ../build_artifacts
-          mv solc/solc ../build_artifacts/solc-v0.5.9+commit.e560f70d
+          mv solc/solc ../solc-v0.5.9+commit.e560f70d
       - name: Hash
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > ./build_artifacts/solc-v0.5.9+commit.e560f70d.md5
@@ -49,7 +48,7 @@ jobs:
       - name: Upload file to bucket
         uses: koraykoska/s3-upload-github-action@master
         env:
-          FILE: ./build_artifacts/solc-v0.5.9+commit.e560f70d
+          FILE: ./solc-v0.5.9+commit.e560f70d
           S3_ENDPOINT: 'https://storage.googleapis.com'
           S3_BUCKET: ${{ secrets.BUCKET }}
           S3_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
