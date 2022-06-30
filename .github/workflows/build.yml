@@ -12,14 +12,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli
           
-          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
+          sudo apt-get install -y libboost1.67-all-dev gcc-7 g++-7
+          sudo apt-get install -y libjsoncpp-dev
           
       - name: Checkout
         uses: actions/checkout@v3
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
-          ref: e560f70d8e2c7c964df197cf0dd784325b0c6f2f
+          ref: acd334c9d289a7cc4674dde2534d8728450cedde
       - name: Build
         run: |
           mkdir build
@@ -28,9 +29,10 @@ jobs:
           
           touch ../prerelease.txt
           
-          
-          mkdir solc
-          echo "this is solc binary I swear" > solc/solc
+
+          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          make -j2
       - name: Hash
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
@@ -39,8 +41,6 @@ jobs:
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
-          aws configure set region ""
-          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/sha256.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.4.0+commit.acd334c9/sha256.hash
