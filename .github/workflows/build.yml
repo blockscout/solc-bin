@@ -39,11 +39,7 @@ jobs:
         run: |
           mkdir ~/.aws
           echo "[default]\naws_access_key_id = ${{ secrets.ACCESS_KEY_ID }}\naws_secret_access_key = ${{ secrets.ACCESS_KEY }}\n" > ~/.aws/credentials  
-          set -x
-          echo "hi"
+          echo "[default]\n" > ~/.aws/config
           aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/solc
-          echo "ho"
           aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/md5.hash
-          echo "hu"
           aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/sha256.hash
-          echo "he"
