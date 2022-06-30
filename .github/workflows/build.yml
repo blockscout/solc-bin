@@ -36,6 +36,9 @@ jobs:
           
 
           
+          mkdir solc
+          touch solc/solc
+
 
           mkdir ../build_artifacts
           mv solc/solc ../build_artifacts/solc-v0.5.9+commit.e560f70d
