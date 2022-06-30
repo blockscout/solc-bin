@@ -10,7 +10,7 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++
+          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli
           
           sudo apt-get install -y libboost-all-dev gcc-8 g++-8
           
@@ -38,6 +38,8 @@ jobs:
       - name: Upload file to bucket
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
+          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
+          aws configure set region ""
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
           aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/solc
           aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.5.9+commit.e560f70d/md5.hash
