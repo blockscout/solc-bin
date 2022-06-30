@@ -46,12 +46,14 @@ jobs:
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > solc-v0.5.9+commit.e560f70d.md5
           sha256sum -b build/solc/solc | cut -d " " -f1 > solc-v0.5.9+commit.e560f70d.sha256
-      - uses: shallwefootball/s3-upload-action@master
-        with:
-          aws_key_id: ${{ secrets.ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.ACCESS_KEY }}
-          aws_bucket: ${{ secrets.BUCKET }}
-          source_dir: 'build_artifacts'
+      - name: Upload file to bucket
+        uses: koraykoska/s3-upload-github-action@master
+        env:
+          FILE: ./build_artifacts/
+          S3_ENDPOINT: 'https://storage.googleapis.com'
+          S3_BUCKET: ${{ secrets.BUCKET }}
+          S3_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
       # - name: Release
       #   uses: softprops/action-gh-release@v1
       #   with:
