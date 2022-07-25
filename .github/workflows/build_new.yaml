@@ -20,7 +20,8 @@ jobs:
           aws configure set region ""
       - name: Version
         run: |
-          last_version=$(curl https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt | tac | tac | head -n 1 | sed 's/soljson-//' | sed 's/.js//')
+          wget -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
+          last_version=$(head -n 1 /tmp/list.txt | sed 's/soljson-//' | sed 's/.js//')
           echo ${last_version}
           exists_test=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version)
           echo ${exists_test}
