@@ -1,0 +1,61 @@
+name: build-solc
+
+on:
+  push:
+  schedule:
+    - cron: "30 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli
+      - name: Configure aws
+        run: |
+          aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
+          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
+          aws configure set region ""
+      - name: Version
+        run: |
+          last_version=$(curl https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt | tac | tac | head -n 1 | sed 's/soljson-//' | sed 's/.js//')
+          echo ${last_version}
+          exists_test=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version)
+          echo ${exists_test}
+          exists=$(test -n "${exists_test}" && echo true || echo false)
+          echo ${exists}
+          echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
+          echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: "env.ALREADY_EXISTS == 'false'"
+        with:
+          repository: ethereum/solidity
+          submodules: 'recursive'
+      - name: Checkout hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          commit_hash=$(echo $SOLC_VERSION | awk -F "commit." '{ print $2 }')
+          echo ${commit_hash}
+          git checkout ${commit_hash}
+      - name: Build
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          mkdir build
+          cd build
+
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          make -j2
+      - name: Hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
+      - name: Upload file to bucket
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/${SOLC_VERSION/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
