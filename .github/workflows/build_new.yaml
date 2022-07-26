@@ -33,6 +33,7 @@ jobs:
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
+          fetch-depth: 0
       - name: Checkout hash
         if: "env.ALREADY_EXISTS == 'false'"
         run: |
