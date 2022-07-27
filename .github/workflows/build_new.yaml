@@ -57,5 +57,5 @@ jobs:
         if: "env.ALREADY_EXISTS == 'false'"
         run: |
           aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/${SOLC_VERSION/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
           aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
