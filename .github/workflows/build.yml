@@ -18,7 +18,7 @@ jobs:
           aws configure set region ""
       - name: Version
         run: |
-          last_version=$(echo "soljson-v0.8.16-nightly.2022.7.4+commit.a53f15f4.js" | sed 's/soljson-//' | sed 's/.js//')
+          last_version=$(echo "soljson-v0.8.16-nightly.2022.7.1+commit.5de51204.js" | sed 's/soljson-//' | sed 's/.js//')
           exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
