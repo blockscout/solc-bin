@@ -10,35 +10,50 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli
-          
-          sudo apt-get install -y libboost-all-dev gcc-8 g++-8
-          
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          repository: ethereum/solidity
-          submodules: 'recursive'
-          ref: be470c16fe003a5c7c5c44298683f873928b324a
-      - name: Build
-        run: |
-          mkdir build
-          cd build
-          
-          
-
-          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
-          make -j2
-      - name: Hash
-        run: |
-          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
-          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
-      - name: Upload file to bucket
+          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli libboost-all-dev
+      - name: Configure aws
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
           aws configure set region ""
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/solc-v0.8.16-nightly.2022.6.17+commit.be470c16/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/solc-v0.8.16-nightly.2022.6.17+commit.be470c16/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/solc-v0.8.16-nightly.2022.6.17+commit.be470c16/sha256.hash
+      - name: Version
+        run: |
+          last_version=$(echo "soljson-v0.8.16-nightly.2022.7.27+commit.72f19072.js" | sed 's/soljson-//' | sed 's/.js//')
+          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
+          echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
+          echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: "env.ALREADY_EXISTS == 'false'"
+        with:
+          repository: ethereum/solidity
+          submodules: 'recursive'
+          fetch-depth: 0
+      - name: Checkout hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          commit_hash=$(echo $SOLC_VERSION | awk -F "commit." '{ print $2 }')
+          git checkout ${commit_hash}
+      - name: Build
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          mkdir build
+          cd build
+
+          if [[ $SOLC_VERSION != *"nightly"* ]];then
+            touch ../prerelease.txt
+          fi
+
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          make -j2
+      - name: Hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
+      - name: Upload file to bucket
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
