@@ -42,6 +42,11 @@ jobs:
         run: |
           mkdir build
           cd build
+
+          if [[ $SOLC_VERSION != *"nightly"* ]];then
+            touch ../prerelease.txt
+          fi
+
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
       - name: Hash
