@@ -18,7 +18,7 @@ jobs:
           aws configure set region ""
       - name: Version
         run: |
-          last_version=$(echo "solc-v0.4.0+commit.acd334c9" | sed 's/soljson-//' | sed 's/.js//')
+          last_version=$(echo "solc-v0.4.26+commit.4563c3fc" | sed 's/soljson-//' | sed 's/.js//')
           exists=$(echo "false")
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
@@ -44,9 +44,9 @@ jobs:
             touch ../prerelease.txt
           fi
 
-          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
-          sed -i "s/set(Boost_USE_STATIC_LIBS OFF)/set(Boost_USE_STATIC_LIBS ON)/g" ../cmake/EthDependencies.cmake
-          sed -i "s/set(STATIC_LINKING FALSE CACHE BOOL "Build static binaries")/set(STATIC_LINKING TRUE CACHE BOOL "Build static binaries")/g" ../cmake/EthDependencies.cmake
+          sed -i 's/add_compile_options(-Werror)/# add_compile_options(-Werror)/g' ../cmake/EthCompilerSettings.cmake
+          sed -i 's/set(Boost_USE_STATIC_LIBS OFF)/set(Boost_USE_STATIC_LIBS ON)/g' ../cmake/EthDependencies.cmake
+          sed -i 's/set(STATIC_LINKING FALSE CACHE BOOL "Build static binaries")/set(STATIC_LINKING TRUE CACHE BOOL "Build static binaries")/g' ../cmake/EthDependencies.cmake
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
       - name: Hash
