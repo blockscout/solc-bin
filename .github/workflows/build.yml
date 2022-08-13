@@ -10,7 +10,7 @@ jobs:
       - name: Prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli libboost-all-dev
+          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli libjsoncpp-dev libboost1.67-all-dev
       - name: Configure aws
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
@@ -18,8 +18,8 @@ jobs:
           aws configure set region ""
       - name: Version
         run: |
-          last_version=$(echo "soljson-v0.8.16+commit.07a7930e.js" | sed 's/soljson-//' | sed 's/.js//')
-          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
+          last_version=$(echo "solc-v0.4.26+commit.4563c3fc" | sed 's/soljson-//' | sed 's/.js//')
+          exists=$(echo "false")
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
       - name: Checkout
@@ -44,6 +44,9 @@ jobs:
             touch ../prerelease.txt
           fi
 
+          sed -i "s/add_compile_options(-Werror)/# add_compile_options(-Werror)/g" ../cmake/EthCompilerSettings.cmake
+          sed -i "s/set(Boost_USE_STATIC_LIBS OFF)/set(Boost_USE_STATIC_LIBS ON)/g" ../cmake/EthDependencies.cmake
+          sed -i "s/set(STATIC_LINKING FALSE CACHE BOOL "Build static binaries")/set(STATIC_LINKING TRUE CACHE BOOL "Build static binaries")/g" ../cmake/EthDependencies.cmake
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
       - name: Hash
