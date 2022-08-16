@@ -15,9 +15,6 @@ version=$(echo "$long_version" | sed -E "s/^(.*)\+.*$/\1/")
 # "vyper.0.3.6+commit.4a2124d0.linux" -> "commit.4a2124d0"
 build=$(echo "$long_version" | sed -E "s/.*\+(.*)\.linux/\1/")
 
-# Empty, since there is no nightly versions for vyper
-prerelease=""
-
 # "--no-clobber" says do not download a file if it already exists
 # redirect stdout to stderr
 wget --no-clobber --directory-prefix="vyper-bin/" "$browser_download_url" >&2
@@ -33,7 +30,6 @@ long_version=$(echo $1 | sed -E "s/vyper\.(.*)\.linux/\1/")
 echo "{
   \"path\": \"$browser_download_url\",
   \"version\": \"$version\",
-  \"prerelease\": \"$prerelease\",
   \"build\": \"$build\",
   \"longVersion\": \"$long_version\",
   \"md5\": \"$md5\",
