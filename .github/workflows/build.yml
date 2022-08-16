@@ -18,7 +18,7 @@ jobs:
           aws configure set region ""
       - name: Version
         run: |
-          last_version=$(echo "v0.4.10-nightly.2017.2.2+commit.8f9839c6" | sed 's/soljson-//' | sed 's/.js//')
+          last_version=$(echo "v0.4.10-nightly.2017.2.1+commit.c1a675da" | sed 's/soljson-//' | sed 's/.js//')
           exists=$(echo "false")
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
