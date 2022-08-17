@@ -17,7 +17,7 @@ build=$(echo "$long_version" | sed -E "s/.*\+(.*)\.linux/\1/")
 
 # "--no-clobber" says do not download a file if it already exists
 # redirect stdout to stderr
-wget --no-clobber --directory-prefix="vyper-bin/" "$browser_download_url" >&2
+wget --no-clobber --directory-prefix="vyper-bin/" "$browser_download_url"
 test $? -eq 0 || return 1
 
 # Using "cut", because checksum returns "<hash> <filename>"
