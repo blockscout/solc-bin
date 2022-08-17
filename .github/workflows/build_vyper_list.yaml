@@ -1,0 +1,34 @@
+name: build-vyper-list
+
+on:
+  push:
+  schedule:
+    # every day at midnight
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl wget jq findutils coreutils sed
+
+      - name: Cache downloads
+        id: cache-primes
+        uses: actions/cache@v3
+        with:
+          path: vyper-bin
+          key: ${{ runner.os }}-vyper-bin
+
+      - name: Build vyper list
+        run: ./vyper_fetch.sh vyper.list.json
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'vyper.list.json'
+
+          message: 'Update vyper list'
