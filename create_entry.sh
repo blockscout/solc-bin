@@ -10,10 +10,11 @@ long_version=$1
 browser_download_url=$2
 
 # "vyper.0.3.6+commit.4a2124d0.linux" -> "0.3.6"
-version=$(echo "$long_version" | sed -E "s/^(.*)\+.*$/\1/")
+# "vyper.0.1.0-beta.17+commit.0671b7b.linux" -> "0.1.0-beta.17"
+version=$(echo "$long_version" | sed -E 's/^.*([0-9]+\.[0-9]+\.[0-9]+(-beta\.[0-9]+)?).*$/\1/')
 
 # "vyper.0.3.6+commit.4a2124d0.linux" -> "commit.4a2124d0"
-build=$(echo "$long_version" | sed -E "s/.*\+(.*)\.linux/\1/")
+build=$(echo "$long_version" | sed -E 's/.*\+(.*)\.linux/\1/')
 
 # "--no-clobber" says do not download a file if it already exists
 # redirect stdout to stderr
@@ -21,11 +22,11 @@ wget --no-clobber --directory-prefix="vyper-bin/" "$browser_download_url"
 test $? -eq 0 || return 1
 
 # Using "cut", because checksum returns "<hash> <filename>"
-md5="$(md5sum -b vyper-bin/$long_version | cut -d " " -f1)"
+md5="$(md5sum -b vyper-bin/"$long_version" | cut -d " " -f1)"
 sha256="$(sha256sum -b vyper-bin/"$long_version" | cut -d " " -f1)"
 
 # "vyper.0.3.6+commit.4a2124d0.linux" -> "0.3.6+commit.4a2124d0"
-long_version=$(echo $1 | sed -E "s/vyper\.(.*)\.linux/\1/")
+long_version=$(echo "$1" | sed -E 's/vyper\.(.*)\.linux/\1/')
 
 echo "{
   \"path\": \"$browser_download_url\",
