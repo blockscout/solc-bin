@@ -1,15 +1,14 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]
-  then
-    echo "Expected one argument: output file"
-    exit 1
+if [ "$#" -ne 2 ]; then
+	echo "Expected two arguments: <path to output file> <path to create_entry.sh>"
+	exit 1
 fi
 
 # 1. Remove beta versions from list.json (because later we call "to number")
 # 2. Cast every version to an array of values ("0.3.6" -> [0, 3, 6]) & Get maximum of such arrays
 latest_downloaded_version=$(jq --raw-output \
-  '[ .builds[] | select(.version | contains("beta") | not) ] |
+	'[ .builds[] | select(.version | contains("beta") | not) ] |
     max_by(.version | split (".") | map(tonumber)) | .version' "$1")
 
 echo "Latest downloaded version: $latest_downloaded_version"
@@ -22,7 +21,7 @@ echo "Fetching new versions..."
 # 4. Get name and download url of the latest versions
 new_versions=$(curl --silent --user-agent "blockscout-solc-bin" "https://api.github.com/repos/vyperlang/vyper/releases" |
 	jq --raw-output \
-	  ".[].assets[] |
+		".[].assets[] |
 	    select(.name | endswith(\"linux\")) |
 	    select(.name | contains(\"beta\") | not) |
 	    select(
@@ -32,15 +31,15 @@ new_versions=$(curl --silent --user-agent "blockscout-solc-bin" "https://api.git
             ) |
       .name, .browser_download_url")
 
-if [ "$new_versions" == "" ];then
-   echo "No new versions found"
-   exit 0
+if [ "$new_versions" == "" ]; then
+	echo "No new versions found"
+	exit 0
 fi
 
 echo -e "New available versions:\n$new_versions"
 
 body_before=$(jq '.builds[]' "$1")
 
-body=$(echo "$new_versions" | xargs --delimiter='\n' --max-args=2 ./create_entry.sh)
+body=$(echo "$new_versions" | xargs --delimiter='\n' --max-args=2 "$2")
 
-echo "$body$body_before" | jq -n '. |= [inputs] | {"builds":.}' > "$1"
+echo "$body$body_before" | jq -n '. |= [inputs] | {"builds":.}' >"$1"
