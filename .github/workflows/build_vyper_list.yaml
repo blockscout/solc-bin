@@ -1,0 +1,25 @@
+name: build-vyper-list
+
+on:
+  push:
+  schedule:
+    # every 3 hours
+    - cron: "0 */3 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl wget jq findutils coreutils sed
+
+      - name: Build vyper list
+        run: vyper/vyper_fetch.sh vyper.list.json vyper/create_entry.sh
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: 'vyper.list.json'
