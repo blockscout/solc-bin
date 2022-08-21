@@ -3,7 +3,7 @@ name: build-solc
 on:
   push:
   schedule:
-    - cron: "30 1 * * *"
+    - cron: "30 */3 * * *"
 
 jobs:
   build:
