@@ -36,7 +36,7 @@
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.1/vyper.0.3.1.darwin",
       "version": "0.3.1",
       "build": "vyper.0.3.1.darwin",
-      "longVersion": "0.3.1",
+      "longVersion": "0.3.1+commit.0463ea4c",
       "md5": "95da50aaa9bb18a0cc69d0f9e4e85f50",
       "sha256": "4b30290c21f2077c2fb3cad5c4cd959931dc98237190bcbe5a2dcc8ba9cc573a"
     },
