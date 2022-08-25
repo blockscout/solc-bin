@@ -7,6 +7,14 @@
             "longVersion": "0.4.8+commit.60cc1668",
             "sha256": "9c64d0ea8373346342f462d0ee5a5a50f1946e209e971f8339af5722c5d65144",
             "md5": "d9414eddda61d4bb6a5751e4dfadfe27"
+        },
+        {
+            "path": "https://github.com/blockscout/solc-bin/raw/rimrakhimov/upload-compiler-to-test/solc/solc-v0.5.16",
+            "version": "0.5.16",
+            "build": "commit.9c3226ce",
+            "longVersion": "0.5.16+commit.9c3226ce",
+            "sha256": "24000b8d56472c7959d30398a0f7ea1f4ed3d389fcf04df98c327ef413e7aae5",
+            "md5": "bd15c4fa310ee4d8856e5b48a03d9981"
         }
     ]
 }
