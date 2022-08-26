@@ -36,7 +36,7 @@
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.1/vyper.0.3.1.linux",
       "version": "0.3.1",
       "build": "vyper.0.3.1.linux",
-      "longVersion": "0.3.1",
+      "longVersion": "0.3.1+commit.0463ea4c",
       "md5": "832c5a7753632abf2fe98881bdc0507a",
       "sha256": "80e272d9266be85ba6fe4bdcf0705292069b1b2bd29133e807e98f061909858c"
     },
