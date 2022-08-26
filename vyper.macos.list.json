@@ -151,6 +151,22 @@
       "longVersion": "0.2.0+commit.d2c0c87",
       "md5": "448576351e1df4dffaa8984711dfa59b",
       "sha256": "06b9d51d12a995aded8e26a324a5282c3571792d20259eb1c3062933826f493a"
+    },
+    {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.1.0-beta.17/vyper.0.1.0-beta.17%2Bcommit.0671b7b.darwin",
+      "version": "0.1.0-beta.17",
+      "build": "commit.0671b7b",
+      "longVersion": "0.1.0-beta.17+commit.0671b7b",
+      "md5": "767ba4e833d00553bc9d6a62df758cf9",
+      "sha256": "e10ca338738798d8e08cf752ab29e5003dd2f86d3fb832b9c142c9a949c66d29"
+    },
+    {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.1.0-beta.16/vyper.0.1.0-beta.16%2Bcommit.5e4a94a.darwin",
+      "version": "0.1.0-beta.16",
+      "build": "commit.5e4a94a",
+      "longVersion": "0.1.0-beta.16+commit.5e4a94a",
+      "md5": "a9914a56a86972115cbef089620d0433",
+      "sha256": "173c3b4ab8f1ba073787e156c54f369368d28634df12c15addb614a0eb1f0769"
     }
   ]
 }
