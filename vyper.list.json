@@ -1,6 +1,14 @@
 {
   "builds": [
     {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.7/vyper.0.3.7%2Bcommit.6020b8bb.linux",
+      "version": "0.3.7",
+      "build": "commit.6020b8bb",
+      "longVersion": "0.3.7+commit.6020b8bb",
+      "md5": "f1740d971118e0083560699e440b8736",
+      "sha256": "00fe707d385952d66c2eefd61fc4c69c293a1496a1618b463244dd985dc12540"
+    },
+    {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.6/vyper.0.3.6%2Bcommit.4a2124d0.linux",
       "version": "0.3.6",
       "build": "commit.4a2124d0",
