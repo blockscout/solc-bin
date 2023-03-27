@@ -1,9 +1,10 @@
 name: build-solc
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "30 */3 * * *"
+  # workflow_dispatch:
+  push:
+  # schedule:
+  #   - cron: "30 */3 * * *"
 
 jobs:
   build:
@@ -21,8 +22,8 @@ jobs:
       - name: Version
         run: |
           wget -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
-          last_version=$(head -n 1 /tmp/list.txt | sed 's/soljson-//' | sed 's/.js//')
-          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
+          last_version=v0.8.18+commit.87f61d96
+          exists=$(echo false)
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
       - name: Checkout
@@ -57,6 +58,6 @@ jobs:
       - name: Upload file to bucket
         if: "env.ALREADY_EXISTS == 'false'"
         run: |
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/test/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/test/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/test/sha256.hash
