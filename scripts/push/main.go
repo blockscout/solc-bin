@@ -15,12 +15,12 @@ func shaFromVersion(ver string) string {
 }
 
 func main() {
-	versions, err := os.Open("tmp_list.txt")
+	versions, err := os.Open("scripts/push/version_list.txt")
 	if err != nil {
 		panic(err)
 	}
 
-	templateFile := "build.yml"
+	templateFile := "scripts/push/build.yml"
 	tmpl, err := template.ParseFiles(templateFile)
 	if err != nil {
 		panic(err)
@@ -46,7 +46,7 @@ func main() {
 			Version string
 		}
 
-		data := Data{	
+		data := Data{
 			Version: ver,
 		}
 		build, err := os.Create(buildFileName)
