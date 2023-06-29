@@ -2,8 +2,6 @@ name: build-solc
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 */3 * * *"
 
 jobs:
   build:
@@ -21,7 +19,7 @@ jobs:
       - name: Version
         run: |
           wget -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
-          last_version=$(head -n 1 /tmp/list.txt | sed 's/soljson-//' | sed 's/.js//')
+          last_version=v0.8.18+commit.87f61d96
           exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
