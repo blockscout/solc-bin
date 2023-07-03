@@ -3,8 +3,8 @@ name: build-vyper-list
 on:
   workflow_dispatch:
   schedule:
-    # every 3 hours
-    - cron: "0 */3 * * *"
+    # every day at 23:00
+    - cron: "0 23 * * *"
 
 jobs:
   build:
