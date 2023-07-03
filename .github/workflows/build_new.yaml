@@ -3,11 +3,12 @@ name: build-solc
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 */3 * * *"
+    # every day at 23:30
+    - cron: "30 23 * * *"
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Prerequisites
         run: |
