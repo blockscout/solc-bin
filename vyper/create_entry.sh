@@ -40,7 +40,7 @@ json_output="{
 
 # Only add the prerelease field if the prerelease variable is not empty
 if [[ -n $prerelease ]]; then
-  json_output+=",\n  \"prerelease\": \"$prerelease\""
+  json_output+="\n  \"prerelease\": \"$prerelease\","
 fi
 
 json_output+="\n  \"build\": \"$build\",
