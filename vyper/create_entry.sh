@@ -25,14 +25,28 @@ test $? -eq 0 || return 1
 md5="$(md5sum -b vyper-bin/"$long_version" | cut -d " " -f1)"
 sha256="$(sha256sum -b vyper-bin/"$long_version" | cut -d " " -f1)"
 
-# "vyper.0.3.6+commit.4a2124d0.linux" -> "0.3.6+commit.4a2124d0"
-long_version=$(echo "$1" | sed -E 's/vyper\.(.*)\.linux/\1/')
+# "0.3.10rc5+commit.42817806 -> "0.3.10-rc5+commit.42817806"
+version_with_prerelease=$(echo "$1" | sed -E 's/([^-.])(rc[0-9]+)/\1-\2/')
 
-echo "{
+prerelease=$(echo "$version_with_prerelease" | grep -oE 'rc[0-9]+' || echo "")
+
+# "vyper.0.3.6+commit.4a2124d0.linux" -> "0.3.6+commit.4a2124d0"
+long_version=$(echo "$version_with_prerelease" | sed -E 's/vyper\.(.*)\.linux/\1/')
+
+# Construct the JSON output
+json_output="{
   \"path\": \"$browser_download_url\",
-  \"version\": \"$version\",
-  \"build\": \"$build\",
+  \"version\": \"$version\","
+
+# Only add the prerelease field if the prerelease variable is not empty
+if [[ -n $prerelease ]]; then
+  json_output+=",\n  \"prerelease\": \"$prerelease\""
+fi
+
+json_output+="\n  \"build\": \"$build\",
   \"longVersion\": \"$long_version\",
   \"md5\": \"$md5\",
   \"sha256\": \"$sha256\"
 }"
+
+echo -e "$json_output"
