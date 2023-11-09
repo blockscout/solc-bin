@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/go-git/go-git/v5"
+	"github.com/go-git/go-git/v5/config"
 )
 
 func shaFromVersion(ver string) string {
@@ -15,6 +16,9 @@ func shaFromVersion(ver string) string {
 }
 
 func main() {
+	remoteName := "origin"
+	branchName := "<branch_name>"
+
 	versions, err := os.Open("scripts/push/version_list.txt")
 	if err != nil {
 		panic(err)
@@ -27,6 +31,15 @@ func main() {
 	}
 
 	r, err := git.PlainOpen("./")
+	if err != nil {
+		panic(err)
+	}
+	remote, err := r.Remote("origin")
+	if err != nil {
+		panic(err)
+	}
+	// Set up the credentials
+	err = remote.Config().Validate()
 	if err != nil {
 		panic(err)
 	}
@@ -64,7 +77,10 @@ func main() {
 		}
 
 		for i := 0; i < 5; i++ {
-			if err = r.Push(&git.PushOptions{}); err == nil {
+			if err = r.Push(&git.PushOptions{
+				RefSpecs:   []config.RefSpec{config.RefSpec(fmt.Sprintf("refs/heads/%s:refs/heads/%s", branchName, branchName))},
+				RemoteName: remoteName,
+			}); err == nil {
 				break
 			}
 			time.Sleep(time.Second)
