@@ -1,0 +1,66 @@
+name: build-solc
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ awscli libboost-all-dev
+      - name: Configure aws
+        run: |
+          aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
+          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
+          aws configure set region ""
+      - name: Version
+        run: |
+          last_version=$(echo "v0.8.22-nightly.2023.9.18+commit.dc44f8ad" | sed 's/soljson-//' | sed 's/.js//')
+          exists=$(echo "false")
+          echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
+          echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: "env.ALREADY_EXISTS == 'false'"
+        with:
+          repository: ethereum/solidity
+          submodules: 'recursive'
+          fetch-depth: 0
+      - name: Checkout hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          commit_hash=$(echo $SOLC_VERSION | awk -F "commit." '{ print $2 }')
+          git checkout ${commit_hash}
+          git submodule init
+          git submodule update --recursive
+      - name: Build
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          mkdir build
+          cd build
+
+          if [[ $SOLC_VERSION != *"nightly"* ]];then
+            touch ../prerelease.txt
+          fi
+
+          sed -i 's/add_compile_options(-Werror)/# add_compile_options(-Werror)/g' ../cmake/EthCompilerSettings.cmake
+          sed -i 's/set(Boost_USE_STATIC_LIBS OFF)/set(Boost_USE_STATIC_LIBS ON)/g' ../cmake/EthDependencies.cmake
+          sed -i 's/set(STATIC_LINKING FALSE CACHE BOOL "Build static binaries")/set(STATIC_LINKING TRUE CACHE BOOL "Build static binaries")/g' ../cmake/EthDependencies.cmake
+          echo "set(Z3_FOUND FALSE)" > ../cmake/FindZ3.cmake
+          echo "set(CVC4_FOUND FALSE)" > ../cmake/FindCVC4.cmake
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+          make -j2
+      - name: Hash
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
+          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
+      - name: Upload file to bucket
+        if: "env.ALREADY_EXISTS == 'false'"
+        run: |
+          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
+          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
+          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
