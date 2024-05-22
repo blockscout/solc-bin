@@ -1,0 +1,165 @@
+{
+  "builds": [
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.4.1/zksolc-linux-amd64-musl-v1.4.1",
+      "version": "1.4.1",
+      "longVersion": "1.4.1",
+      "md5": "a8191265c43a7adf621bcfd66b7505b3",
+      "sha256": "d65cbc5a25699d5fae873b66c7e367098426b923"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.4.0/zksolc-linux-amd64-musl-v1.4.0",
+      "version": "1.4.0",
+      "longVersion": "1.4.0",
+      "md5": "fa5e1af5df4014fcf4b7cc6f60c1bb91",
+      "sha256": "742843e79531c9f63f0c4f736b33af5535f525eb"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.23/zksolc-linux-amd64-musl-v1.3.23",
+      "version": "1.3.23",
+      "longVersion": "1.3.23",
+      "md5": "c97b7454b289db732213493300ed2856",
+      "sha256": "384a8410d3d98bf6d0db49d3909d2e9bca3dabdd"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.22/zksolc-linux-amd64-musl-v1.3.22",
+      "version": "1.3.22",
+      "longVersion": "1.3.22",
+      "md5": "54ef29082a85702e8df202a561802043",
+      "sha256": "e77aade77d321f45727f167b78486173dd5884a8"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.21/zksolc-linux-amd64-musl-v1.3.21",
+      "version": "1.3.21",
+      "longVersion": "1.3.21",
+      "md5": "c24426a35da8780669beb688d4131e4b",
+      "sha256": "d61e1ef42dc4b87715582f65880900739261a3af"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.19/zksolc-linux-amd64-musl-v1.3.19",
+      "version": "1.3.19",
+      "longVersion": "1.3.19",
+      "md5": "2a3b179db8f04b6ca5082b6bf11761b4",
+      "sha256": "62536bc0e4c59534ed7deb8437bf3935d7562ece"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.18/zksolc-linux-amd64-musl-v1.3.18",
+      "version": "1.3.18",
+      "longVersion": "1.3.18",
+      "md5": "3750a01a18c4e0a6de2f7c8c4b7212ce",
+      "sha256": "93fef237e78e97f6c3f774dfd949acde00e89798"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.17/zksolc-linux-amd64-musl-v1.3.17",
+      "version": "1.3.17",
+      "longVersion": "1.3.17",
+      "md5": "807647792bd9cc5ea22e654ef7a1d5ec",
+      "sha256": "2f4905b5e8d044076c107ddec2cd2ea10e7b41cb"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.16/zksolc-linux-amd64-musl-v1.3.16",
+      "version": "1.3.16",
+      "longVersion": "1.3.16",
+      "md5": "a03fa5c408e24fa87bcb50f17eb625f5",
+      "sha256": "206d78a82004ad5b7947502ca80a7c1ebc3e973d"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.14/zksolc-linux-amd64-musl-v1.3.14",
+      "version": "1.3.14",
+      "longVersion": "1.3.14",
+      "md5": "fb5cd0dcc7dd86d597e56a38054c336a",
+      "sha256": "fe41a530d54544b5f7169dda0c95053f3b75562f"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.13/zksolc-linux-amd64-musl-v1.3.13",
+      "version": "1.3.13",
+      "longVersion": "1.3.13",
+      "md5": "28a850d98a4ff1cf0d49fba5dec2cd25",
+      "sha256": "afb7657281b1eb8c1bac0fa8f75b58405bda43d2"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.11/zksolc-linux-amd64-musl-v1.3.11",
+      "version": "1.3.11",
+      "longVersion": "1.3.11",
+      "md5": "db6e98cad630f623349a4bc0bb655de6",
+      "sha256": "f7b057183bfdc53ec5bb6c4fb19308d1eb2096f5"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.10/zksolc-linux-amd64-musl-v1.3.10",
+      "version": "1.3.10",
+      "longVersion": "1.3.10",
+      "md5": "a0ce86db1e64abd5b8488bb1a66ccc97",
+      "sha256": "df44f299d20aeb1f03cf941c221169e172feae98"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.9/zksolc-linux-amd64-musl-v1.3.9",
+      "version": "1.3.9",
+      "longVersion": "1.3.9",
+      "md5": "4ba826cc40415ea92efc80093d06b589",
+      "sha256": "46d89e3e61ff41df18bc69d9e9e83e1627ff1977"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.8/zksolc-linux-amd64-musl-v1.3.8",
+      "version": "1.3.8",
+      "longVersion": "1.3.8",
+      "md5": "a6738bd2d348339ac571a3c7c8fb120f",
+      "sha256": "8e9a8eccae90854e4e8b82552541970d32d282be"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.7/zksolc-linux-amd64-musl-v1.3.7",
+      "version": "1.3.7",
+      "longVersion": "1.3.7",
+      "md5": "5aa16f61753816677f0d97834ad1beff",
+      "sha256": "4d2f4e962a78af9bffffe2a69ac4c6cea604ae78"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.6/zksolc-linux-amd64-musl-v1.3.6",
+      "version": "1.3.6",
+      "longVersion": "1.3.6",
+      "md5": "a389c3408c8785f24dabcb488a202d22",
+      "sha256": "694569d44b8dc02f2724c4418651b59fe6fea8cf"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.5/zksolc-linux-amd64-musl-v1.3.5",
+      "version": "1.3.5",
+      "longVersion": "1.3.5",
+      "md5": "cbae90a8e1ab2cbdbd9c9755d094cd22",
+      "sha256": "7ca3750230d776700c26145d789988a0797ab74c"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.4/zksolc-linux-amd64-musl-v1.3.4",
+      "version": "1.3.4",
+      "longVersion": "1.3.4",
+      "md5": "f6cf92a44afb79290bfe6d5838d0ec6a",
+      "sha256": "8c2d8c6d98af92f6ba4bd6fcf021e4107c82b899"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.3/zksolc-linux-amd64-musl-v1.3.3",
+      "version": "1.3.3",
+      "longVersion": "1.3.3",
+      "md5": "c65a0a0e9099c60d50436b5ec98f3076",
+      "sha256": "1a646aa5f193f4ee581f640fc140932179f7091d"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.2/zksolc-linux-amd64-musl-v1.3.2",
+      "version": "1.3.2",
+      "longVersion": "1.3.2",
+      "md5": "6f9f190afba2f191a9551d9f58fe634c",
+      "sha256": "f1392d32cc5fb85b29a3bade3710acf70cc1134e"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.1/zksolc-linux-amd64-musl-v1.3.1",
+      "version": "1.3.1",
+      "longVersion": "1.3.1",
+      "md5": "0040ef799a0541c2dfc526bb37dcd377",
+      "sha256": "9cb6950053ff2190f569b377761bfee2d5599245"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.0/zksolc-linux-amd64-musl-v1.3.0",
+      "version": "1.3.0",
+      "longVersion": "1.3.0",
+      "md5": "647909ca78e86ef32d5c5ab79ca0cb84",
+      "sha256": "2d1f63c138263d1823b4556dd3efcbe5a49a5784"
+    }
+  ]
+}
