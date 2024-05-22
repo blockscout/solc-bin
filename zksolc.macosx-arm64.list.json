@@ -5,161 +5,161 @@
       "version": "1.4.1",
       "longVersion": "1.4.1",
       "md5": "8736f04aaaca31dd78bbbe0bdd5c2443",
-      "sha256": "9afd38b44972c02abb30a584a38c9be127172189"
+      "sha256": "f9991aa8c227d2ce35672cd33cf93370febce736b26beb047ede1919de12a3b8"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.4.0/zksolc-macosx-arm64-v1.4.0",
       "version": "1.4.0",
       "longVersion": "1.4.0",
       "md5": "005275d59b24e73e1279c975b411d763",
-      "sha256": "e5720d8e2f53639451f0377405d4f23f5a13ed3c"
+      "sha256": "4a632c16a2203a8ba2d73627da34e2e39940f70a04526cf7059107163d126607"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.23/zksolc-macosx-arm64-v1.3.23",
       "version": "1.3.23",
       "longVersion": "1.3.23",
       "md5": "30349c5cf2de260db3710f6d08b900c6",
-      "sha256": "213e16adcb039d66313f4c585eb2f8ecc0bf1613"
+      "sha256": "828c991e85ee08ac92c66c099440e142cb152dc2608570b45d29a17de828124e"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.22/zksolc-macosx-arm64-v1.3.22",
       "version": "1.3.22",
       "longVersion": "1.3.22",
       "md5": "b28b653f58a7dfd1f83809b468946193",
-      "sha256": "266b18dfcfae3a579cb5b3e933b1cf3b7ece11b4"
+      "sha256": "470c6619a28d19acd13558956e7a972a8a753c38b2c05120455420199e46bc2a"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.21/zksolc-macosx-arm64-v1.3.21",
       "version": "1.3.21",
       "longVersion": "1.3.21",
       "md5": "8290e02ccfbb5d7f41b66aec23e29774",
-      "sha256": "1e88b0cd2faead0e3addcf6159b6575cc7fe7fd6"
+      "sha256": "7ee746f9ec941f8315482f484bd7ddf49937a0250b755fa58c87e9bb53498706"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.19/zksolc-macosx-arm64-v1.3.19",
       "version": "1.3.19",
       "longVersion": "1.3.19",
       "md5": "65667763ad8f2647da8f5f163bf00229",
-      "sha256": "2adeeb523c7575d1bc5e33c8fffc49805d8451a6"
+      "sha256": "63f711eb46a9e94fdb42b40d46faae77e5367a6a2457434117855c5e521edbad"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.18/zksolc-macosx-arm64-v1.3.18",
       "version": "1.3.18",
       "longVersion": "1.3.18",
       "md5": "a63c05090cd2755d5b004819bc7a03c5",
-      "sha256": "2b38e3ec0505d18f71637a1e3d0140467139b2d9"
+      "sha256": "c0b07ecd201a222dd3bc9715d75c1687fd0a22119e0f70590d7f2480a129cea1"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.17/zksolc-macosx-arm64-v1.3.17",
       "version": "1.3.17",
       "longVersion": "1.3.17",
       "md5": "7c9d78ccb42a89716b3dacfe68e70dfc",
-      "sha256": "fc905c7867ff50a981ba7e76196fe1ec353f3531"
+      "sha256": "c51759fbd6145c64bcbf0d0086ecd473e428275f76d94c90a85ab7827dccf242"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.16/zksolc-macosx-arm64-v1.3.16",
       "version": "1.3.16",
       "longVersion": "1.3.16",
       "md5": "d9cd4bfbe176dfc1e6895683baeedbcc",
-      "sha256": "2d1be9634120d2d3c341ccf93f32dc10dd7bbf3c"
+      "sha256": "531e7e3fc00a0cb4e85ffa4ced682b206648daaf5f7d69bf29db3534dc899074"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.14/zksolc-macosx-arm64-v1.3.14",
       "version": "1.3.14",
       "longVersion": "1.3.14",
       "md5": "37c4c1f6105656b238f3f60d17f9d063",
-      "sha256": "7bcf8bd07609225e317007abe1d051822418b0c3"
+      "sha256": "a239e42d593f2b5e6f1014d0e940b8f76acacc664da5e8ee9cdbb604e264b161"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.13/zksolc-macosx-arm64-v1.3.13",
       "version": "1.3.13",
       "longVersion": "1.3.13",
       "md5": "bc9398a8160d62896d56559429a8aea3",
-      "sha256": "1f81511e178963c35826650f54030e8caaf1c264"
+      "sha256": "659aa7e3b3b22c7906b89678ca412386d3ed32c90cc2863ddf32e12165f8799c"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.11/zksolc-macosx-arm64-v1.3.11",
       "version": "1.3.11",
       "longVersion": "1.3.11",
       "md5": "d9284b9a64928c2ddd963eaad6e6f28e",
-      "sha256": "b55c6fb74754d3fa29ce3804c1597c35c19065d0"
+      "sha256": "77ce1ad0dac6f63b578df92366b657b5f9918c96ee8cf112a815b599483959f0"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.10/zksolc-macosx-arm64-v1.3.10",
       "version": "1.3.10",
       "longVersion": "1.3.10",
       "md5": "e5143314dc73c515f7807db71411db28",
-      "sha256": "067035a83ccd7ff71de7f21a574459abaa8ff223"
+      "sha256": "23b31d70e461ec6553cba69b664141f3f2329d8d4185c13dabccd78ddcb7ea99"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.9/zksolc-macosx-arm64-v1.3.9",
       "version": "1.3.9",
       "longVersion": "1.3.9",
       "md5": "7a13be513f52b9abe8629bf60fdb4896",
-      "sha256": "d7efa2a3d785e434f61f6421b5ba558caeb095ed"
+      "sha256": "a7453e135f2f4651078db70d800b1e1ec9b1fb548c63cc086d7a073ff034a180"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.8/zksolc-macosx-arm64-v1.3.8",
       "version": "1.3.8",
       "longVersion": "1.3.8",
       "md5": "729c8d99375fa9d6f678a9c6fba27bf4",
-      "sha256": "92bac013a807b819bf96f16169db7852376dcbae"
+      "sha256": "82be8940d1d13d989bcee553e5c66e47d0eadbd2174cae77067e3b63c45b2609"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.7/zksolc-macosx-arm64-v1.3.7",
       "version": "1.3.7",
       "longVersion": "1.3.7",
       "md5": "85448d6b0e26e10bb032460197d7d1d3",
-      "sha256": "771e9bb08f199884d45c9518f8513ba721e0e907"
+      "sha256": "a6ed8da3fa1149c3bdce6dad2838cf884d4746bafcf6ae618bf36e7a3071d6f0"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.6/zksolc-macosx-arm64-v1.3.6",
       "version": "1.3.6",
       "longVersion": "1.3.6",
       "md5": "aaa40f8a2aad4c9a2427ccbf5a21ed7e",
-      "sha256": "279bf82f161be82632c7110760252d640e1ea157"
+      "sha256": "0542429f2a98134fbaa198a080896d2003596a53c54e531a895a6633347a101b"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.5/zksolc-macosx-arm64-v1.3.5",
       "version": "1.3.5",
       "longVersion": "1.3.5",
       "md5": "0a61e65c81cb892e5966d76422629659",
-      "sha256": "e3e4c587eade7f6af0ec24428287972003803df3"
+      "sha256": "3dcf417787e5c0afb86578a37eec8b98bfc0d1ae522cce303b3355f3d2ce99f5"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.4/zksolc-macosx-arm64-v1.3.4",
       "version": "1.3.4",
       "longVersion": "1.3.4",
       "md5": "85c30ffbcdcd5c8d89c02427e814b5c5",
-      "sha256": "fe2966dffe5b6a67acdbe23ac376058a975b440c"
+      "sha256": "159efdeca8b0519960d84ec5e8e7e69cf90e3786aa3be49c9a76846aec1cbef5"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.3/zksolc-macosx-arm64-v1.3.3",
       "version": "1.3.3",
       "longVersion": "1.3.3",
       "md5": "5797db91f65916c8a042c6f2f911b4b7",
-      "sha256": "912da5ff018c59f16bf39341f2352e547b52db5f"
+      "sha256": "bc371c62a49b9723b2f343150a617ad77c8ec913030d1d1893eea5d033b717e3"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.2/zksolc-macosx-arm64-v1.3.2",
       "version": "1.3.2",
       "longVersion": "1.3.2",
       "md5": "853213d6b92be22762bc1edfac6b2183",
-      "sha256": "f5cd82525a51837880b4ab50e907a5807a6c59f5"
+      "sha256": "2eadb40d38fc85562a0ef70e1cd4ba47f933cf324eb062d2485153988659f227"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.1/zksolc-macosx-arm64-v1.3.1",
       "version": "1.3.1",
       "longVersion": "1.3.1",
       "md5": "4530c5185366b18041e5f8a6ab851fe8",
-      "sha256": "54ddb06c173223dbaf52c630e88f86657c645bc4"
+      "sha256": "d578e2f635659388fe3ba82e41fa66b14a0929e30b939c8f69c5cbf03234b75a"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.3.0/zksolc-macosx-arm64-v1.3.0",
       "version": "1.3.0",
       "longVersion": "1.3.0",
       "md5": "cffbaea56b941e3fb148906718bfbca1",
-      "sha256": "beffc8b8b82f4dccf8529ffe5daffb562787a43c"
+      "sha256": "48e116e1e7f116478e15c7f24b4a91770932ee77fe5b6648978519b385b31d48"
     }
   ]
 }
