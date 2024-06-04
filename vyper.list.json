@@ -147,8 +147,8 @@
       "version": "0.3.8",
       "build": "commit.036f1536",
       "longVersion": "0.3.8+commit.036f1536",
-      "md5": "3be128afd08c7401d73093b271a153a6",
-      "sha256": "e1819d43236a888b8f870123fadae52b58bcf3387dadafac8d9914d23344c78d"
+      "md5": "bc08a583187f315e83244506f44787c2",
+      "sha256": "3413920cbb8f01149eb276aebc988b4eead3b1e821aaba467716dc0d9e3366b5"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.7/vyper.0.3.7%2Bcommit.6020b8bb.linux",
