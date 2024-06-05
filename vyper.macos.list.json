@@ -1,6 +1,14 @@
 {
   "builds": [
     {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc6/vyper.0.4.0rc6+commit.33719560.darwin",
+      "version": "0.4.0",
+      "build": "commit.33719560",
+      "longVersion": "0.4.0-rc6+commit.33719560",
+      "md5": "69d3960f24aa9421b12d2a19c4ba171b",
+      "sha256": "829c7bd6ce298e3b45fc90c15320b6072eb060b2a1a3563a84b89e01ae09a230"
+    },
+    {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.10/vyper.0.3.10%2Bcommit.91361694.darwin",
       "version": "0.3.10",
       "build": "commit.91361694",
