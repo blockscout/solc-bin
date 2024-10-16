@@ -3,8 +3,9 @@
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.1b1/vyper.0.4.1b1%2Bcommit.039d3692.linux",
       "version": "0.4.1",
+      "prerelease": "b1",
       "build": "commit.039d3692",
-      "longVersion": "0.4.1b1+commit.039d3692",
+      "longVersion": "0.4.1-b1+commit.039d3692",
       "md5": "c06f2c5a973a66560d3dc2cc7d247de8",
       "sha256": "606970ac97fde7072593c33f4b75ca348754f4e962769432931f49fd6d174a26"
     },
