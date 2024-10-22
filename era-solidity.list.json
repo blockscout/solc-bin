@@ -1,0 +1,1300 @@
+{
+    "builds": [
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.28-1.0.1/solc-macosx-arm64-0.8.28-1.0.1",
+            "version": "0.8.28",
+            "build": "commit.acc7d8f9",
+            "longVersion": "0.8.28+commit.acc7d8f9",
+            "sha256": "ecb66f0ca47bb2e9e8d52dbbf837463e44edec7e5d27cae2bec1308e3975f094",
+            "md5": "bf95d82e521a5dbc38e376f8bef732fd"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/mlir-0.8.26-tag/solc-macosx-arm64-0.8.26-mlir",
+            "version": "0.8.26",
+            "build": "commit.64a757c8",
+            "longVersion": "0.8.26+commit.64a757c8",
+            "sha256": "1fb4e50036e83f255fbf9d47fa2202cdd60ac9fbbb861893e99289f1be01c56e",
+            "md5": "ecc9f8a9162e1d87f369660a4805dd15"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.27-1.0.1/solc-macosx-arm64-0.8.27-1.0.1",
+            "version": "0.8.27",
+            "build": "commit.fd3a7203",
+            "longVersion": "0.8.27+commit.fd3a7203",
+            "sha256": "9253f3a5a7d8396bb19b82147e1cce22b651f157b4597690cec9a31ef4348fd0",
+            "md5": "27bdfdf25be0d2fd41a27fe0f646acb5"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.1/solc-macosx-arm64-0.4.16-1.0.1",
+            "version": "0.4.16",
+            "build": "commit.cf588aa9",
+            "longVersion": "0.4.16+commit.cf588aa9",
+            "sha256": "f310343874bbe18b04c17b2ac8988bb1acdd60243b2d14d900ef5a219d280990",
+            "md5": "c11a8ea6517b08ec92faf444b7b1e35a"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.1/solc-macosx-arm64-0.4.15-1.0.1",
+            "version": "0.4.15",
+            "build": "commit.e3ad3748",
+            "longVersion": "0.4.15+commit.e3ad3748",
+            "sha256": "7a5db52dab4413e165e4855cb94866dfe9dce3ce24188399d7b32b86ea799eb1",
+            "md5": "6d92e4426ab2b0e9f344903494698d5a"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.1/solc-macosx-arm64-0.4.14-1.0.1",
+            "version": "0.4.14",
+            "build": "commit.58dce8e6",
+            "longVersion": "0.4.14+commit.58dce8e6",
+            "sha256": "2fb0179bec280132a2baf247e910a9d7d22d886fbc95559089fc9c827e5b27b1",
+            "md5": "e533f3d5ae51e8d7ecf754724c5ed651"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.1/solc-macosx-arm64-0.4.13-1.0.1",
+            "version": "0.4.13",
+            "build": "commit.2e10cee7",
+            "longVersion": "0.4.13+commit.2e10cee7",
+            "sha256": "e4a0b09f63e6d6a4badb716bf7d6fd38140523096efa371c491e347057bcf6ae",
+            "md5": "a9ef28cd3e6ac3828abaea5e56b63f98"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.1/solc-macosx-arm64-0.4.12-1.0.1",
+            "version": "0.4.12",
+            "build": "commit.42a88949",
+            "longVersion": "0.4.12+commit.42a88949",
+            "sha256": "42604bbc1000870d227302a22618652f9ebe6f7633c5bae09a62c71316642179",
+            "md5": "38b705e9d223782750e5521490cdcd67"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.26-1.0.1/solc-macosx-arm64-0.8.26-1.0.1",
+            "version": "0.8.26",
+            "build": "commit.905b735b",
+            "longVersion": "0.8.26+commit.905b735b",
+            "sha256": "3d7bb0e70655b54885ec1b8bc6d9452dc59c121908f753e9bbf1b5061b9dbed5",
+            "md5": "ec522668fcf84eaeea7122dad14e8af8"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.1/solc-macosx-arm64-0.8.25-1.0.1",
+            "version": "0.8.25",
+            "build": "commit.47b979f3",
+            "longVersion": "0.8.25+commit.47b979f3",
+            "sha256": "443e59f85c0c7d4919afe4732944c774da189bda3f582dc8af293a7a23fdff4c",
+            "md5": "089fc00ad65600e6ee0ac6d6c4f03d02"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.1/solc-macosx-arm64-0.8.24-1.0.1",
+            "version": "0.8.24",
+            "build": "commit.3a2587f6",
+            "longVersion": "0.8.24+commit.3a2587f6",
+            "sha256": "3b1a528dcc8dd1d75033df3254968e6ea9c3b5b5349243c9dce72b5d216aa2d1",
+            "md5": "aa30a09b6973f9c85a6529d825736eec"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.1/solc-macosx-arm64-0.8.23-1.0.1",
+            "version": "0.8.23",
+            "build": "commit.b42ca2a3",
+            "longVersion": "0.8.23+commit.b42ca2a3",
+            "sha256": "b9c27ac4d818c00b693a3e21a5554423717197459540e73102b8c27918accd12",
+            "md5": "79b76bd59dbfb541891fcaffdbfd65ff"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.1/solc-macosx-arm64-0.8.22-1.0.1",
+            "version": "0.8.22",
+            "build": "commit.d3b5c2a5",
+            "longVersion": "0.8.22+commit.d3b5c2a5",
+            "sha256": "3140b988b5746f2e8e3b05ccab3446e7ebe971ea3de87879a8948e964af5ab0c",
+            "md5": "509c916d7ef3934d98f0c9c760b26f12"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.1/solc-macosx-arm64-0.8.21-1.0.1",
+            "version": "0.8.21",
+            "build": "commit.ec5dde33",
+            "longVersion": "0.8.21+commit.ec5dde33",
+            "sha256": "8dd1dbdeded090b1d6ccb8f0be16336a20be9c87df805a926d2fceb6fa97cb89",
+            "md5": "868b8a09b0dfe5c36bdf739400ba457c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.1/solc-macosx-arm64-0.8.20-1.0.1",
+            "version": "0.8.20",
+            "build": "commit.9f2a5241",
+            "longVersion": "0.8.20+commit.9f2a5241",
+            "sha256": "061a5c7a23fef4f3d9f0c758b08e3ff6734e8a782f4781e196f6ef8350412964",
+            "md5": "9a4f8004da392c6e3b7f8a0254a6fa1b"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.1/solc-macosx-arm64-0.8.19-1.0.1",
+            "version": "0.8.19",
+            "build": "commit.580a8fe5",
+            "longVersion": "0.8.19+commit.580a8fe5",
+            "sha256": "dec6a86d0c0428dd1cf132b6cfb7d84fb1e440311e8b29f4b2f0ca9bad00053c",
+            "md5": "53ac666f433668c663b3c39286b4e0be"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.1/solc-macosx-arm64-0.8.18-1.0.1",
+            "version": "0.8.18",
+            "build": "commit.84357b55",
+            "longVersion": "0.8.18+commit.84357b55",
+            "sha256": "593e782fc9bf52951b5c5f151fe2573cbc67f9936c608f32c9fa2711020a34e9",
+            "md5": "ba7a05af28048b72c9e30b891015bdbf"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.1/solc-macosx-arm64-0.8.17-1.0.1",
+            "version": "0.8.17",
+            "build": "commit.439a1047",
+            "longVersion": "0.8.17+commit.439a1047",
+            "sha256": "92767f0bf8cf94fe0a687c009ddc156bfc8697ae2aac6a3d3fa8a6ecfb0c2961",
+            "md5": "116ebd46fae4614fb3a96fae47c92f28"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.1/solc-macosx-arm64-0.8.16-1.0.1",
+            "version": "0.8.16",
+            "build": "commit.2d04f2ab",
+            "longVersion": "0.8.16+commit.2d04f2ab",
+            "sha256": "05434bf2354a764c06c833513d31ef6b1e5e7eabc89f7c8846488871f52ffec1",
+            "md5": "713120cf239459a259ddee78270e6f8f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.1/solc-macosx-arm64-0.8.15-1.0.1",
+            "version": "0.8.15",
+            "build": "commit.74e5d21d",
+            "longVersion": "0.8.15+commit.74e5d21d",
+            "sha256": "2ce9f1a7fdb60c13db083cc75089c793f5661032af8b711e585d58433e09b5b7",
+            "md5": "7b1f1817c8e86289f96b786a49a5303b"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.1/solc-macosx-arm64-0.8.14-1.0.1",
+            "version": "0.8.14",
+            "build": "commit.ac205588",
+            "longVersion": "0.8.14+commit.ac205588",
+            "sha256": "fc00c1bd4443f18e8367e8464d48393afa0e8af7645dc7617cb7abfbfeca1974",
+            "md5": "1280c7148cff776fd0364c9c393f15b2"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.1/solc-macosx-arm64-0.8.13-1.0.1",
+            "version": "0.8.13",
+            "build": "commit.dc7bb5d3",
+            "longVersion": "0.8.13+commit.dc7bb5d3",
+            "sha256": "08de5e9851fb4486d3a4e5e21f1664fd35fa4948e3aacd34ec4c2b2002cf7951",
+            "md5": "bad2ba237a3c5e44c2fcd8adf5f83a37"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.1/solc-macosx-arm64-0.8.12-1.0.1",
+            "version": "0.8.12",
+            "build": "commit.8774d16c",
+            "longVersion": "0.8.12+commit.8774d16c",
+            "sha256": "dd59ba087b903994990a69e4ff5044523b95bdac7ba4d13ab0c22fa25cd1caee",
+            "md5": "0850904cd80ea694a39c041dbb849c31"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.1/solc-macosx-arm64-0.8.11-1.0.1",
+            "version": "0.8.11",
+            "build": "commit.4611d937",
+            "longVersion": "0.8.11+commit.4611d937",
+            "sha256": "bcbfee460571d7f300eff44a0ae8ab84db546168f371ac405340a65628200d20",
+            "md5": "d6642ca65ca7f42092462ba06088d301"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.1/solc-macosx-arm64-0.8.10-1.0.1",
+            "version": "0.8.10",
+            "build": "commit.6eff489a",
+            "longVersion": "0.8.10+commit.6eff489a",
+            "sha256": "3eaab08ecd4298a1e7d049aae7cb2f86bd300d2f563ee96b66d7c8b4c9fe9eef",
+            "md5": "91f1897082a709ae914e28fb8f1a03ec"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.1/solc-macosx-arm64-0.8.9-1.0.1",
+            "version": "0.8.9",
+            "build": "commit.182f38a0",
+            "longVersion": "0.8.9+commit.182f38a0",
+            "sha256": "4e3f90360da1b5c7bc2137394c8945633fe38b6876a381d6bcc68c7716aefde2",
+            "md5": "1d87fa0952bc87cbecae13c6ea4ab7d2"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.1/solc-macosx-arm64-0.8.8-1.0.1",
+            "version": "0.8.8",
+            "build": "commit.94d96e66",
+            "longVersion": "0.8.8+commit.94d96e66",
+            "sha256": "ec7695de57f3e256fecd8a92f6990fca4c90d6cd6f55c60e5638573fa4520b20",
+            "md5": "d9a38a18aba743ee7e328627e9c75d6e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.1/solc-macosx-arm64-0.8.7-1.0.1",
+            "version": "0.8.7",
+            "build": "commit.7bc31051",
+            "longVersion": "0.8.7+commit.7bc31051",
+            "sha256": "e33b14980f410b643b4eb1dac08a05f263231b4943eedd6f1b40a1a42f631f5c",
+            "md5": "4407109fae73ebec111c85ca7fa47d43"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.1/solc-macosx-arm64-0.8.6-1.0.1",
+            "version": "0.8.6",
+            "build": "commit.1ad37205",
+            "longVersion": "0.8.6+commit.1ad37205",
+            "sha256": "1aa29bd0597269de2431cdd82e2fff3947ce83ed961aac53cb5f4992a1b0cf18",
+            "md5": "72143ff4999dec9ab918652cb656b60c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.1/solc-macosx-arm64-0.8.5-1.0.1",
+            "version": "0.8.5",
+            "build": "commit.e9911bde",
+            "longVersion": "0.8.5+commit.e9911bde",
+            "sha256": "3006c49febab6746ba947913dff02ec5a6451d5a0d2cc1a8fc06ee34d5dc2b91",
+            "md5": "8753d3720d3d3a90b7f05c50e0b0dbf6"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.1/solc-macosx-arm64-0.8.4-1.0.1",
+            "version": "0.8.4",
+            "build": "commit.414f455d",
+            "longVersion": "0.8.4+commit.414f455d",
+            "sha256": "a56411a4ccd339ad29d0ade1a61349e89d69cad010f8090a4b39cc13933d7a33",
+            "md5": "6bd008cbd7e1dbd3e1d34a701f6ce9d5"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.1/solc-macosx-arm64-0.8.3-1.0.1",
+            "version": "0.8.3",
+            "build": "commit.5190db56",
+            "longVersion": "0.8.3+commit.5190db56",
+            "sha256": "44fa8b0742131fd9a448dcedc444bb1b129d56ffc72e645166f1aa8bf9d26954",
+            "md5": "01b5c268f37d50ca0650ea47f471750c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.1/solc-macosx-arm64-0.8.2-1.0.1",
+            "version": "0.8.2",
+            "build": "commit.fd3b12ff",
+            "longVersion": "0.8.2+commit.fd3b12ff",
+            "sha256": "0227219844df135aa30e18ff8f93c50bbaf0fe03bc7c307f87009208f0ab87f6",
+            "md5": "d088b82e7b860c46aac8945bf6703afe"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.1/solc-macosx-arm64-0.8.1-1.0.1",
+            "version": "0.8.1",
+            "build": "commit.58ae5c5d",
+            "longVersion": "0.8.1+commit.58ae5c5d",
+            "sha256": "c6f4b62a7c995869df5451868d4282a73ef26b5eec2cd8b558c8f1e42093a382",
+            "md5": "c46192a730bf94e7fdfbea8c4397d74d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.1/solc-macosx-arm64-0.8.0-1.0.1",
+            "version": "0.8.0",
+            "build": "commit.653de846",
+            "longVersion": "0.8.0+commit.653de846",
+            "sha256": "40326f9e8f0f15e6ee6b15c30da24d510ae598d40f101523f6dda8293ae5f712",
+            "md5": "96d7d42fb8e19d9004df4bd7221ccb14"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.1/solc-macosx-arm64-0.7.6-1.0.1",
+            "version": "0.7.6",
+            "build": "commit.90d53997",
+            "longVersion": "0.7.6+commit.90d53997",
+            "sha256": "3455f043e083323fa4fd6eca65b606dbd03b61da8eb7fef19b87e96af84c65cb",
+            "md5": "f0aa7ec3160224d2bc1bf8a2f0d3d784"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.1/solc-macosx-arm64-0.7.5-1.0.1",
+            "version": "0.7.5",
+            "build": "commit.80350332",
+            "longVersion": "0.7.5+commit.80350332",
+            "sha256": "5f4ccd0d5f9944d3771a6d0dd28efe96c7a8ebcd346c32c217e50d8829a8b141",
+            "md5": "a1cec1cba7367a3dde389c6bf99d946e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.1/solc-macosx-arm64-0.7.4-1.0.1",
+            "version": "0.7.4",
+            "build": "commit.5047983b",
+            "longVersion": "0.7.4+commit.5047983b",
+            "sha256": "f40efda11a07c037337ba9b7d3114064a6a3ff867b5634c3c500f38432b9dce8",
+            "md5": "7cccf9f590e645aff62738e37ef2ec11"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.1/solc-macosx-arm64-0.7.3-1.0.1",
+            "version": "0.7.3",
+            "build": "commit.6924a502",
+            "longVersion": "0.7.3+commit.6924a502",
+            "sha256": "778da0e53ccb393a53a002d77ef5d7f0cdcb52957399c482ea5b48eea3d8b38e",
+            "md5": "3b522254be85fd05a7599cc2f2d64665"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.1/solc-macosx-arm64-0.7.2-1.0.1",
+            "version": "0.7.2",
+            "build": "commit.88d1104e",
+            "longVersion": "0.7.2+commit.88d1104e",
+            "sha256": "7dc19a956ba53421edf2773f2370676b2ea5b5a16a494e55a6d745919434d384",
+            "md5": "6ce9c741e586c75906a03a47d3678365"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.1/solc-macosx-arm64-0.7.1-1.0.1",
+            "version": "0.7.1",
+            "build": "commit.703e7aab",
+            "longVersion": "0.7.1+commit.703e7aab",
+            "sha256": "69719b5d1ed14953d584bf1e20d6e5b10701c39255b017538ace0c754a6e5631",
+            "md5": "79b1158e6be980e6ed85fe6d36b9859d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.1/solc-macosx-arm64-0.7.0-1.0.1",
+            "version": "0.7.0",
+            "build": "commit.fc4b0321",
+            "longVersion": "0.7.0+commit.fc4b0321",
+            "sha256": "4a6f6f3514b203ce8e13a01b9c97c6e0196a0c06122d5b3eee2dca067bfeb452",
+            "md5": "7062fa403970aef8201914b343af259c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.1/solc-macosx-arm64-0.6.12-1.0.1",
+            "version": "0.6.12",
+            "build": "commit.148869f1",
+            "longVersion": "0.6.12+commit.148869f1",
+            "sha256": "3e00305c3aa8e87239daa4c5536620c4de40fce7cd5d068f5992b48a0331ab92",
+            "md5": "e0adc3cf8aa3b1f4bc2fe08ca566f668"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.1/solc-macosx-arm64-0.6.11-1.0.1",
+            "version": "0.6.11",
+            "build": "commit.41a5f1c1",
+            "longVersion": "0.6.11+commit.41a5f1c1",
+            "sha256": "948aa17bc85fbaa347644ddaa1113ab05469457a06b63dead4dcc0a264ded552",
+            "md5": "cae08e34126a470afcf007084df35068"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.1/solc-macosx-arm64-0.6.10-1.0.1",
+            "version": "0.6.10",
+            "build": "commit.b116c857",
+            "longVersion": "0.6.10+commit.b116c857",
+            "sha256": "b65bde1d3b688d05a1f361f8a4f21d7661fa2eb749cb24bd5ba3981c88f5dc32",
+            "md5": "670d7313cab81940ec563e2533b3604f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.1/solc-macosx-arm64-0.6.9-1.0.1",
+            "version": "0.6.9",
+            "build": "commit.d1775e38",
+            "longVersion": "0.6.9+commit.d1775e38",
+            "sha256": "62a33537d7b9f14264a25ba427d95b49647caba3a37c936681201e8b95743c61",
+            "md5": "aae76b17fd14fd9269fb49f998dd360e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.1/solc-macosx-arm64-0.6.8-1.0.1",
+            "version": "0.6.8",
+            "build": "commit.c0fdd5da",
+            "longVersion": "0.6.8+commit.c0fdd5da",
+            "sha256": "8e0ab921b0017201901f655ab792b7e1c8a359c908af3c1617a1ec2c5d7c0c8f",
+            "md5": "4b50b6f4de95d2157dbc3b7c9d619128"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.1/solc-macosx-arm64-0.6.7-1.0.1",
+            "version": "0.6.7",
+            "build": "commit.9abea9d1",
+            "longVersion": "0.6.7+commit.9abea9d1",
+            "sha256": "687e22e1bfe14a0acba98c70dbef30f33ea10f09032786c75ea73f050203b51b",
+            "md5": "ce80bfe44596de621b89e7c26ffa5bd2"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.1/solc-macosx-arm64-0.6.6-1.0.1",
+            "version": "0.6.6",
+            "build": "commit.8469fa3b",
+            "longVersion": "0.6.6+commit.8469fa3b",
+            "sha256": "b479b60d2be42c0f659c59ece0464d56d91c11c75b1282e475e4184e5155e100",
+            "md5": "052381e67dd62ceb6e0cebd7539945bc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.1/solc-macosx-arm64-0.6.5-1.0.1",
+            "version": "0.6.5",
+            "build": "commit.7e46561e",
+            "longVersion": "0.6.5+commit.7e46561e",
+            "sha256": "2ce05d351ec01c0017777652226ce924876e9806fb2b1d74cff24d0f36deceae",
+            "md5": "a31046153d4aff32397a58253acf3810"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.1/solc-macosx-arm64-0.6.4-1.0.1",
+            "version": "0.6.4",
+            "build": "commit.aab18a82",
+            "longVersion": "0.6.4+commit.aab18a82",
+            "sha256": "1abebcf8eaf1999538c3041b04c5bedbdbc7ed4c2810801cda54c6c7cf73eca1",
+            "md5": "d2a16af580b658f0cbbef8925ced6f67"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.1/solc-macosx-arm64-0.6.3-1.0.1",
+            "version": "0.6.3",
+            "build": "commit.df6d4b77",
+            "longVersion": "0.6.3+commit.df6d4b77",
+            "sha256": "2d2ae75ebea4891289cac5a2ad39ee01f92a82cfbe11de537512228beb9c9deb",
+            "md5": "bd7847c98fe5ca79f2fe68255ef1bf18"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.1/solc-macosx-arm64-0.6.2-1.0.1",
+            "version": "0.6.2",
+            "build": "commit.88a26618",
+            "longVersion": "0.6.2+commit.88a26618",
+            "sha256": "ad5f491aa75231a568e410cda9727396c69fd9db396a1888c4afd4ae0bc9029d",
+            "md5": "f0a6936c82b62662e3bc52fac66360ba"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.1/solc-macosx-arm64-0.6.1-1.0.1",
+            "version": "0.6.1",
+            "build": "commit.81a285c8",
+            "longVersion": "0.6.1+commit.81a285c8",
+            "sha256": "f7f3e2a85042369e677806c1bd1fb0e6a3bbce7143d3f69170688cc66eeaebef",
+            "md5": "0a116592e0dfd4cf6e13071f9fcb61d0"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.1/solc-macosx-arm64-0.6.0-1.0.1",
+            "version": "0.6.0",
+            "build": "commit.6708c82c",
+            "longVersion": "0.6.0+commit.6708c82c",
+            "sha256": "4f985d2ae442e58806d038cc2b99a014200ec0ef60543ac74daeb625fddb071d",
+            "md5": "cfd95ba9dba4bfd9eea894f94e09c9a0"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.1/solc-macosx-arm64-0.5.17-1.0.1",
+            "version": "0.5.17",
+            "build": "commit.dba8cb1c",
+            "longVersion": "0.5.17+commit.dba8cb1c",
+            "sha256": "4d390558a6be7d0b854bc4d5d71dbd3c81f0d113a280a4322f2a06c2c674a282",
+            "md5": "d65ebfbc26879b02dac4effc81c7d7ac"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.1/solc-macosx-arm64-0.5.16-1.0.1",
+            "version": "0.5.16",
+            "build": "commit.b9534989",
+            "longVersion": "0.5.16+commit.b9534989",
+            "sha256": "babac33caffb225fcbaa82a2200e676669e33be0ccdb196b4dc04cacafb800a3",
+            "md5": "2842420f38302e4bcc0db3c098d20e62"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.1/solc-macosx-arm64-0.5.15-1.0.1",
+            "version": "0.5.15",
+            "build": "commit.ceea502f",
+            "longVersion": "0.5.15+commit.ceea502f",
+            "sha256": "17aec801cc2acb2f65b779b196b69d95e831e554fd3da2f8d3de007c73f7d630",
+            "md5": "711af84a190177fd5dfcd71b3b14f428"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.1/solc-macosx-arm64-0.5.14-1.0.1",
+            "version": "0.5.14",
+            "build": "commit.57a29b35",
+            "longVersion": "0.5.14+commit.57a29b35",
+            "sha256": "c0785d434b101a02b4400d8c8ea6830e3bc685d412b283f113e339ce449d5411",
+            "md5": "4d84e9e1efde249213289c173ceffeba"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.1/solc-macosx-arm64-0.5.13-1.0.1",
+            "version": "0.5.13",
+            "build": "commit.ca5fba33",
+            "longVersion": "0.5.13+commit.ca5fba33",
+            "sha256": "53c61238a3ed75b3d88ca891511d64c5af928a9d6982348d2c046ccac5d7723c",
+            "md5": "d11cd7b1954085330a7eac9e54eb246f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.1/solc-macosx-arm64-0.5.12-1.0.1",
+            "version": "0.5.12",
+            "build": "commit.2133f4dc",
+            "longVersion": "0.5.12+commit.2133f4dc",
+            "sha256": "7636d806952bc9020f1908c89c76cf1da57bde13d96be1aed00cf5145f004d6f",
+            "md5": "69b5b8ef20c2dbfd204b73b8ea28e69c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.1/solc-macosx-arm64-0.5.11-1.0.1",
+            "version": "0.5.11",
+            "build": "commit.a7973e18",
+            "longVersion": "0.5.11+commit.a7973e18",
+            "sha256": "45a35a179bdb0b9cd3671843d9665ac69a3f57ad4ffb1a2e85cc029861922797",
+            "md5": "0a2c14d2112f63090c2b3dcfb2ef914f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.1/solc-macosx-arm64-0.5.10-1.0.1",
+            "version": "0.5.10",
+            "build": "commit.6dd3d4b5",
+            "longVersion": "0.5.10+commit.6dd3d4b5",
+            "sha256": "e56d7aeb23091215ddfb4aa01987482444e60acccb0df00a8338ef684bf5b953",
+            "md5": "efa69a125d6803abb9f4c2ff57310f12"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.1/solc-macosx-arm64-0.5.9-1.0.1",
+            "version": "0.5.9",
+            "build": "commit.fd720a17",
+            "longVersion": "0.5.9+commit.fd720a17",
+            "sha256": "d569d3682efcb630e0888253e23f24542bfc8b4fe895a35c85403330062cdede",
+            "md5": "c939a3f28fe67a7d0c3c256017d567cf"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.1/solc-macosx-arm64-0.5.8-1.0.1",
+            "version": "0.5.8",
+            "build": "commit.6a1ba12d",
+            "longVersion": "0.5.8+commit.6a1ba12d",
+            "sha256": "34ad988e4100c0014a70ec4b63ed65387b6d208343c4cde093b0c555f7843aa0",
+            "md5": "556836b1e755f1606cbfe10c177d2ab6"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.1/solc-macosx-arm64-0.5.7-1.0.1",
+            "version": "0.5.7",
+            "build": "commit.4f8a32da",
+            "longVersion": "0.5.7+commit.4f8a32da",
+            "sha256": "35c5dbca6b4cec75e2b16e64de4b681848bb4dde937a0c7be9d9d8e6c92a3540",
+            "md5": "d9243b0750ab78268b31ba813b0d61f9"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.1/solc-macosx-arm64-0.5.6-1.0.1",
+            "version": "0.5.6",
+            "build": "commit.08b90bf7",
+            "longVersion": "0.5.6+commit.08b90bf7",
+            "sha256": "a21274df7676f18c3971656e897aed7fdc89fef53fbcec59e553117227432bc2",
+            "md5": "adada5ee08fc25cd5676908dfbb985a3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.1/solc-macosx-arm64-0.5.5-1.0.1",
+            "version": "0.5.5",
+            "build": "commit.878d203c",
+            "longVersion": "0.5.5+commit.878d203c",
+            "sha256": "e1fba8161cc1fecbb5a5ea8bc860a7083322d904b9a020c030cab93dc886ef9b",
+            "md5": "1059c16bef366249918fea6be9f7c294"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.1/solc-macosx-arm64-0.5.4-1.0.1",
+            "version": "0.5.4",
+            "build": "commit.9389ec4d",
+            "longVersion": "0.5.4+commit.9389ec4d",
+            "sha256": "532bec6e1fd97c6050bb0da5207277eaa9780e0c7f6d9fe79627e21fbeb945cc",
+            "md5": "924abe63c3dc146f95f98d95ff754083"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.1/solc-macosx-arm64-0.5.3-1.0.1",
+            "version": "0.5.3",
+            "build": "commit.7453343e",
+            "longVersion": "0.5.3+commit.7453343e",
+            "sha256": "8c4ef50bf5d32715650db0a08980f577fc6806743a288bb18ced7cf2c40bfabd",
+            "md5": "85dea40b5c08ae4e5179d11c349d6e9e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.1/solc-macosx-arm64-0.5.2-1.0.1",
+            "version": "0.5.2",
+            "build": "commit.adb8a652",
+            "longVersion": "0.5.2+commit.adb8a652",
+            "sha256": "02d633eef982d0edc4b75a673f06ed9c41bafbaba9ee9a90f9b26b2aa9f873ef",
+            "md5": "d2b666c32bf1f2ad6be5344dc5c99b4c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.1/solc-macosx-arm64-0.5.1-1.0.1",
+            "version": "0.5.1",
+            "build": "commit.4c8a42ab",
+            "longVersion": "0.5.1+commit.4c8a42ab",
+            "sha256": "487247332e0fd04b4c7672d79b5a5f914c4a4b74e4fdd56d47c235aed5573338",
+            "md5": "10f22e5c0ecdbd62d83b9483834a4996"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.1/solc-macosx-arm64-0.5.0-1.0.1",
+            "version": "0.5.0",
+            "build": "commit.86e0ff68",
+            "longVersion": "0.5.0+commit.86e0ff68",
+            "sha256": "3c3eacdd5485764d14e711b20bf0cfb36ef81cafe514c64ba99dc1dcc542b89b",
+            "md5": "b1408fe064748a7c2d0903f0236530b9"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.1/solc-macosx-arm64-0.4.26-1.0.1",
+            "version": "0.4.26",
+            "build": "commit.d42289a4",
+            "longVersion": "0.4.26+commit.d42289a4",
+            "sha256": "e08a5a854588e8c70f8162ea5c607ca7ed01690de7ba989bd5e616fc02addabc",
+            "md5": "41abc5caffaa38cb82f4a0b530ba6df6"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.1/solc-macosx-arm64-0.4.25-1.0.1",
+            "version": "0.4.25",
+            "build": "commit.b436d681",
+            "longVersion": "0.4.25+commit.b436d681",
+            "sha256": "589b5a79dcad628bc3153e2cb18da11ece3602f8525008ca9df789edc45f542a",
+            "md5": "e24338fee0888a7939f48809e720b15c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.1/solc-macosx-arm64-0.4.24-1.0.1",
+            "version": "0.4.24",
+            "build": "commit.bd81feb0",
+            "longVersion": "0.4.24+commit.bd81feb0",
+            "sha256": "7dd89d3253496a81a7b8f9138dd01315ff74df0fea1a0e0a051544900d3eea8c",
+            "md5": "e1b80d4326c0f1b9c40e4d2950db629d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.1/solc-macosx-arm64-0.4.23-1.0.1",
+            "version": "0.4.23",
+            "build": "commit.af447a00",
+            "longVersion": "0.4.23+commit.af447a00",
+            "sha256": "8c251fdf807da80841ac16ca052ed2288ac0be5f45832bfa6df544885031fbf5",
+            "md5": "9060d909c870016da2562123b2e82514"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.1/solc-macosx-arm64-0.4.22-1.0.1",
+            "version": "0.4.22",
+            "build": "commit.a3e5264b",
+            "longVersion": "0.4.22+commit.a3e5264b",
+            "sha256": "d1cb1cdfe2c1e95871323327f5e35e684b6baa110e21dd97c37cd6940df85c84",
+            "md5": "ae67f2ba6dd41ea468c31b401f2fd469"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.1/solc-macosx-arm64-0.4.21-1.0.1",
+            "version": "0.4.21",
+            "build": "commit.63a03d5e",
+            "longVersion": "0.4.21+commit.63a03d5e",
+            "sha256": "f303244c555b39bfbb7ede06db284ffdb22a1b044fa381b1749950bd5894e1dc",
+            "md5": "871dad9d7dc69ed5796279d6d588beca"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.1/solc-macosx-arm64-0.4.20-1.0.1",
+            "version": "0.4.20",
+            "build": "commit.708cd109",
+            "longVersion": "0.4.20+commit.708cd109",
+            "sha256": "635d68ffcd63135eb5f5787f75a2c4edbe328548a4c1852e2c8872a76f0f1390",
+            "md5": "07753f6a3c6ac0efd514158354ae312d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.1/solc-macosx-arm64-0.4.19-1.0.1",
+            "version": "0.4.19",
+            "build": "commit.7ff1bd60",
+            "longVersion": "0.4.19+commit.7ff1bd60",
+            "sha256": "bf08ec682ff4bcce0f9da0dda6ea4f457607cd71a096712645f89f5983514492",
+            "md5": "615662027762d7e9de87fbeb4d39dd19"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.1/solc-macosx-arm64-0.4.18-1.0.1",
+            "version": "0.4.18",
+            "build": "commit.905b735b",
+            "longVersion": "0.4.18+commit.905b735b",
+            "sha256": "98aab3e834a92924e8f16058676145ea5842a2ae78874cba432f2df9e477b8e3",
+            "md5": "d481a08f547d0fb21fb4d31c578b0103"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.1/solc-macosx-arm64-0.4.17-1.0.1",
+            "version": "0.4.17",
+            "build": "commit.00b04601",
+            "longVersion": "0.4.17+commit.00b04601",
+            "sha256": "8ad5813cd77a0b0fe30f55a928c4df9324ac1299127152452b1327d158fec7c3",
+            "md5": "20d0a74d9b5ce0d72d1a2f7f9fe976fc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.0/solc-macosx-arm64-0.8.25-1.0.0",
+            "version": "0.8.25",
+            "build": "commit.728f1683",
+            "longVersion": "0.8.25+commit.728f1683",
+            "sha256": "c07723e17d60ff44afec0d7bb715ed24f6f7382833cd0767e7b7555ef8033e7a",
+            "md5": "037716c75b2e39911c905f021f89c171"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.0/solc-macosx-arm64-0.8.24-1.0.0",
+            "version": "0.8.24",
+            "build": "commit.52d54a91",
+            "longVersion": "0.8.24+commit.52d54a91",
+            "sha256": "ebf1e80b014778c4fcef13279d928d0690dec2b6017d701951b264115d2cfbd5",
+            "md5": "5632e5b4844999c2c327dc1aff5ad4cc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.0/solc-macosx-arm64-0.8.23-1.0.0",
+            "version": "0.8.23",
+            "build": "commit.c46cbc01",
+            "longVersion": "0.8.23+commit.c46cbc01",
+            "sha256": "ba82825620bb3c90750a17df039059cfcb9ce12ae52adaca102117ed72d452d6",
+            "md5": "50899f69b3f50cd1bba1640e22332baa"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.0/solc-macosx-arm64-0.8.22-1.0.0",
+            "version": "0.8.22",
+            "build": "commit.beb84e1c",
+            "longVersion": "0.8.22+commit.beb84e1c",
+            "sha256": "259f75dd5fdfd7542a6bea1ab48440435933ecff44d531dc7b02e21eeb567213",
+            "md5": "2031cf7d29b3aa9f9babb588adfcdce5"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.0/solc-macosx-arm64-0.8.21-1.0.0",
+            "version": "0.8.21",
+            "build": "commit.bb862db2",
+            "longVersion": "0.8.21+commit.bb862db2",
+            "sha256": "c6383071e742420b5336ea1da5faa3c8c1e62eb769ea6b346b68eba1dc9e649c",
+            "md5": "af57dc76ee9c42c25d37fe0da00a8021"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.0/solc-macosx-arm64-0.8.20-1.0.0",
+            "version": "0.8.20",
+            "build": "commit.475d6d9f",
+            "longVersion": "0.8.20+commit.475d6d9f",
+            "sha256": "8390020e0f159f535ab12ae9ae9fde80096bb301ebfa640de5ca01d437f7928a",
+            "md5": "9e53c03e0ffa98288a07ed92900340f2"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.0/solc-macosx-arm64-0.8.19-1.0.0",
+            "version": "0.8.19",
+            "build": "commit.5e99f3d9",
+            "longVersion": "0.8.19+commit.5e99f3d9",
+            "sha256": "85e6cf1299c1742c5c7ebb684ef0b9cf59b5e9de8941c672305587e4727649b9",
+            "md5": "6dd3d9bde080fb7512ae9345a05d7a44"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.0/solc-macosx-arm64-0.8.18-1.0.0",
+            "version": "0.8.18",
+            "build": "commit.4850e071",
+            "longVersion": "0.8.18+commit.4850e071",
+            "sha256": "95cba73cb92728d79870f682b34789a633bffb08be50a64f074ce9926490ab65",
+            "md5": "8034b6be6484bc49fef0a18006a3c70e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.0/solc-macosx-arm64-0.8.17-1.0.0",
+            "version": "0.8.17",
+            "build": "commit.6c091780",
+            "longVersion": "0.8.17+commit.6c091780",
+            "sha256": "9eb4061c881c04c6d005ea33e45bd0a6886e5c1bd5517ff047251ad9e2c24fb0",
+            "md5": "d04578a95bbe3375f7b0be014eb490a3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.0/solc-macosx-arm64-0.8.16-1.0.0",
+            "version": "0.8.16",
+            "build": "commit.8e15a08d",
+            "longVersion": "0.8.16+commit.8e15a08d",
+            "sha256": "a4bd91666f9a718d02b745dd5d073bd53d00e40f2317ce3b8ae17b24184763c0",
+            "md5": "607d502e401279c37642c311bfe27bed"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.0/solc-macosx-arm64-0.8.15-1.0.0",
+            "version": "0.8.15",
+            "build": "commit.d8159763",
+            "longVersion": "0.8.15+commit.d8159763",
+            "sha256": "08c785b3067c831025292fa77020d809551534ce87c15c464716e2c472c14ead",
+            "md5": "0b24d4f2c98164acfc842820e65f920d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.0/solc-macosx-arm64-0.8.14-1.0.0",
+            "version": "0.8.14",
+            "build": "commit.953831a6",
+            "longVersion": "0.8.14+commit.953831a6",
+            "sha256": "cdfd512b76e44af1885a50c2b2247ff98a8cd3094871e662d60ce93f9c4285a6",
+            "md5": "28ecdfe67608b4859c7df560ebc59275"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.0/solc-macosx-arm64-0.8.13-1.0.0",
+            "version": "0.8.13",
+            "build": "commit.218d7e3a",
+            "longVersion": "0.8.13+commit.218d7e3a",
+            "sha256": "35966bbbc924c5d94b789b15faad9d604e8ebc9e36be79e89a32568dc755311b",
+            "md5": "1e66265d436749f799d50b8d8fc71029"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.0/solc-macosx-arm64-0.8.12-1.0.0",
+            "version": "0.8.12",
+            "build": "commit.4b7f7da7",
+            "longVersion": "0.8.12+commit.4b7f7da7",
+            "sha256": "e18411dccf1fba0182598e38ad8260048c10e18e319f486b8809ebd65a51fc3d",
+            "md5": "343ee3dd2e57d4337d5a6cf1289b7774"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.0/solc-macosx-arm64-0.8.11-1.0.0",
+            "version": "0.8.11",
+            "build": "commit.16d17a5c",
+            "longVersion": "0.8.11+commit.16d17a5c",
+            "sha256": "9bc2da0b002937436420e7d44d6e75b5e2f20d4190ee91c113db8b49b56ad2e3",
+            "md5": "3078fe0a8f0a1056e4107ffd38fe39b7"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.0/solc-macosx-arm64-0.8.10-1.0.0",
+            "version": "0.8.10",
+            "build": "commit.ac3397cb",
+            "longVersion": "0.8.10+commit.ac3397cb",
+            "sha256": "e474aad4868de5c0ec995189af2ea35a5459170aba908cae57efa27fc8d3b637",
+            "md5": "a013f4de161d630794565762df6ae52b"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.0/solc-macosx-arm64-0.8.9-1.0.0",
+            "version": "0.8.9",
+            "build": "commit.1965fadf",
+            "longVersion": "0.8.9+commit.1965fadf",
+            "sha256": "5d9c768744aedcf6f5b42fd4251ddaa79cb84ac5e5ef1aadf281adb8808591f1",
+            "md5": "5d83dfb0748526a57001d5deeac85df3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.0/solc-macosx-arm64-0.8.8-1.0.0",
+            "version": "0.8.8",
+            "build": "commit.129884bc",
+            "longVersion": "0.8.8+commit.129884bc",
+            "sha256": "6a3b749c6af160895f6685d897cf1de2b50153be38524aa3943617e728fdb377",
+            "md5": "2bd74cf4066a0abad0f0f81cea4bbb11"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.0/solc-macosx-arm64-0.8.7-1.0.0",
+            "version": "0.8.7",
+            "build": "commit.b2de7db3",
+            "longVersion": "0.8.7+commit.b2de7db3",
+            "sha256": "4831c4312b4cdb9a45bc5fe80d019f546c4f99b957b889c511edd6030269c5b8",
+            "md5": "b7624ba09f97f0ce807fa388e939f1d6"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.0/solc-macosx-arm64-0.8.6-1.0.0",
+            "version": "0.8.6",
+            "build": "commit.ff11fd6f",
+            "longVersion": "0.8.6+commit.ff11fd6f",
+            "sha256": "f4ffaa336362e35ed6f520ce1d59e9f5fe3317987ebd5a0ff849927993aba5db",
+            "md5": "816c5fee36a12fdc783b80b48f792b92"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.0/solc-macosx-arm64-0.8.5-1.0.0",
+            "version": "0.8.5",
+            "build": "commit.c0ca130e",
+            "longVersion": "0.8.5+commit.c0ca130e",
+            "sha256": "bfa3ab6e1efd5f2ed6acc35e6c82043f2a30c6706e61f86ac45429c1342c34c3",
+            "md5": "c0f70765a51e74e01340971c2b30dea3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.0/solc-macosx-arm64-0.8.4-1.0.0",
+            "version": "0.8.4",
+            "build": "commit.cc284d6e",
+            "longVersion": "0.8.4+commit.cc284d6e",
+            "sha256": "cbbd2b864417d5485921b2eff01c55c7bee2136e4bc4cfec4d00959acd07e8f5",
+            "md5": "0436e7d6bf2cae4736861c4e0890d5e5"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.0/solc-macosx-arm64-0.8.3-1.0.0",
+            "version": "0.8.3",
+            "build": "commit.23c5ed97",
+            "longVersion": "0.8.3+commit.23c5ed97",
+            "sha256": "5cbc37b4825080057055fc7e6928085cc2f29724fe594f67bb52b1079994d92e",
+            "md5": "ccfbfe606f219f154536ce712711b3a5"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.0/solc-macosx-arm64-0.8.2-1.0.0",
+            "version": "0.8.2",
+            "build": "commit.29d899d8",
+            "longVersion": "0.8.2+commit.29d899d8",
+            "sha256": "2c6e3a26653184fc7af4b00e42e7edc7674c5f6a3840669f1eb8d3a2d3d6bfe1",
+            "md5": "12846be228fea4698d08cf686f01d1f4"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.0/solc-macosx-arm64-0.8.1-1.0.0",
+            "version": "0.8.1",
+            "build": "commit.5d73d8d7",
+            "longVersion": "0.8.1+commit.5d73d8d7",
+            "sha256": "a8f92bf69b9f4303f292cf078722102b4b8fe7d87ba806a938ffbf374c3abc0a",
+            "md5": "2f45dc353109fcac20b093f47d5f51e0"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.0/solc-macosx-arm64-0.8.0-1.0.0",
+            "version": "0.8.0",
+            "build": "commit.ffd2038c",
+            "longVersion": "0.8.0+commit.ffd2038c",
+            "sha256": "836ac5a41a2b08bff409cf0d5daf0921dbffdef4af7f72e9729bc11dea607cfa",
+            "md5": "44cc38cd18cbac305d9a596e0945b473"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.0/solc-macosx-arm64-0.7.6-1.0.0",
+            "version": "0.7.6",
+            "build": "commit.11a377df",
+            "longVersion": "0.7.6+commit.11a377df",
+            "sha256": "42152aabbc28e491f109a6ac3eba6783086548995fb3596be2fb84e95a4361b0",
+            "md5": "f226bd81ea14a5e62c5aab4fbeb6d684"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.0/solc-macosx-arm64-0.7.5-1.0.0",
+            "version": "0.7.5",
+            "build": "commit.b5bc0301",
+            "longVersion": "0.7.5+commit.b5bc0301",
+            "sha256": "cca16fc262c9ae9002512729cf30e08c7ade47f055f92c50854391a24c18dc11",
+            "md5": "3899c8c7fa8c272d81550cfe2aa0b1e9"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.0/solc-macosx-arm64-0.7.4-1.0.0",
+            "version": "0.7.4",
+            "build": "commit.91ed041a",
+            "longVersion": "0.7.4+commit.91ed041a",
+            "sha256": "c1a1831ddbecfe221cd442b16a9777ac9d460ac4187d54e43ec35981f4468e82",
+            "md5": "394ab4771665c3f952b150fba972536e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.0/solc-macosx-arm64-0.7.3-1.0.0",
+            "version": "0.7.3",
+            "build": "commit.02cf47c9",
+            "longVersion": "0.7.3+commit.02cf47c9",
+            "sha256": "76226ecfa8f6e2c1f4c311246c6486a0b6a829ccf6b8d565c42861fa6f52f6c9",
+            "md5": "96ad29bd96a388dbcb69008b6d8ff0e8"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.0/solc-macosx-arm64-0.7.2-1.0.0",
+            "version": "0.7.2",
+            "build": "commit.91ef3abf",
+            "longVersion": "0.7.2+commit.91ef3abf",
+            "sha256": "f4c4f0abddc072f94a967e5280443dfd06654d1e2809003fb2c6e730341c887d",
+            "md5": "fe3393eedf27449b3de5cf084e0f4528"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.0/solc-macosx-arm64-0.7.1-1.0.0",
+            "version": "0.7.1",
+            "build": "commit.29fce715",
+            "longVersion": "0.7.1+commit.29fce715",
+            "sha256": "d40efd256bb051eb89bde1593e0bd2b833e39eba4562a648d6e59be41909567b",
+            "md5": "5f2fa56ca3c6b9358f6a08d5951c8c8d"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.0/solc-macosx-arm64-0.7.0-1.0.0",
+            "version": "0.7.0",
+            "build": "commit.984391be",
+            "longVersion": "0.7.0+commit.984391be",
+            "sha256": "9f12ba61d3eecb13c18ede0237448706bc41548ff0b04993029ca5654ffb55df",
+            "md5": "8f6f4b6659dd40c5e684fad6bfaa38f3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.0/solc-macosx-arm64-0.6.12-1.0.0",
+            "version": "0.6.12",
+            "build": "commit.2074e101",
+            "longVersion": "0.6.12+commit.2074e101",
+            "sha256": "b359139e38b8e35313c7c122b0ce83a603ce2b6f2d32a4673abd3fe247723c8b",
+            "md5": "ff4652d3f2bacf9d9008c67fa189d062"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.0/solc-macosx-arm64-0.6.11-1.0.0",
+            "version": "0.6.11",
+            "build": "commit.2a97c5ae",
+            "longVersion": "0.6.11+commit.2a97c5ae",
+            "sha256": "5498807e4fc99195f2c8778a7b03b2e17e9933ad3363b150eac5fbe28068e300",
+            "md5": "0570f25aaf2664cccc0585b1a883da08"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.0/solc-macosx-arm64-0.6.10-1.0.0",
+            "version": "0.6.10",
+            "build": "commit.e2d92761",
+            "longVersion": "0.6.10+commit.e2d92761",
+            "sha256": "bbce03cb7d5488d0433a857f5e7d97d73bbbbd8ace81b2eef6156f3cf54f6563",
+            "md5": "415ea4002af1fa9a28210da006b096b7"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.0/solc-macosx-arm64-0.6.9-1.0.0",
+            "version": "0.6.9",
+            "build": "commit.a6babe6f",
+            "longVersion": "0.6.9+commit.a6babe6f",
+            "sha256": "fbb8d20f87c3c50b8873e9ba1adcf8766fbc88788f63b340cd8e9b31a7207166",
+            "md5": "39896b0ed4ac35a722b7f3ba7ecbd250"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.0/solc-macosx-arm64-0.6.8-1.0.0",
+            "version": "0.6.8",
+            "build": "commit.ea4019dc",
+            "longVersion": "0.6.8+commit.ea4019dc",
+            "sha256": "29387760995dc1e963d605e813a62e885ca14ab9209b14a873b9aad16d09b900",
+            "md5": "4480bfcd67c3f1642dcf7bbbbf579cf0"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.0/solc-macosx-arm64-0.6.7-1.0.0",
+            "version": "0.6.7",
+            "build": "commit.f4b488b3",
+            "longVersion": "0.6.7+commit.f4b488b3",
+            "sha256": "78409a433645504c6db60d1e3d27b9d13955e1de4fe674043940c0ffa1eea10a",
+            "md5": "d4577f208333a9b70b6ac58c72e26217"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.0/solc-macosx-arm64-0.6.6-1.0.0",
+            "version": "0.6.6",
+            "build": "commit.41fab514",
+            "longVersion": "0.6.6+commit.41fab514",
+            "sha256": "2c2bebf68b6c70cb123a1d7a2b14ed2705f9275391f8f6e11a3fdcccb598faab",
+            "md5": "b466c0b383304c516cdf74f38e99e9f3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.0/solc-macosx-arm64-0.6.5-1.0.0",
+            "version": "0.6.5",
+            "build": "commit.aaa7268f",
+            "longVersion": "0.6.5+commit.aaa7268f",
+            "sha256": "92ee7bcfb6821fced1a9c90fb29d0aa0522e0f5d6cacce3f29c14f75fd3caa37",
+            "md5": "2e61a5f6d84cfca272580f960a466025"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.0/solc-macosx-arm64-0.6.4-1.0.0",
+            "version": "0.6.4",
+            "build": "commit.654472f7",
+            "longVersion": "0.6.4+commit.654472f7",
+            "sha256": "b957256a4b285d7f92f5c44392ba907985e64434ea88af810e2b76df227f7ec2",
+            "md5": "e1c8a09199be22d701f3a6c503d16e3e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.0/solc-macosx-arm64-0.6.3-1.0.0",
+            "version": "0.6.3",
+            "build": "commit.bbae0190",
+            "longVersion": "0.6.3+commit.bbae0190",
+            "sha256": "db69289555e6f091dfe61df57fbe9118876563cdb0bb65691edb54872578156b",
+            "md5": "50abc716fe5a60f5fdb207f0fe1beb08"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.0/solc-macosx-arm64-0.6.2-1.0.0",
+            "version": "0.6.2",
+            "build": "commit.d454ba9f",
+            "longVersion": "0.6.2+commit.d454ba9f",
+            "sha256": "12f32402986b49f05f468447367badcc77dd7257df538a96fbe041d70e4b8b4b",
+            "md5": "0b3d6f5ed228be167c44bb8a75720384"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.0/solc-macosx-arm64-0.6.1-1.0.0",
+            "version": "0.6.1",
+            "build": "commit.edee8562",
+            "longVersion": "0.6.1+commit.edee8562",
+            "sha256": "096d405b6a36c348f929b0670576a9c315bde05d08dcd81bfc9f108bdaeb1d96",
+            "md5": "e760883388991986daeeb5ea3abf11dc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.0/solc-macosx-arm64-0.6.0-1.0.0",
+            "version": "0.6.0",
+            "build": "commit.ec8fd52c",
+            "longVersion": "0.6.0+commit.ec8fd52c",
+            "sha256": "fe59d7888d768ec6adc2fa3886e17960c2fed1f1658594fe7d92b2ec15ab7fb9",
+            "md5": "e2b39f00b3bcea98c83a9bdec38b9324"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.0/solc-macosx-arm64-0.5.17-1.0.0",
+            "version": "0.5.17",
+            "build": "commit.f5894a46",
+            "longVersion": "0.5.17+commit.f5894a46",
+            "sha256": "b65f8f9c04411a0fd8091611443e79c238b61d75bbd6efb12ceda3c4a571c746",
+            "md5": "2f82c48d3071b9cf5ac1ba3bf97ae5fc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.0/solc-macosx-arm64-0.5.16-1.0.0",
+            "version": "0.5.16",
+            "build": "commit.a4404286",
+            "longVersion": "0.5.16+commit.a4404286",
+            "sha256": "d0a2adca3da1aec4717896b0ffdf6541f97aa7c5f88b69ebdedbb40ea0b60ab5",
+            "md5": "306262f916389908bc9b856f68fb98b8"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.0/solc-macosx-arm64-0.5.15-1.0.0",
+            "version": "0.5.15",
+            "build": "commit.d627745b",
+            "longVersion": "0.5.15+commit.d627745b",
+            "sha256": "c593fd71d0557c4afe2de2509be8290b0cee80e2f64c6c071fd33c4e777bdf2a",
+            "md5": "cc56f3a5e35a28ee8aee3b4e0aa5a4cc"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.0/solc-macosx-arm64-0.5.14-1.0.0",
+            "version": "0.5.14",
+            "build": "commit.8c61a890",
+            "longVersion": "0.5.14+commit.8c61a890",
+            "sha256": "d799b8af0ea753b4032c93dc876e719322d965bc6c197f24ddea5d991be6b3a9",
+            "md5": "28f9a267e70cf93e856ffbcf45b40de8"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.0/solc-macosx-arm64-0.5.13-1.0.0",
+            "version": "0.5.13",
+            "build": "commit.2279152e",
+            "longVersion": "0.5.13+commit.2279152e",
+            "sha256": "ba55177cf016c5b9d3109e87217ff00e6bea81ba46a6b7b20c489b7bafb4950a",
+            "md5": "371aee64e83efa89b10e1231b188a53f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.0/solc-macosx-arm64-0.5.12-1.0.0",
+            "version": "0.5.12",
+            "build": "commit.9ba4eaaa",
+            "longVersion": "0.5.12+commit.9ba4eaaa",
+            "sha256": "ecb139f3b9df0907254540e8b99c7e4c39678d2faae25dbb4a4996f56a5d735d",
+            "md5": "c3d9c53435f4f2f707ae0f6b0bb02d9f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.0/solc-macosx-arm64-0.5.11-1.0.0",
+            "version": "0.5.11",
+            "build": "commit.d122d7a4",
+            "longVersion": "0.5.11+commit.d122d7a4",
+            "sha256": "bcedea1ecb04a7b70fdd965873917ffed31ec93c85af97b6967557a7c8e1e6d4",
+            "md5": "08a395bb6a74e35d05e2053014ec26a3"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.0/solc-macosx-arm64-0.5.10-1.0.0",
+            "version": "0.5.10",
+            "build": "commit.bcd13cb8",
+            "longVersion": "0.5.10+commit.bcd13cb8",
+            "sha256": "c7b7e846187f48f64e5853bb87c4fad4595e245b584ae8ce75d1904ae42fe7f3",
+            "md5": "139d8ddc3011973d4a88beebb27d3ca4"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.0/solc-macosx-arm64-0.5.9-1.0.0",
+            "version": "0.5.9",
+            "build": "commit.9c617e09",
+            "longVersion": "0.5.9+commit.9c617e09",
+            "sha256": "aa6c58c34ceda1a1f2c6375298f1f8731bdbceba94132eabdeba7b886edf364b",
+            "md5": "9370a0f9f800a24e875a765ca5551057"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.0/solc-macosx-arm64-0.5.8-1.0.0",
+            "version": "0.5.8",
+            "build": "commit.4d156757",
+            "longVersion": "0.5.8+commit.4d156757",
+            "sha256": "83dc37edcab60a93603d4ead30b7395acd51100c8f54576c55e0dbb9a26f72bd",
+            "md5": "5b1d72c048c27c713db18f8d34b4fc20"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.0/solc-macosx-arm64-0.5.7-1.0.0",
+            "version": "0.5.7",
+            "build": "commit.fd31ba28",
+            "longVersion": "0.5.7+commit.fd31ba28",
+            "sha256": "18d48caa8d38859faa29ac1eb887f87de6fe3039c8f3e1efcacd2a58982410b2",
+            "md5": "9d38555068419cd120a9624b3fc2d02e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.0/solc-macosx-arm64-0.5.6-1.0.0",
+            "version": "0.5.6",
+            "build": "commit.444402ef",
+            "longVersion": "0.5.6+commit.444402ef",
+            "sha256": "bf0a9491db09616d64956a8d0856fbb76528bf6c91d606c9a4792decc608d13a",
+            "md5": "2d70b42724333fd52c428086ba8e3cbb"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.0/solc-macosx-arm64-0.5.5-1.0.0",
+            "version": "0.5.5",
+            "build": "commit.c570574b",
+            "longVersion": "0.5.5+commit.c570574b",
+            "sha256": "327c4b10bbea0e467c74dd5badf4927edb76b9c5cb6dc328bdebdda1fe6d3cec",
+            "md5": "74aa166776cf234ee3c43f9accfba7a1"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.0/solc-macosx-arm64-0.5.4-1.0.0",
+            "version": "0.5.4",
+            "build": "commit.ce41b2d8",
+            "longVersion": "0.5.4+commit.ce41b2d8",
+            "sha256": "d0cd771705085228b01d289c78041248f08608136c40ecb65880cd4b9578a1a9",
+            "md5": "f3b948ab0bec70310cf325e0d9222bc8"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.0/solc-macosx-arm64-0.5.3-1.0.0",
+            "version": "0.5.3",
+            "build": "commit.4c83b22d",
+            "longVersion": "0.5.3+commit.4c83b22d",
+            "sha256": "66ce14601ff34c20b6c9be43fd77a03481972f56e8c274ea1a1aafd3e85e00d4",
+            "md5": "866986f8ce6837701cb9c9ddd56179da"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.0/solc-macosx-arm64-0.5.2-1.0.0",
+            "version": "0.5.2",
+            "build": "commit.6a4c60c4",
+            "longVersion": "0.5.2+commit.6a4c60c4",
+            "sha256": "51113d9d061211486e4588a13eabe087538a82c1d5b61478a51289f36cb1cc2e",
+            "md5": "14cb5fbc27fa52b9d6dda4d71f60efde"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.0/solc-macosx-arm64-0.5.1-1.0.0",
+            "version": "0.5.1",
+            "build": "commit.2a5b9858",
+            "longVersion": "0.5.1+commit.2a5b9858",
+            "sha256": "0a8e0aab2acdddaeffb170c32600168db82863a77da4a27924ec97de42e3ab55",
+            "md5": "16d5bf20ce6433e48022f2d80dfabb5f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.0/solc-macosx-arm64-0.5.0-1.0.0",
+            "version": "0.5.0",
+            "build": "commit.9b091a85",
+            "longVersion": "0.5.0+commit.9b091a85",
+            "sha256": "5c7fcbeec00b075d15e6f4d68c8c62c5d490c7ae38ad112d30b5d59af7041f0b",
+            "md5": "f3b15876e7a376801dbcb4e50ed50f9e"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.0/solc-macosx-arm64-0.4.26-1.0.0",
+            "version": "0.4.26",
+            "build": "commit.913a6e8b",
+            "longVersion": "0.4.26+commit.913a6e8b",
+            "sha256": "d6c5876abc03c2abb4214cc5992b3a226ba3d648cd138f58977b8f8c87274c43",
+            "md5": "d4c556f15a0a9087035a4d0d207c6a2c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.0/solc-macosx-arm64-0.4.25-1.0.0",
+            "version": "0.4.25",
+            "build": "commit.82a08142",
+            "longVersion": "0.4.25+commit.82a08142",
+            "sha256": "db43c4f52574f26810765c5dc8da03eb7ced9deb6230a8c1db206d862c929208",
+            "md5": "2f15e6d7cc4bc61ba86485fe9f324322"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.0/solc-macosx-arm64-0.4.24-1.0.0",
+            "version": "0.4.24",
+            "build": "commit.4bc4e42e",
+            "longVersion": "0.4.24+commit.4bc4e42e",
+            "sha256": "15488e5a4663e47c3e8b69763b1e6f8a5f28d8f84cebc3237a331401f16ac58f",
+            "md5": "5b0f7575c4393b0601bb20f8e1b138e1"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.0/solc-macosx-arm64-0.4.23-1.0.0",
+            "version": "0.4.23",
+            "build": "commit.6d5c9dcf",
+            "longVersion": "0.4.23+commit.6d5c9dcf",
+            "sha256": "487258c9ef755bbb6101ba598ef5094c1f825490a96d87971dbdf36620210da2",
+            "md5": "93d9aa7030876083c197d07013814b7c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.0/solc-macosx-arm64-0.4.22-1.0.0",
+            "version": "0.4.22",
+            "build": "commit.4e06d80c",
+            "longVersion": "0.4.22+commit.4e06d80c",
+            "sha256": "d6e87107d30b467ff01933e51121c2c5156df13e96c953c27eec6c3e78485af1",
+            "md5": "479444308033a691a5ff322dffede5fa"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.0/solc-macosx-arm64-0.4.21-1.0.0",
+            "version": "0.4.21",
+            "build": "commit.6e44b9f8",
+            "longVersion": "0.4.21+commit.6e44b9f8",
+            "sha256": "4a389f6bfba01ab14012aacf6666f7496f757c9b562bbfb778a202d21b45296b",
+            "md5": "55f5034d6814d729905f5b3e034f8b28"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.0/solc-macosx-arm64-0.4.20-1.0.0",
+            "version": "0.4.20",
+            "build": "commit.b3908d23",
+            "longVersion": "0.4.20+commit.b3908d23",
+            "sha256": "05167197071559b8961ba7641806d5c1835f19c0126fa4b90767d2f601e690b2",
+            "md5": "dd18ceea087f3a6424d66120ea2e6363"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.0/solc-macosx-arm64-0.4.19-1.0.0",
+            "version": "0.4.19",
+            "build": "commit.3966cb28",
+            "longVersion": "0.4.19+commit.3966cb28",
+            "sha256": "d051d0b420918b1310a45cb69b05431ca0d54c93accac56cd3d3050bc9432762",
+            "md5": "a33af612520bb3869269bc360ae0e4ba"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.0/solc-macosx-arm64-0.4.18-1.0.0",
+            "version": "0.4.18",
+            "build": "commit.151d837e",
+            "longVersion": "0.4.18+commit.151d837e",
+            "sha256": "a72ac2f8d3f1413640e1a6dcaa9caa394f6135f39b07b654e61db8c471ab6f99",
+            "md5": "fa52d6fb3510e852a74c7d4856d5c311"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.0/solc-macosx-arm64-0.4.17-1.0.0",
+            "version": "0.4.17",
+            "build": "commit.cca45a37",
+            "longVersion": "0.4.17+commit.cca45a37",
+            "sha256": "3b519689494e1eafaa5ea90e4183279216702e00200d55c8790694df93d1d20d",
+            "md5": "aa146d1bf97f2cef22896ed13703884c"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.0/solc-macosx-arm64-0.4.16-1.0.0",
+            "version": "0.4.16",
+            "build": "commit.3d30d40f",
+            "longVersion": "0.4.16+commit.3d30d40f",
+            "sha256": "f0e0663cdeae8c85447e51353f24a0d126667a1f61928a2b439b2d5b688c6481",
+            "md5": "9e240f1994b0c1f60bc2ebe47716d530"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.0/solc-macosx-arm64-0.4.15-1.0.0",
+            "version": "0.4.15",
+            "build": "commit.b30064a1",
+            "longVersion": "0.4.15+commit.b30064a1",
+            "sha256": "ad9661df1eb87eff009181d2dca52c9161c65e3bb3340436b8ef5bd82faf632b",
+            "md5": "54d062609bd4565d241ee88ace7a6bdb"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.0/solc-macosx-arm64-0.4.14-1.0.0",
+            "version": "0.4.14",
+            "build": "commit.181e5386",
+            "longVersion": "0.4.14+commit.181e5386",
+            "sha256": "ad9661df1eb87eff009181d2dca52c9161c65e3bb3340436b8ef5bd82faf632b",
+            "md5": "54d062609bd4565d241ee88ace7a6bdb"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.0/solc-macosx-arm64-0.4.13-1.0.0",
+            "version": "0.4.13",
+            "build": "commit.18f538df",
+            "longVersion": "0.4.13+commit.18f538df",
+            "sha256": "9f44e9c469d4c204e2de88333853f240d9581ae1f53cf15646e5f783f53b0ffa",
+            "md5": "8771493b98e17948088c3fc3fba90f4f"
+        },
+        {
+            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.0/solc-macosx-arm64-0.4.12-1.0.0",
+            "version": "0.4.12",
+            "build": "commit.3759ffdc",
+            "longVersion": "0.4.12+commit.3759ffdc",
+            "sha256": "9f44e9c469d4c204e2de88333853f240d9581ae1f53cf15646e5f783f53b0ffa",
+            "md5": "8771493b98e17948088c3fc3fba90f4f"
+        }
+    ]
+}
