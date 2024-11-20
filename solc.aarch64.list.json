@@ -1,0 +1,484 @@
+{
+  "builds": [
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.0",
+      "version": "0.5.0",
+      "build": "commit.1d4f565a",
+      "longVersion": "0.5.0+commit.1d4f565a",
+      "sha256": "34f52e974ade0defef795abe9b8f38775517812b05dc213307d32a70ec282dfd",
+      "md5": "18c9983248c11cccf05ed24d88b9cfb6"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.1",
+      "version": "0.5.1",
+      "build": "commit.c8a2cb62",
+      "longVersion": "0.5.1+commit.c8a2cb62",
+      "sha256": "28f2bba1bd0398aec3d7b1df6b491222f9a16762b60bacafc87dd3a9139d275f",
+      "md5": "49abc918347aa55f1e3423e1201b3a7b"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.2",
+      "version": "0.5.2",
+      "build": "commit.1df8f40c",
+      "longVersion": "0.5.2+commit.1df8f40c",
+      "sha256": "f48ee4a26da31a2330d27ccd544c66ed2306918a2c0b564cc7925b5d11ee3ba8",
+      "md5": "dc61cdd83c905de9344b9418afd1e223"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.3",
+      "version": "0.5.3",
+      "build": "commit.10d17f24",
+      "longVersion": "0.5.3+commit.10d17f24",
+      "sha256": "04fc44c535c31317db5bd5d949aa388d9e6c3b5c76b3b5d07bf8796cdf8b7227",
+      "md5": "0e5919e41c04fb7e1491a97158c97451"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.9",
+      "version": "0.5.9",
+      "build": "commit.c68bc34e",
+      "longVersion": "0.5.9+commit.c68bc34e",
+      "sha256": "24222594ab7e00a5b8e2c13c56aa8c2a605fa85f4406fc20cb46f12b86fab58a",
+      "md5": "579266e77ee2cd0136804e0a7032160d"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.10",
+      "version": "0.5.10",
+      "build": "commit.5a6ea5b1",
+      "longVersion": "0.5.10+commit.5a6ea5b1",
+      "sha256": "450479fcd6adfa3c7d6c4dd1de1759917453c84fa8ea1a3eb98983ce3964214b",
+      "md5": "bd19ae37a9bf41dba52fe14477a812dc"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.11",
+      "version": "0.5.11",
+      "build": "commit.22be8592",
+      "longVersion": "0.5.11+commit.22be8592",
+      "sha256": "69ae5168825ff9bf51b9d5e0e340f1413d1c21bca37f9c60dce612af0c4b9432",
+      "md5": "096b37b602d6d21c7bda4ab5e6bacfa1"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.14",
+      "version": "0.5.14",
+      "build": "commit.01f1aaa4",
+      "longVersion": "0.5.14+commit.01f1aaa4",
+      "sha256": "0438d5251c5f7717678360490f4e3ae14212a93e1ae810ac8a7dd47aabba78b3",
+      "md5": "d190c5680b2a094015a8fd18226e3bb7"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.15",
+      "version": "0.5.15",
+      "build": "commit.6a57276f",
+      "longVersion": "0.5.15+commit.6a57276f",
+      "sha256": "8b2a800d9f0284c5980fbeb4788fcdfe842c8c0aa2596625684d9d696cd2da17",
+      "md5": "4274e7a0e93d6489cd4da2ac4d842e9c"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.16",
+      "version": "0.5.16",
+      "build": "commit.9c3226ce",
+      "longVersion": "0.5.16+commit.9c3226ce",
+      "sha256": "3a992539d9e556e242ad43a35aea94b121444e02871324ba42c1ad1610a93289",
+      "md5": "e039a367e7aac0fc9e7987c3db0374d8"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.5.17",
+      "version": "0.5.17",
+      "build": "commit.d19bba13",
+      "longVersion": "0.5.17+commit.d19bba13",
+      "sha256": "07e81934616a0f1d0898d8cbc007ee0ad2fe4a7d18c4f1a5fcdb82ea7f58e959",
+      "md5": "1289259ec485897e47b68cfda724ee60"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.0",
+      "version": "0.6.0",
+      "build": "commit.26b70077",
+      "longVersion": "0.6.0+commit.26b70077",
+      "sha256": "c5741dc2d8242c1b947d6ad64eb9115ae50ffddb069b11d3e991a57c521a1065",
+      "md5": "f5598a63303f4488005be3b433637c4b"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.1",
+      "version": "0.6.1",
+      "build": "commit.e6f7d5a4",
+      "longVersion": "0.6.1+commit.e6f7d5a4",
+      "sha256": "ccb28024d498d68fe66ab37fc0b3c5e11da79009dd025826e8876930163d3939",
+      "md5": "be7e247e85bcc66ed5c9ebdeb81c4502"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.2",
+      "version": "0.6.2",
+      "build": "commit.bacdbe57",
+      "longVersion": "0.6.2+commit.bacdbe57",
+      "sha256": "9224f49dad9d169034ca9932ec0d1c16b007c8f0cc834b1f05db402fddb172aa",
+      "md5": "b83ef63beff3631f3ca31f617240e323"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.3",
+      "version": "0.6.3",
+      "build": "commit.8dda9521",
+      "longVersion": "0.6.3+commit.8dda9521",
+      "sha256": "14ffb1a48a8ad38053fef82c591f8934566adcdc8709f3f3b9624b590880aa60",
+      "md5": "fdd3cceb42244e03fa457bf32eeb5618"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.4",
+      "version": "0.6.4",
+      "build": "commit.1dca32f3",
+      "longVersion": "0.6.4+commit.1dca32f3",
+      "sha256": "a41634148fdbec21abbad30d140eed8246f787a357bed46ae7391bbe5ea951c7",
+      "md5": "1085a49327910ba0df79a7ead363f70d"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.5",
+      "version": "0.6.5",
+      "build": "commit.f956cc89",
+      "longVersion": "0.6.5+commit.f956cc89",
+      "sha256": "9032d1515cef9333f460e61253771df00690cf351cf3ab090f58a144a3b613ed",
+      "md5": "0f71150ae1991969abaaf569035ad209"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.6",
+      "version": "0.6.6",
+      "build": "commit.6c089d02",
+      "longVersion": "0.6.6+commit.6c089d02",
+      "sha256": "ae1f848133f8dae4427a6b93e8fb187d8a2cb2d9fd531e2aab60d75f534b60a3",
+      "md5": "2ae55947a70ba98fb1472f1ca07640e7"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.7",
+      "version": "0.6.7",
+      "build": "commit.b8d736ae",
+      "longVersion": "0.6.7+commit.b8d736ae",
+      "sha256": "daaabd430024c1db34d16dc2498c61e11f0953586e8adb015a2126b4632f5c46",
+      "md5": "73b223b92ddde86605534afef6e470f8"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.8",
+      "version": "0.6.8",
+      "build": "commit.0bbfe453",
+      "longVersion": "0.6.8+commit.0bbfe453",
+      "sha256": "d752637bdba3da6c9ef9dac80cf168b8eea41935691622a90e387be97ad2db72",
+      "md5": "e0bfd744b2115420b5f3fc094fab67f0"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.9",
+      "version": "0.6.9",
+      "build": "commit.3e3065ac",
+      "longVersion": "0.6.9+commit.3e3065ac",
+      "sha256": "eb81d5c6716da623f7403bd624e53f87c84272df407d88b7aa152239de284f47",
+      "md5": "48e38e4f8199a70d091b16b67837684a"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.10",
+      "version": "0.6.10",
+      "build": "commit.00c0fcaf",
+      "longVersion": "0.6.10+commit.00c0fcaf",
+      "sha256": "7bf5aa730a00ddaf948d554dfd8d20bd44067a505d8cf50bbb2e4d54d6764af2",
+      "md5": "4f6694c29e584c3fb98eeba0fb282a54"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.11",
+      "version": "0.6.11",
+      "build": "commit.5ef660b1",
+      "longVersion": "0.6.11+commit.5ef660b1",
+      "sha256": "0500b3bff78a85758e0712a9076ea3c3f5f1ee681f2d30e5affae70a9f5e98d6",
+      "md5": "7ccfcfa46eebf8b74705e2759b11e5d6"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.6.12",
+      "version": "0.6.12",
+      "build": "commit.27d51765",
+      "longVersion": "0.6.12+commit.27d51765",
+      "sha256": "e2c0796b8b3ea9f6f22530de74390a40b5598531824c0b57015482cf8251a287",
+      "md5": "e36256d20091cb78a64d646ad0e64565"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.0",
+      "version": "0.7.0",
+      "build": "commit.9e61f92b",
+      "longVersion": "0.7.0+commit.9e61f92b",
+      "sha256": "89bad37021ece7b62567e1dbd5cfa2a494aa7beab0e57f0cbb2b32a7fa8bf65f",
+      "md5": "e369a394d064c96f1e5e6f0a04876953"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.1",
+      "version": "0.7.1",
+      "build": "commit.f4a555be",
+      "longVersion": "0.7.1+commit.f4a555be",
+      "sha256": "abc72ecdbb4d11e8f88103f2b8834d4bd55cc602a61eeb57695cb48f32bb31ce",
+      "md5": "e705639d9ceaaa63dd8444f95beae9c3"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.2",
+      "version": "0.7.2",
+      "build": "commit.51b20bc0",
+      "longVersion": "0.7.2+commit.51b20bc0",
+      "sha256": "309dbb5522a715f31033ec8d3edba90a1c6d209d87a2d458e0646bfbf7d0aaa0",
+      "md5": "43ac5f56b6f0327846931976f7b67078"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.3",
+      "version": "0.7.3",
+      "build": "commit.9bfce1f6",
+      "longVersion": "0.7.3+commit.9bfce1f6",
+      "sha256": "9991391ac1e8ac4d521bedd3668e72d914f55c537287ecf2d367421de6f0dd7b",
+      "md5": "fca959a68de471bc605039317fcd59e9"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.4",
+      "version": "0.7.4",
+      "build": "commit.3f05b770",
+      "longVersion": "0.7.4+commit.3f05b770",
+      "sha256": "cf4ae2bf7ebd262b2dd63d48847f7d30cfe7d2ae3033598579d59b3e80920291",
+      "md5": "f0dfaf892a9e8358bf13a604f9194a68"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.5",
+      "version": "0.7.5",
+      "build": "commit.eb77ed08",
+      "longVersion": "0.7.5+commit.eb77ed08",
+      "sha256": "9c6ec908a02e827f37c6fde6ae1748bc09f8dcdb3817d633afec6b88a43d6ec0",
+      "md5": "dc7952f4f14af31e8d18bebf5a6f767c"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.7.6",
+      "version": "0.7.6",
+      "build": "commit.7338295f",
+      "longVersion": "0.7.6+commit.7338295f",
+      "sha256": "be0f9d18b3046ba7e840b5663d48754409fca2ca05205f04c6cf8524d1f48231",
+      "md5": "0c9cdf40b563c6c1601506d301e748dc"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.0",
+      "version": "0.8.0",
+      "build": "commit.c7dfd78e",
+      "longVersion": "0.8.0+commit.c7dfd78e",
+      "sha256": "2ce5be99fdefe1a7d0aad4376d09f1b7365e38aabe17547669b9bfe2a8a32779",
+      "md5": "8519b8caa6d460f60900dd85a486ea34"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.1",
+      "version": "0.8.1",
+      "build": "commit.df193b15",
+      "longVersion": "0.8.1+commit.df193b15",
+      "sha256": "c8216f86880aec58ec16b10671517acd4c45fc067e24a34e2d817126da41674e",
+      "md5": "67a03d317308fd755aedc7e4ef0a8289"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.2",
+      "version": "0.8.2",
+      "build": "commit.661d1103",
+      "longVersion": "0.8.2+commit.661d1103",
+      "sha256": "27f5c746ce62893999bdf3ccf715c88a683649f1d47fce7e4daca857aa300fe0",
+      "md5": "5de27ed7cf64605a506c569e30d0e369"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.3",
+      "version": "0.8.3",
+      "build": "commit.8d00100c",
+      "longVersion": "0.8.3+commit.8d00100c",
+      "sha256": "ee4a9d2d5015d06814394403a1d9e3f7c7eae005fe0562912fc4828dc24c48a1",
+      "md5": "9e1b5dc6a4abea36e80331e734ab8ba3"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.4",
+      "version": "0.8.4",
+      "build": "commit.c7e474f2",
+      "longVersion": "0.8.4+commit.c7e474f2",
+      "sha256": "f5c8ed0de02862215afce17935f4466aa8d02f70e3329384cbeb25f39be075f8",
+      "md5": "72aa9357d7892f8a84d12262f73e3a53"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.5",
+      "version": "0.8.5",
+      "build": "commit.a4f2e591",
+      "longVersion": "0.8.5+commit.a4f2e591",
+      "sha256": "11bf06141d2ac9e1ceed654cbf02ee64cab2a7bc1bfcd85b4ef574d4198d5a4f",
+      "md5": "791c092b976bdcb229e383da8ac01a98"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.6",
+      "version": "0.8.6",
+      "build": "commit.11564f7e",
+      "longVersion": "0.8.6+commit.11564f7e",
+      "sha256": "38a3dae819f59d3ad161c42684ae3525603dc78552ca948602ae2658d13f2842",
+      "md5": "53fc679dfed2f92ba7f5b2647c6197e1"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.7",
+      "version": "0.8.7",
+      "build": "commit.e28d00a7",
+      "longVersion": "0.8.7+commit.e28d00a7",
+      "sha256": "ab90240046f2424063eab576fe1c1be176c56b7e8833db2be86b2813bfb44176",
+      "md5": "a70d1c8a00a42d8265aae42d4a9f31be"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.8",
+      "version": "0.8.8",
+      "build": "commit.dddeac2f",
+      "longVersion": "0.8.8+commit.dddeac2f",
+      "sha256": "d2cb6d523f460ff06b823b89a2369f3f01400184fc972dd5f825bf96867d3ee3",
+      "md5": "1f59fbe060de402fc73ae279dff30186"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.9",
+      "version": "0.8.9",
+      "build": "commit.e5eed63a",
+      "longVersion": "0.8.9+commit.e5eed63a",
+      "sha256": "9fe4548a3eb8d121efba6e50f272572a736c0a5f5344021f88c5ffdc3c995e8b",
+      "md5": "142a3e517e05b05fd6b061207072cac9"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.10",
+      "version": "0.8.10",
+      "build": "commit.fc410830",
+      "longVersion": "0.8.10+commit.fc410830",
+      "sha256": "441e42fb8109db9a2ffb8e7e61502bc3f7f43daaf0c4c03ef0856937df13709f",
+      "md5": "6d5ef7982cdc8275f41b3bd509f82aa3"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.11",
+      "version": "0.8.11",
+      "build": "commit.d7f03943",
+      "longVersion": "0.8.11+commit.d7f03943",
+      "sha256": "e72c0462c5bf00388b8663a32542db8d4abdbd7192d16575dd31f3fbd58f4b2a",
+      "md5": "0b5bccfcd936512d3a85c71bc7d2dd78"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.12",
+      "version": "0.8.12",
+      "build": "commit.f00d7308",
+      "longVersion": "0.8.12+commit.f00d7308",
+      "sha256": "15a0faaa5974b6e8f6bb2edc4d78a2fe2a65843e4c735f1ea3d0747763dccae8",
+      "md5": "43dedcb6d12a04323af3d75cd293a39f"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.13",
+      "version": "0.8.13",
+      "build": "commit.abaa5c0e",
+      "longVersion": "0.8.13+commit.abaa5c0e",
+      "sha256": "d09c83afa89c0a031bb35221f84bcff6280025fd436590a5a06de17f02dc1ad7",
+      "md5": "6e080f60cedada670879211831ec775d"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.14",
+      "version": "0.8.14",
+      "build": "commit.80d49f37",
+      "longVersion": "0.8.14+commit.80d49f37",
+      "sha256": "2a535f947992cbd8d356df44d188fab954ad5796426b218c03c02ae735e0474e",
+      "md5": "9147a4532736d2569806b4f07857dc66"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.15",
+      "version": "0.8.15",
+      "build": "commit.e14f2714",
+      "longVersion": "0.8.15+commit.e14f2714",
+      "sha256": "292b4efbd51a35eece83cfe706f406893f06d48834dc99636ed360209ddfd589",
+      "md5": "0b68e676ed66539acd26f47d9fe23b61"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.16",
+      "version": "0.8.16",
+      "build": "commit.07a7930e",
+      "longVersion": "0.8.16+commit.07a7930e",
+      "sha256": "638832561e15c5436d8f4067c804d252f024d8764badcd9be79963917c84d443",
+      "md5": "d1d2dce3d124ad11e2d9f9e120084ada"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.17",
+      "version": "0.8.17",
+      "build": "commit.8df45f5f",
+      "longVersion": "0.8.17+commit.8df45f5f",
+      "sha256": "e905b3d7f785f660f3c573c1641f42d11be0b4daae79c37e23b72fa2df808098",
+      "md5": "93621ed1ea373bfb6c566aaa1492a808"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.18",
+      "version": "0.8.18",
+      "build": "commit.87f61d96",
+      "longVersion": "0.8.18+commit.87f61d96",
+      "sha256": "d0bb39a5fbcac77b315ea0d9cf48c6882de5b6bcb716be2197355722f24f2ee8",
+      "md5": "ed8c101e0ccf37a50624e54447d93948"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.19",
+      "version": "0.8.19",
+      "build": "commit.7dd6d404",
+      "longVersion": "0.8.19+commit.7dd6d404",
+      "sha256": "e5c06bf72eda1a50fd7f91eb3d717f0a4bd9b0c01257c3e7ca905fc073aca5f1",
+      "md5": "7e34e77bcbb4fb1c62a0abef1ca08d01"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.20",
+      "version": "0.8.20",
+      "build": "commit.a1b79de6",
+      "longVersion": "0.8.20+commit.a1b79de6",
+      "sha256": "d742f637a5846dc434903f1c2e19a510762d722b97a3b105f773df6aebdab39a",
+      "md5": "490b97807f9458fbdcf86d520b1046db"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.21",
+      "version": "0.8.21",
+      "build": "commit.d9974bed",
+      "longVersion": "0.8.21+commit.d9974bed",
+      "sha256": "234e14560f891e32650e3a527cf180d23e63913939f6eb49907b2a42eac9d4e3",
+      "md5": "93a6e17b1eb03c24b6b32866719d93f6"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.22",
+      "version": "0.8.22",
+      "build": "commit.4fc1097e",
+      "longVersion": "0.8.22+commit.4fc1097e",
+      "sha256": "30da7dbe7a7fba07aa99b30160f9ec88aeb5ff416f7c9a2af9bf084101d08fc0",
+      "md5": "748a4b53501758745da22041dfa36b54"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.23",
+      "version": "0.8.23",
+      "build": "commit.f704f362",
+      "longVersion": "0.8.23+commit.f704f362",
+      "sha256": "16d29f5a113931bfd3af41e45b00b09aac7d9cc2a2ba8d947af2758516711a49",
+      "md5": "a2518e340d931323138ab64bedeaa255"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.24",
+      "version": "0.8.24",
+      "build": "commit.e11b9ed9",
+      "longVersion": "0.8.24+commit.e11b9ed9",
+      "sha256": "0cee609d876eef3b1f7785fb9396503965c7d244fe82ddd3079f16bde6f19d1a",
+      "md5": "b611a44cce6b9541bf02944aee65b806"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.25",
+      "version": "0.8.25",
+      "build": "commit.b61c2a91",
+      "longVersion": "0.8.25+commit.b61c2a91",
+      "sha256": "a23ef0c336c32b9b2d9ef5cbca0ef79b4b199606640d778522f027f64bc0e5cb",
+      "md5": "fc5c6b26bba9de1d6af1d2c952f2a42f"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.26",
+      "version": "0.8.26",
+      "build": "commit.8a97fa7a",
+      "longVersion": "0.8.26+commit.8a97fa7a",
+      "sha256": "867f03d262400b27455f3e42d0879fd9dd3ec4589a3a4868efbef57e5679ecad",
+      "md5": "da186738df8644de7fdaaef7f3bfb453"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.27",
+      "version": "0.8.27",
+      "build": "commit.40a35a09",
+      "longVersion": "0.8.27+commit.40a35a09",
+      "sha256": "2f95bb7e871c03218999cbc836a0728833095183eecb400e69558a0ef6a109a7",
+      "md5": "992d9a6ad9507c3612a807cd94ff1856"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/nikitastupin/solc/main/linux/aarch64/solc-v0.8.28",
+      "version": "0.8.28",
+      "build": "commit.7893614a",
+      "longVersion": "0.8.28+commit.7893614a",
+      "sha256": "891ecdd8f92a8211ee99f21bc3052b63fa098b4807f21ed8311d66e35d5aeb84",
+      "md5": "5290d941855ca3f94697c885a3871207"
+    }
+  ]
+}
