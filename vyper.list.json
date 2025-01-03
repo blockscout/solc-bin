@@ -1,6 +1,24 @@
 {
   "builds": [
     {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.1b3/vyper.0.4.1b3%2Bcommit.537313b0.linux",
+      "version": "0.4.1",
+      "prerelease": "b3",
+      "build": "commit.537313b0",
+      "longVersion": "0.4.1-b3+commit.537313b0",
+      "md5": "4c32d232ee0c288a7a053c49b906116a",
+      "sha256": "d3620c37efb17f0bbff9898ea181716e6f3731f77ee679337ba124b38d3984f1"
+    },
+    {
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.1b2/vyper.0.4.1b2%2Bcommit.f249c936.linux",
+      "version": "0.4.1",
+      "prerelease": "b2",
+      "build": "commit.f249c936",
+      "longVersion": "0.4.1-b2+commit.f249c936",
+      "md5": "9e41e73cd9d8723cb4350dbd34a476f6",
+      "sha256": "22424d1e8a7494e8af717a08ff01baed0f4298dc73d092d1a98681e73cb62fb8"
+    },
+    {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.1b1/vyper.0.4.1b1%2Bcommit.039d3692.linux",
       "version": "0.4.1",
       "prerelease": "b1",
@@ -18,7 +36,7 @@
       "sha256": "dab657bd826f1db92e54eb92d87f5efc8808fce40805dfe4cfbf416958fae019"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc6/vyper.0.4.0rc6+commit.33719560.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc6/vyper.0.4.0rc6%2Bcommit.33719560.linux",
       "version": "0.4.0",
       "prerelease": "rc6",
       "build": "commit.33719560",
@@ -27,7 +45,7 @@
       "sha256": "e7692d2b8df813e8fcabe343f61790d376d35e885943db594630d5488b94a573"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc5/vyper.0.4.0rc5+commit.98370f50.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc5/vyper.0.4.0rc5%2Bcommit.98370f50.linux",
       "version": "0.4.0",
       "prerelease": "rc5",
       "build": "commit.98370f50",
@@ -36,7 +54,7 @@
       "sha256": "d4922c00c60a2caaf839fb446670d640774dca24cba1ad0d1df4c81e2ed76d7e"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc4/vyper.0.4.0rc4+commit.41a3e084.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc4/vyper.0.4.0rc4%2Bcommit.41a3e084.linux",
       "version": "0.4.0",
       "prerelease": "rc4",
       "build": "commit.41a3e084",
@@ -45,7 +63,7 @@
       "sha256": "d38ec5843d75d6ccb2c8499e8675e2fca8df03ff8e7fdd5e402fe640c48e5287"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc3/vyper.0.4.0rc3+commit.f2136550.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc3/vyper.0.4.0rc3%2Bcommit.f2136550.linux",
       "version": "0.4.0",
       "prerelease": "rc3",
       "build": "commit.f2136550",
@@ -54,7 +72,7 @@
       "sha256": "a9fe8dbc03c3170dd7fdf65a654548e862fd9a9c1c800a5c71a18c48c4b2f0f6"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc2/vyper.0.4.0rc2+commit.6f09e296.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc2/vyper.0.4.0rc2%2Bcommit.6f09e296.linux",
       "version": "0.4.0",
       "prerelease": "rc2",
       "build": "commit.6f09e296",
@@ -63,7 +81,7 @@
       "sha256": "da3eb34a5eaa6f51a5e60f894acd0a81b54309dd3734c1def98eaa9921e70813"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc1/vyper.0.4.0rc1+commit.44a593a0.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0rc1/vyper.0.4.0rc1%2Bcommit.44a593a0.linux",
       "version": "0.4.0",
       "prerelease": "rc1",
       "build": "commit.44a593a0",
@@ -72,7 +90,7 @@
       "sha256": "d26a9faea6da16b41c067e57df28e7c59fd082b3b82262e624631d5750c025ea"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b6/vyper.0.4.0b6+commit.7485ceab.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b6/vyper.0.4.0b6%2Bcommit.7485ceab.linux",
       "version": "0.4.0",
       "prerelease": "b6",
       "build": "commit.7485ceab",
@@ -81,7 +99,7 @@
       "sha256": "d292f9ff4d13ce9b1cc69ccf0f02614482263ef48bb8d4099738f3d24602b462"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b5/vyper.0.4.0b5+commit.a9ee6414.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b5/vyper.0.4.0b5%2Bcommit.a9ee6414.linux",
       "version": "0.4.0",
       "prerelease": "b5",
       "build": "commit.a9ee6414",
@@ -90,7 +108,7 @@
       "sha256": "9acd5ab41b6c71637b1405f426e07a9d4c6645a24c9448950d5bcafbb872a962"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b4/vyper.0.4.0b4+commit.541b2e75.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b4/vyper.0.4.0b4%2Bcommit.541b2e75.linux",
       "version": "0.4.0",
       "prerelease": "b4",
       "build": "commit.541b2e75",
@@ -99,7 +117,7 @@
       "sha256": "db93f6ea14868e7bb640f3694f994c8c9fd9c046812a07c8d369ff8dc7571c8d"
     },
     {
-      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b1/vyper.0.4.0b1+commit.6fb750af.linux",
+      "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.0b1/vyper.0.4.0b1%2Bcommit.6fb750af.linux",
       "version": "0.4.0",
       "prerelease": "b1",
       "build": "commit.6fb750af",
@@ -210,7 +228,7 @@
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.1/vyper.0.3.1.linux",
       "version": "0.3.1",
-      "build": "vyper.0.3.1.linux",
+      "build": "commit.0463ea4c",
       "longVersion": "0.3.1+commit.0463ea4c",
       "md5": "832c5a7753632abf2fe98881bdc0507a",
       "sha256": "80e272d9266be85ba6fe4bdcf0705292069b1b2bd29133e807e98f061909858c"
@@ -218,128 +236,130 @@
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.3.0/vyper.0.3.0%2Bcommit.8a23feb.linux",
       "version": "0.3.0",
-      "build": "commit.8a23feb",
-      "longVersion": "0.3.0+commit.8a23feb",
+      "build": "commit.8a23febb",
+      "longVersion": "0.3.0+commit.8a23febb",
       "md5": "985222557c27c6dbfd8fa4ca084e7a1e",
       "sha256": "9a511ee7fa01a8b8f4cbee4be5efc793592b8b4060b14115e33769ddedfd38a6"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.16/vyper.0.2.16%2Bcommit.59e1bdd.linux",
       "version": "0.2.16",
-      "build": "commit.59e1bdd",
-      "longVersion": "0.2.16+commit.59e1bdd",
+      "build": "commit.59e1bdd9",
+      "longVersion": "0.2.16+commit.59e1bdd9",
       "md5": "d04b51525e79af01d6ad097f7245f5c8",
       "sha256": "111340f714f537eb0ec4fc05335caf00e2e3ca4f354784bc6c7fb97d5678a529"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.15/vyper.0.2.15%2Bcommit.6e7dba7.linux",
       "version": "0.2.15",
-      "build": "commit.6e7dba7",
-      "longVersion": "0.2.15+commit.6e7dba7",
+      "build": "commit.6e7dba7a",
+      "longVersion": "0.2.15+commit.6e7dba7a",
       "md5": "db0517ccdcc418f1feac69ffe40ebe8c",
       "sha256": "d115253c05e5f629ef8ba2a781fcd60f3dbfb994863c1ffc6e6c00b03c81fdb2"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.12/vyper.0.2.12%2Bcommit.2c6842c.linux",
       "version": "0.2.12",
-      "build": "commit.2c6842c",
-      "longVersion": "0.2.12+commit.2c6842c",
+      "build": "commit.2c6842cd",
+      "longVersion": "0.2.12+commit.2c6842cd",
       "md5": "008acf4c415570ee8d68cc90e187f040",
       "sha256": "ee5b828e65546b43907cb3ddb0a1e12b9a146f8fc921825f12a3deea5c2da643"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.11/vyper.0.2.11%2Bcommit.5db35ef.linux",
       "version": "0.2.11",
-      "build": "commit.5db35ef",
-      "longVersion": "0.2.11+commit.5db35ef",
+      "build": "commit.5db35ef4",
+      "longVersion": "0.2.11+commit.5db35ef4",
       "md5": "206337aaca2276609cdc3cbf17939e41",
       "sha256": "ac10f8a7d5a02b0ad67e70a52a66f5532647e763cb2255bf466b772a09cc1a70"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.8/vyper.0.2.8%2Bcommit.069936f.linux",
       "version": "0.2.8",
-      "build": "commit.069936f",
-      "longVersion": "0.2.8+commit.069936f",
+      "build": "commit.069936fa",
+      "longVersion": "0.2.8+commit.069936fa",
       "md5": "d21d837842cd11dfb12d7f4644a4bfec",
       "sha256": "c6d5644546d8712bf11579812e680a99fb181c767d75e30371ad46ec3d8e7994"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.7/vyper.0.2.7%2Bcommit.0b3f3b3.linux",
       "version": "0.2.7",
-      "build": "commit.0b3f3b3",
-      "longVersion": "0.2.7+commit.0b3f3b3",
+      "build": "commit.0b3f3b32",
+      "longVersion": "0.2.7+commit.0b3f3b32",
       "md5": "4801769a34ed0847f6c6dc99c61add01",
       "sha256": "dfd121138238b2efa698d5747f72beb2f02e43767b844ab2a6b311d121efc16c"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.6/vyper.0.2.6%2Bcommit.35467d5.linux",
       "version": "0.2.6",
-      "build": "commit.35467d5",
-      "longVersion": "0.2.6+commit.35467d5",
+      "build": "commit.35467d57",
+      "longVersion": "0.2.6+commit.35467d57",
       "md5": "af6195087fac4aeee65c5c421d97a27f",
       "sha256": "a21b0bf59bc7f53ebc6f33ce3bdddb79cf2cef534245dcd1e9a2797ad15750da"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.5/vyper.0.2.5%2Bcommit.a0c561c.linux",
       "version": "0.2.5",
-      "build": "commit.a0c561c",
-      "longVersion": "0.2.5+commit.a0c561c",
+      "build": "commit.a0c561cb",
+      "longVersion": "0.2.5+commit.a0c561cb",
       "md5": "0f59b22d26b3d822377da945adf50c20",
       "sha256": "1a202f239f332a6f88db6127082e4316d813c257040df90a78436afb5b586d08"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.4/vyper.0.2.4%2Bcommit.7949850.linux",
       "version": "0.2.4",
-      "build": "commit.7949850",
-      "longVersion": "0.2.4+commit.7949850",
+      "build": "commit.7949850c",
+      "longVersion": "0.2.4+commit.7949850c",
       "md5": "db2a7ecdce6a0cd3386276b611604302",
       "sha256": "e7cbe92d6a1734bcd489051812d80c3fbcd14cd1df8638b781af0e5251036f12"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.3/vyper.0.2.3%2Bcommit.006968f.linux",
       "version": "0.2.3",
-      "build": "commit.006968f",
-      "longVersion": "0.2.3+commit.006968f",
+      "build": "commit.006968f0",
+      "longVersion": "0.2.3+commit.006968f0",
       "md5": "afddc7918486af67491ae60c39eb612e",
       "sha256": "a27ed62a4ac03213d6b918fdf967c86bb70d3738d7bb05d20d7604e6512e2f07"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.2/vyper.0.2.2%2Bcommit.337c2ef.linux",
       "version": "0.2.2",
-      "build": "commit.337c2ef",
-      "longVersion": "0.2.2+commit.337c2ef",
+      "build": "commit.337c2efc",
+      "longVersion": "0.2.2+commit.337c2efc",
       "md5": "8512b5ba7794e22a8a53588a9f81a5e1",
       "sha256": "d23c62a42eece51cba68b1423b201a98b866a457385bd9535d83cac24751c812"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.1/vyper.0.2.1%2Bcommit.cac3d7d.linux",
       "version": "0.2.1",
-      "build": "commit.cac3d7d",
-      "longVersion": "0.2.1+commit.cac3d7d",
+      "build": "commit.cac3d7d9",
+      "longVersion": "0.2.1+commit.cac3d7d9",
       "md5": "55d9c1bff47a82a188ab2c49157a5b5e",
       "sha256": "0eeda7afebbfd8c8bddd4126dfcfb92f7b4505196a0220ef624a3f90789ac290"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.2.0/vyper.0.2.0%2Bcommit.d2c0c87.linux",
       "version": "0.2.0",
-      "build": "commit.d2c0c87",
-      "longVersion": "0.2.0+commit.d2c0c87",
+      "build": "commit.d2c0c87a",
+      "longVersion": "0.2.0+commit.d2c0c87a",
       "md5": "51473a10d484f51127c9c712885af11e",
       "sha256": "4e5670abcc6dd67737e7f92b1188d9b993746bc07fdce8f8bafffb011a1ef316"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.1.0-beta.17/vyper.0.1.0-beta.17%2Bcommit.0671b7b.linux",
-      "version": "0.1.0-beta.17",
-      "build": "commit.0671b7b",
-      "longVersion": "0.1.0-beta.17+commit.0671b7b",
+      "version": "0.1.0",
+      "prerelease": "beta.17",
+      "build": "commit.0671b7bb",
+      "longVersion": "0.1.0-beta.17+commit.0671b7bb",
       "md5": "ff041863842b4731405da3bf88d31c1b",
       "sha256": "c472df425cb1fa5885ba96e20ae885d0fdb459cc85e306a8bd2849ee0684f2bc"
     },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.1.0-beta.16/vyper.0.1.0-beta.16%2Bcommit.5e4a94a.linux",
-      "version": "0.1.0-beta.16",
-      "build": "commit.5e4a94a",
-      "longVersion": "0.1.0-beta.16+commit.5e4a94a",
+      "version": "0.1.0",
+      "prerelease": "beta.16",
+      "build": "commit.5e4a94ad",
+      "longVersion": "0.1.0-beta.16+commit.5e4a94ad",
       "md5": "cb30ce1c50267113ee1d1f823ed74ef6",
       "sha256": "eb90aca57b7b956f2dd1c38ee4bfa6875baab5e32d65727b5471926f48a394aa"
     }
