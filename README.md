@@ -2,4 +2,4 @@
 The main purpose of the repo is to provide linux-amd64 binaries for blockscout/blockscout-rs.
  
 
-10.12.24
+10.01.25
