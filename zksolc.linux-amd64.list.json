@@ -1,11 +1,39 @@
 {
   "builds": [
     {
-      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.7/zksolc-linux-amd64-musl-v1.5.7", 
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.11/zksolc-linux-amd64-musl-v1.5.11",
+      "version": "1.5.11",
+      "longVersion": "1.5.11",
+      "md5": "f37c6185464c40ee4e5cff638b8de50a",
+      "sha256": "aac04e482baf59c33d4cb758bb9f0d2c33dd88ba2ea32dfeae402109dc4ba6d4"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.10/zksolc-linux-amd64-musl-v1.5.10",
+      "version": "1.5.10",
+      "longVersion": "1.5.10",
+      "md5": "6089d3e18ec8902876e04988f297e48b",
+      "sha256": "87d49fcbe4659fd7c601e29fdfb37ae400fb3b3bbc79f0e4c3648bb1f62ed1c0"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.9/zksolc-linux-amd64-musl-v1.5.9",
+      "version": "1.5.9",
+      "longVersion": "1.5.9",
+      "md5": "2d1cc50b880653a288c86282e522f7a4",
+      "sha256": "539d5f637504791a2007434e1e42d75c5dfb20e6f4bc3dfd44f5e550d0bf1844"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.8/zksolc-linux-amd64-musl-v1.5.8",
+      "version": "1.5.8",
+      "longVersion": "1.5.8",
+      "md5": "672521570b3a0fdb9ddc2bc1b90002eb",
+      "sha256": "3198ac974a8cb8043c6aeced678320d1eeb576316bb9532498b56bbf8e1e2933"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.7/zksolc-linux-amd64-musl-v1.5.7",
       "version": "1.5.7",
-      "longVersion": "1.5.7", 
-      "sha256": "04e3aeacd46f1c11415391b14bce63f5e0070fcf0f52be942751bdb8aee8e640", 
-      "md5": "1067ea99088c9dee7789ff3689a57ee0"
+      "longVersion": "1.5.7",
+      "md5": "1067ea99088c9dee7789ff3689a57ee0",
+      "sha256": "04e3aeacd46f1c11415391b14bce63f5e0070fcf0f52be942751bdb8aee8e640"
     },
     {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.6/zksolc-linux-amd64-musl-v1.5.6",
