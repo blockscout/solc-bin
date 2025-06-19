@@ -7,7 +7,7 @@
       "longVersion": "0.4.3+commit.bff19ea2",
       "md5": "f0564040fa2f1f23632eb79bd905a6f7",
       "sha256": "4bf9eba8d242b53ee234daa7be98bba82fd7f910f295716a1a1cbde5d7e2fd46"
-    }
+    },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.3rc1/vyper.0.4.3rc1%2Bcommit.a35bfd5e.darwin",
       "version": "0.4.3",
@@ -16,7 +16,7 @@
       "longVersion": "0.4.3-rc1+commit.a35bfd5e",
       "md5": "3cfccdb2565c626a08153f6ddcb877f9",
       "sha256": "9c4fb660aa58df9cd577461bf7f6e77cd69c9bdcc502da88536943ef013edc59"
-    }
+    },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.2/vyper.0.4.2%2Bcommit.c216787f.darwin",
       "version": "0.4.2",
@@ -24,7 +24,7 @@
       "longVersion": "0.4.2+commit.c216787f",
       "md5": "0651b74c43536a478defc6e56f39c671",
       "sha256": "3174d031657b54cc3d80c5f54d46cc539ad1ec847560688b7e58ace69a9c9668"
-    }
+    },
     {
       "path": "https://github.com/vyperlang/vyper/releases/download/v0.4.2rc1/vyper.0.4.2rc1%2Bcommit.11522b83.darwin",
       "version": "0.4.2",
