@@ -1,1300 +1,1988 @@
 {
-    "builds": [
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.28-1.0.1/solc-linux-amd64-0.8.28-1.0.1",
-            "version": "0.8.28",
-            "build": "commit.acc7d8f9",
-            "longVersion": "0.8.28+commit.acc7d8f9",
-            "sha256": "cebf505bd1874f7ce3a6e7de3545f7f7fd52b4ba7bccb54f710c7daf7ae42edd",
-            "md5": "24cba354d1a934d82b87570f45623932"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/mlir-0.8.26-tag/solc-linux-amd64-0.8.26-mlir",
-            "version": "0.8.26",
-            "build": "commit.64a757c8",
-            "longVersion": "0.8.26+commit.64a757c8",
-            "sha256": "cefb3312191b8921444b1c48e80634d5cb350773075281e2507aa701c6fed4f7",
-            "md5": "5b5b3c37c431e120eb6390060457596c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.27-1.0.1/solc-linux-amd64-0.8.27-1.0.1",
-            "version": "0.8.27",
-            "build": "commit.fd3a7203",
-            "longVersion": "0.8.27+commit.fd3a7203",
-            "sha256": "416acec4e16861535b56ae5487e9ec7ccc2bf3c5ec7c7f4fe2bb35e2a2b0677e",
-            "md5": "0f97ee0f1ac2e8eb73e0b7c8b10ee045"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.1/solc-linux-amd64-0.4.16-1.0.1",
-            "version": "0.4.16",
-            "build": "commit.cf588aa9",
-            "longVersion": "0.4.16+commit.cf588aa9",
-            "sha256": "0767922d2764fc52789a715a443b937a515d4d6de858da2f9f82089acf082083",
-            "md5": "42b8ec6101b09fb70ba93023f8561336"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.1/solc-linux-amd64-0.4.15-1.0.1",
-            "version": "0.4.15",
-            "build": "commit.e3ad3748",
-            "longVersion": "0.4.15+commit.e3ad3748",
-            "sha256": "84c8684200e2b1b43535f512a7e55ca65264ee9b1d9a3f53488bb213b23a2e0b",
-            "md5": "28003a927ee6a9f70d6ee0d97235798f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.1/solc-linux-amd64-0.4.14-1.0.1",
-            "version": "0.4.14",
-            "build": "commit.58dce8e6",
-            "longVersion": "0.4.14+commit.58dce8e6",
-            "sha256": "dfb4763302a991ed81c1d8c65b7363184ac70ae0fe62da1333cfa80890d0692e",
-            "md5": "eb0ed854fafccb63e91f40aeb2a3c8a7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.1/solc-linux-amd64-0.4.13-1.0.1",
-            "version": "0.4.13",
-            "build": "commit.2e10cee7",
-            "longVersion": "0.4.13+commit.2e10cee7",
-            "sha256": "e732d00f3b0172aeb0058f3cfc8ae6cd6d1b75323b07e5309cfaedf77f5124ae",
-            "md5": "fb3d57daa56fdb0f7a5c4b7ae78d3fd6"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.1/solc-linux-amd64-0.4.12-1.0.1",
-            "version": "0.4.12",
-            "build": "commit.42a88949",
-            "longVersion": "0.4.12+commit.42a88949",
-            "sha256": "0b0afdfe19f1095929375aaefa9dd9474b6871904a5a0152f94434d91308d209",
-            "md5": "762b00390f51efb66f55899238add760"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.26-1.0.1/solc-linux-amd64-0.8.26-1.0.1",
-            "version": "0.8.26",
-            "build": "commit.905b735b",
-            "longVersion": "0.8.26+commit.905b735b",
-            "sha256": "2b41b671a9efa54a55ea76c9cd19f2bffed0f9c03d0d55766c0ec9b730b2e590",
-            "md5": "457c5cc28d26da0f3e6712bdb0080549"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.1/solc-linux-amd64-0.8.25-1.0.1",
-            "version": "0.8.25",
-            "build": "commit.47b979f3",
-            "longVersion": "0.8.25+commit.47b979f3",
-            "sha256": "30c4ae71baf42004b390cb124a3137db1c699d7c030731d5d3e7a1ed3a5dacb1",
-            "md5": "9990fabe93c5b145d1c5379dace17e0c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.1/solc-linux-amd64-0.8.24-1.0.1",
-            "version": "0.8.24",
-            "build": "commit.3a2587f6",
-            "longVersion": "0.8.24+commit.3a2587f6",
-            "sha256": "0dbecbf68e17103ef1634ddd5b53b6b06d2f72cc41e2ff5829af7b75bce181b9",
-            "md5": "ba4f21555697b2fe0a7e882e3cc2d199"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.1/solc-linux-amd64-0.8.23-1.0.1",
-            "version": "0.8.23",
-            "build": "commit.b42ca2a3",
-            "longVersion": "0.8.23+commit.b42ca2a3",
-            "sha256": "18a7e49d1422a85431357c348420c931abc0d0641039823fafa748708b0aba9f",
-            "md5": "4717c42dbf6a54ae2ac05371e90ed710"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.1/solc-linux-amd64-0.8.22-1.0.1",
-            "version": "0.8.22",
-            "build": "commit.d3b5c2a5",
-            "longVersion": "0.8.22+commit.d3b5c2a5",
-            "sha256": "109c31c80b83f863ab4507048a905931b37c1d6ccf0f00634ba2c09340a8ec08",
-            "md5": "12c36d9b46ce18781409a58590fe5bd2"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.1/solc-linux-amd64-0.8.21-1.0.1",
-            "version": "0.8.21",
-            "build": "commit.ec5dde33",
-            "longVersion": "0.8.21+commit.ec5dde33",
-            "sha256": "3c79a880211c47441bc691c392af7541ce6cfe5f7018c57ad8d99ce4087da2dc",
-            "md5": "ca6ac844fcda9f8bf2fb049ade14e9b2"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.1/solc-linux-amd64-0.8.20-1.0.1",
-            "version": "0.8.20",
-            "build": "commit.9f2a5241",
-            "longVersion": "0.8.20+commit.9f2a5241",
-            "sha256": "657d3602edf434056262a3355bf91af364fa81706f2f10592dfdbe073e064542",
-            "md5": "6af18ece395e1aa9723cc916d6453b6e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.1/solc-linux-amd64-0.8.19-1.0.1",
-            "version": "0.8.19",
-            "build": "commit.580a8fe5",
-            "longVersion": "0.8.19+commit.580a8fe5",
-            "sha256": "c7e2afb67887ce542bbf4c6c9c5a2984642891d85d5c656b0219b4ab4ce15516",
-            "md5": "ec6c02142f16440b270afac5eda04614"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.1/solc-linux-amd64-0.8.18-1.0.1",
-            "version": "0.8.18",
-            "build": "commit.84357b55",
-            "longVersion": "0.8.18+commit.84357b55",
-            "sha256": "3be2ef30df22bc399d20a8c151a537c2d7ddf2a82fd7c5c01092d88e6b523158",
-            "md5": "e3bee867f65e82bd668d0eca9e6c39d7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.1/solc-linux-amd64-0.8.17-1.0.1",
-            "version": "0.8.17",
-            "build": "commit.439a1047",
-            "longVersion": "0.8.17+commit.439a1047",
-            "sha256": "15156d359816513ef69a87c5fa6b797a90774700d8cbf0685fa9abe5f614b20d",
-            "md5": "3329bbea3cf805391c45e61a74123e95"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.1/solc-linux-amd64-0.8.16-1.0.1",
-            "version": "0.8.16",
-            "build": "commit.2d04f2ab",
-            "longVersion": "0.8.16+commit.2d04f2ab",
-            "sha256": "07899fad3cd742ed13fe051fe19e0d29881027b13cdf39cc2d70c3ed15aa1cf2",
-            "md5": "8799396023181ddd3f96e97b4fa2cdd7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.1/solc-linux-amd64-0.8.15-1.0.1",
-            "version": "0.8.15",
-            "build": "commit.74e5d21d",
-            "longVersion": "0.8.15+commit.74e5d21d",
-            "sha256": "7ab3b9c40d70022705d59c3432719860fd573a075a425940c4aab30cc8898d3f",
-            "md5": "341b4997bacd832a461178b82d7e6db5"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.1/solc-linux-amd64-0.8.14-1.0.1",
-            "version": "0.8.14",
-            "build": "commit.ac205588",
-            "longVersion": "0.8.14+commit.ac205588",
-            "sha256": "158f79a1c50986ef5dafffaea2f6e1dc74073a6e4ddb283fa752c389eac52e10",
-            "md5": "1b379b517fef808dd172ccc20d845faa"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.1/solc-linux-amd64-0.8.13-1.0.1",
-            "version": "0.8.13",
-            "build": "commit.dc7bb5d3",
-            "longVersion": "0.8.13+commit.dc7bb5d3",
-            "sha256": "6b318a31e89c8d99f605f63e94dbc6fdb887e1acd725c8751b249fcb9e1384d5",
-            "md5": "2478cd830733996410ea00af2bb546ea"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.1/solc-linux-amd64-0.8.12-1.0.1",
-            "version": "0.8.12",
-            "build": "commit.8774d16c",
-            "longVersion": "0.8.12+commit.8774d16c",
-            "sha256": "f347ecbfcc46ff38de02a7f8b1b09ceabbd9b78b20c0ab6c36207adc0d71af2e",
-            "md5": "a104f734a05194cb7281969386cb6279"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.1/solc-linux-amd64-0.8.11-1.0.1",
-            "version": "0.8.11",
-            "build": "commit.4611d937",
-            "longVersion": "0.8.11+commit.4611d937",
-            "sha256": "7f2d506f8b3824f25423761a4ed82c073375370876cb2180729c4276c60dd599",
-            "md5": "d3c80d43ce7025aafff952625af53191"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.1/solc-linux-amd64-0.8.10-1.0.1",
-            "version": "0.8.10",
-            "build": "commit.6eff489a",
-            "longVersion": "0.8.10+commit.6eff489a",
-            "sha256": "cb5cede7fbda1149164c04f9017c5e0ee534708ef78beae202342259b993d381",
-            "md5": "2e19a194bc94733f0a212e9d439c9cc7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.1/solc-linux-amd64-0.8.9-1.0.1",
-            "version": "0.8.9",
-            "build": "commit.182f38a0",
-            "longVersion": "0.8.9+commit.182f38a0",
-            "sha256": "122aaead40af9a4c91ea503e690cc5783550f2b5ca5fb45a47e4b9233ecc3eed",
-            "md5": "433e411d86a12c7c82a696313f4a3098"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.1/solc-linux-amd64-0.8.8-1.0.1",
-            "version": "0.8.8",
-            "build": "commit.94d96e66",
-            "longVersion": "0.8.8+commit.94d96e66",
-            "sha256": "a7574015ad937c2ee4e60787f071a6a1e60dda6829ffbc8e00413039b8cefb0c",
-            "md5": "79d33f35fde3c03e2fb5d6884e2e4350"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.1/solc-linux-amd64-0.8.7-1.0.1",
-            "version": "0.8.7",
-            "build": "commit.7bc31051",
-            "longVersion": "0.8.7+commit.7bc31051",
-            "sha256": "9558574e60b500965ddeb6278a724f714bb96b8603244f4fe1321a503ecc115c",
-            "md5": "1f55ae8802978cf055ee0c84bfb83cb9"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.1/solc-linux-amd64-0.8.6-1.0.1",
-            "version": "0.8.6",
-            "build": "commit.1ad37205",
-            "longVersion": "0.8.6+commit.1ad37205",
-            "sha256": "fb7cf72c3ac419a153796b756e1d59b207e4dfd8bc2d681cd2b9047b2e45b82c",
-            "md5": "30cffb0686fe0fe1d01e091a0e2ebc4a"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.1/solc-linux-amd64-0.8.5-1.0.1",
-            "version": "0.8.5",
-            "build": "commit.e9911bde",
-            "longVersion": "0.8.5+commit.e9911bde",
-            "sha256": "b449bb21631e7aa001d1a9e93d50696835e4004cce9afa65d1cf7da82d34873f",
-            "md5": "fba66e40898583bbed6dbba618e2904d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.1/solc-linux-amd64-0.8.4-1.0.1",
-            "version": "0.8.4",
-            "build": "commit.414f455d",
-            "longVersion": "0.8.4+commit.414f455d",
-            "sha256": "6704206c6097f734bf0d3acafd393a5803f34cd259e4ea4042156274422b21fc",
-            "md5": "f2f87e74706665f742750417e8edc430"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.1/solc-linux-amd64-0.8.3-1.0.1",
-            "version": "0.8.3",
-            "build": "commit.5190db56",
-            "longVersion": "0.8.3+commit.5190db56",
-            "sha256": "48174b22ab6a4e3a10a8c4014576986fd03d55480c659cef0e0b511eb550001d",
-            "md5": "b1816aaf15579410eeb4ce52e1462a4f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.1/solc-linux-amd64-0.8.2-1.0.1",
-            "version": "0.8.2",
-            "build": "commit.fd3b12ff",
-            "longVersion": "0.8.2+commit.fd3b12ff",
-            "sha256": "7ab54e0739e42d29ba7295d17fa90cf60778646f8db1867b18189133b04943b5",
-            "md5": "4f0f3ffbd82925d0c100083363ce6a94"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.1/solc-linux-amd64-0.8.1-1.0.1",
-            "version": "0.8.1",
-            "build": "commit.58ae5c5d",
-            "longVersion": "0.8.1+commit.58ae5c5d",
-            "sha256": "7a9853e04d96279c721f29d217b5be514dddeaf4d035a23c2e5105d3609ee367",
-            "md5": "752fccad2fa2512148b75fcf35c11a4c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.1/solc-linux-amd64-0.8.0-1.0.1",
-            "version": "0.8.0",
-            "build": "commit.653de846",
-            "longVersion": "0.8.0+commit.653de846",
-            "sha256": "2c6bd827eb7eeb315bd2f1f7495853fd9ccd27d20d02f2252d8156162e4ba363",
-            "md5": "2e746def211357e654f539aa9b14cc79"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.1/solc-linux-amd64-0.7.6-1.0.1",
-            "version": "0.7.6",
-            "build": "commit.90d53997",
-            "longVersion": "0.7.6+commit.90d53997",
-            "sha256": "c6d3ddc9fc230753f3baa891272ae8625561755e91e3a8acb821f989c08feff1",
-            "md5": "95a2c5e746202f5958fce8c25907ff69"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.1/solc-linux-amd64-0.7.5-1.0.1",
-            "version": "0.7.5",
-            "build": "commit.80350332",
-            "longVersion": "0.7.5+commit.80350332",
-            "sha256": "24b9dac420255a4da72d6e33135a2765fc73db96d51cf098717f0795ccd63211",
-            "md5": "8cfff7392b29116a61dc65761d0ebccd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.1/solc-linux-amd64-0.7.4-1.0.1",
-            "version": "0.7.4",
-            "build": "commit.5047983b",
-            "longVersion": "0.7.4+commit.5047983b",
-            "sha256": "f4af3a540b966bb09f1e419577891f99f1e6b6eb9c8c97afc63e34c5d43035db",
-            "md5": "8abf4ada6a2afad2cb3b513ce92af61f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.1/solc-linux-amd64-0.7.3-1.0.1",
-            "version": "0.7.3",
-            "build": "commit.6924a502",
-            "longVersion": "0.7.3+commit.6924a502",
-            "sha256": "725934b75818c9193150d9192b5a59dc03e7fc81019cbff57c41580d2275085b",
-            "md5": "2ad18e246a02dad0b85e4f1939b0e6da"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.1/solc-linux-amd64-0.7.2-1.0.1",
-            "version": "0.7.2",
-            "build": "commit.88d1104e",
-            "longVersion": "0.7.2+commit.88d1104e",
-            "sha256": "087c1b6fa1bcacf5ba9761804fe97d5981b432c7ef994aaa04edd2c275c26ad5",
-            "md5": "a7844ad77553a2830e228f284d34fe53"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.1/solc-linux-amd64-0.7.1-1.0.1",
-            "version": "0.7.1",
-            "build": "commit.703e7aab",
-            "longVersion": "0.7.1+commit.703e7aab",
-            "sha256": "f894adefcce94336b6daaab6f1bc85be34931ff0f6ee1ddc0b138fa974aac793",
-            "md5": "782996432906c517cbff528e721badff"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.1/solc-linux-amd64-0.7.0-1.0.1",
-            "version": "0.7.0",
-            "build": "commit.fc4b0321",
-            "longVersion": "0.7.0+commit.fc4b0321",
-            "sha256": "4cfd1e60b4d9a5d1aab50588c988d19fcfd9cea86a85d294ea3822cd2eff6760",
-            "md5": "3b96240c9966504f31e5c89cbfbd331f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.1/solc-linux-amd64-0.6.12-1.0.1",
-            "version": "0.6.12",
-            "build": "commit.148869f1",
-            "longVersion": "0.6.12+commit.148869f1",
-            "sha256": "b9308050c10329a97124cec97a00b596bdaff5e197b3fa7f266a66224565ca62",
-            "md5": "19e15f08be9561e9420a9bce96b9f305"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.1/solc-linux-amd64-0.6.11-1.0.1",
-            "version": "0.6.11",
-            "build": "commit.41a5f1c1",
-            "longVersion": "0.6.11+commit.41a5f1c1",
-            "sha256": "5929433ab1f05170988c14650aa7cb5486be1076806309ae2c9c299d4371d51b",
-            "md5": "71d560e4384c7299ddc5f84af3b96e38"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.1/solc-linux-amd64-0.6.10-1.0.1",
-            "version": "0.6.10",
-            "build": "commit.b116c857",
-            "longVersion": "0.6.10+commit.b116c857",
-            "sha256": "e15da02e421f8e044f7f09d9eb1ef29872e707314fed28f4bedd23126fa63f7f",
-            "md5": "a3731a19e06e35b4a5e2ba238ff1b379"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.1/solc-linux-amd64-0.6.9-1.0.1",
-            "version": "0.6.9",
-            "build": "commit.d1775e38",
-            "longVersion": "0.6.9+commit.d1775e38",
-            "sha256": "a2001f407191d5f8da2ae9646ca5fd60eba420323bf3a0d3ab92d0f221b27de2",
-            "md5": "ade1464f863404766b21c3c9b5c774cd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.1/solc-linux-amd64-0.6.8-1.0.1",
-            "version": "0.6.8",
-            "build": "commit.c0fdd5da",
-            "longVersion": "0.6.8+commit.c0fdd5da",
-            "sha256": "53547a36dc1a953a4a4135227745d8a547798e262b357e4c0e0bc8ebc6605822",
-            "md5": "e6a76cd2eb48ce58bc95fcb59b647354"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.1/solc-linux-amd64-0.6.7-1.0.1",
-            "version": "0.6.7",
-            "build": "commit.9abea9d1",
-            "longVersion": "0.6.7+commit.9abea9d1",
-            "sha256": "4cd4c1f35c4f85f4548044ede09e20747af6f421117f62b922b2ecedf7f7a2ca",
-            "md5": "4f71d9b2f137badac3cbe57248a910a9"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.1/solc-linux-amd64-0.6.6-1.0.1",
-            "version": "0.6.6",
-            "build": "commit.8469fa3b",
-            "longVersion": "0.6.6+commit.8469fa3b",
-            "sha256": "67d5e6d1dd82c2809aadd89b67d9013f056d82a2848b1b6e3717220387aada86",
-            "md5": "bae691ffd1b57a7ebe77a668a91bee0d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.1/solc-linux-amd64-0.6.5-1.0.1",
-            "version": "0.6.5",
-            "build": "commit.7e46561e",
-            "longVersion": "0.6.5+commit.7e46561e",
-            "sha256": "e2627c75d62f65a1c122df649eb98c635f068b295c9306f0bdbd267192d54737",
-            "md5": "ecba283df56ae6b84c978a9b1adec4d7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.1/solc-linux-amd64-0.6.4-1.0.1",
-            "version": "0.6.4",
-            "build": "commit.aab18a82",
-            "longVersion": "0.6.4+commit.aab18a82",
-            "sha256": "1a65c9b317a0191d5fb61ce52eeedfe594710add7c28a7e975d999ee1a253a73",
-            "md5": "c74d47ca9067023cf1e867ce203af308"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.1/solc-linux-amd64-0.6.3-1.0.1",
-            "version": "0.6.3",
-            "build": "commit.df6d4b77",
-            "longVersion": "0.6.3+commit.df6d4b77",
-            "sha256": "f5aa8a9e1862048989e8e3ac6db8e57a7d555f3d88dbfbf927def3dd83d8f269",
-            "md5": "cab501eb89621c8eb8aedf8afc210fcf"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.1/solc-linux-amd64-0.6.2-1.0.1",
-            "version": "0.6.2",
-            "build": "commit.88a26618",
-            "longVersion": "0.6.2+commit.88a26618",
-            "sha256": "a6378d7966a2fd64de71828cff5b8a399ca2635b9915437613b62f6402d2bd45",
-            "md5": "86ec6d5039a3d86cc7ee255453402027"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.1/solc-linux-amd64-0.6.1-1.0.1",
-            "version": "0.6.1",
-            "build": "commit.81a285c8",
-            "longVersion": "0.6.1+commit.81a285c8",
-            "sha256": "59f028b77262cba5726b52d125749a95df9b011c85e35a019c8ccdc887ac6214",
-            "md5": "d64dd3de7d03eae639d1eb6833c1b490"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.1/solc-linux-amd64-0.6.0-1.0.1",
-            "version": "0.6.0",
-            "build": "commit.6708c82c",
-            "longVersion": "0.6.0+commit.6708c82c",
-            "sha256": "4f679fc52655785fac18ed81c5907812d7c802d58949be7d6e067514a34a3eb0",
-            "md5": "d8063a10ee1d96dc08e2576427be67a3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.1/solc-linux-amd64-0.5.17-1.0.1",
-            "version": "0.5.17",
-            "build": "commit.dba8cb1c",
-            "longVersion": "0.5.17+commit.dba8cb1c",
-            "sha256": "4154d385fbba14dc85e536d05cffba60cff3690ec1bd51c42c86afbe5c71fdc1",
-            "md5": "fd078f9f45926be36a695687aae9e0ee"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.1/solc-linux-amd64-0.5.16-1.0.1",
-            "version": "0.5.16",
-            "build": "commit.b9534989",
-            "longVersion": "0.5.16+commit.b9534989",
-            "sha256": "6ba2d2f50d25343bf997959a11668b8a82271afef2104738d53b47bfd82d5e74",
-            "md5": "e32b35f5f305f4a49f34e26dde9dd27f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.1/solc-linux-amd64-0.5.15-1.0.1",
-            "version": "0.5.15",
-            "build": "commit.ceea502f",
-            "longVersion": "0.5.15+commit.ceea502f",
-            "sha256": "32765ff28bfd06329037ba670eafafd9c154cae0398c959abf582a83cebd9a91",
-            "md5": "61c41ac07787eebd3e3617f905b26530"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.1/solc-linux-amd64-0.5.14-1.0.1",
-            "version": "0.5.14",
-            "build": "commit.57a29b35",
-            "longVersion": "0.5.14+commit.57a29b35",
-            "sha256": "b249b6281e3495c9f231811421b506f265a180aee8c97f6e9a44fc4867c3658a",
-            "md5": "17ae29a460c6f08d539c654d6f0040f3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.1/solc-linux-amd64-0.5.13-1.0.1",
-            "version": "0.5.13",
-            "build": "commit.ca5fba33",
-            "longVersion": "0.5.13+commit.ca5fba33",
-            "sha256": "d9412a6f33f05947cd50d7df79d03f10fc062c1af500da7095c21372938bd717",
-            "md5": "c50565c44755d79b3ba72c2ea75b2b6c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.1/solc-linux-amd64-0.5.12-1.0.1",
-            "version": "0.5.12",
-            "build": "commit.2133f4dc",
-            "longVersion": "0.5.12+commit.2133f4dc",
-            "sha256": "fca6b64d55b236e6ad1e0e79f730798bfa21ab8f63c803700c01a8559d3fcf44",
-            "md5": "23f6a5b13b33752a47a2d0bd61488200"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.1/solc-linux-amd64-0.5.11-1.0.1",
-            "version": "0.5.11",
-            "build": "commit.a7973e18",
-            "longVersion": "0.5.11+commit.a7973e18",
-            "sha256": "0895d9b8110064fff010911d3cdea82b4ee398b8f5b97fbf7707040415c0da80",
-            "md5": "643cb3e5d53c14f4d65bff2b17ea68ea"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.1/solc-linux-amd64-0.5.10-1.0.1",
-            "version": "0.5.10",
-            "build": "commit.6dd3d4b5",
-            "longVersion": "0.5.10+commit.6dd3d4b5",
-            "sha256": "3361e92b7a598003aa2d05395e96109380b03104892c34cdb4cd5eb20156d83d",
-            "md5": "fefb0c0174be685cf39c41bc6ad96a3e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.1/solc-linux-amd64-0.5.9-1.0.1",
-            "version": "0.5.9",
-            "build": "commit.fd720a17",
-            "longVersion": "0.5.9+commit.fd720a17",
-            "sha256": "5db286b9a2333a2ed03332219daef0a9e7b6caef468e355b132c31e16a884c9f",
-            "md5": "334bd17745238eb16b8ab373f8163519"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.1/solc-linux-amd64-0.5.8-1.0.1",
-            "version": "0.5.8",
-            "build": "commit.6a1ba12d",
-            "longVersion": "0.5.8+commit.6a1ba12d",
-            "sha256": "bb8fd10173913162aed7b90a7ed03338b0e3824703adf40226c4cb0fcfe82692",
-            "md5": "5a75eedfe40d22b2f6032213c0e26fd3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.1/solc-linux-amd64-0.5.7-1.0.1",
-            "version": "0.5.7",
-            "build": "commit.4f8a32da",
-            "longVersion": "0.5.7+commit.4f8a32da",
-            "sha256": "9a074793017bd90baa45d6e542dd93ccb81b3a31aa786c0dc319bfe1a3b41fa0",
-            "md5": "5c330ed1ce33675be446cdd74cafc480"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.1/solc-linux-amd64-0.5.6-1.0.1",
-            "version": "0.5.6",
-            "build": "commit.08b90bf7",
-            "longVersion": "0.5.6+commit.08b90bf7",
-            "sha256": "668b4878374af83e0ada63cbaf9331716b46b80e2f65204f0de3d2adf7844ac8",
-            "md5": "729f88f85ae692ec9c0842b0b1445ef7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.1/solc-linux-amd64-0.5.5-1.0.1",
-            "version": "0.5.5",
-            "build": "commit.878d203c",
-            "longVersion": "0.5.5+commit.878d203c",
-            "sha256": "2c214e4e83b2386fe784401bb8afc6dbf73ad1d868fb9d3de1e829a6bfb28603",
-            "md5": "62f904f4f651e5859a9c6e4ce69facdd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.1/solc-linux-amd64-0.5.4-1.0.1",
-            "version": "0.5.4",
-            "build": "commit.9389ec4d",
-            "longVersion": "0.5.4+commit.9389ec4d",
-            "sha256": "f64c9d369daa369905764f7e39ac340138b6a36f6daaa2ead01fe7489011fe79",
-            "md5": "96d3901ac7205f7a1ebd2407e6976788"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.1/solc-linux-amd64-0.5.3-1.0.1",
-            "version": "0.5.3",
-            "build": "commit.7453343e",
-            "longVersion": "0.5.3+commit.7453343e",
-            "sha256": "0fee9d7b488a517b0c58dfc6de4086db466d54a8698a48a53f210ac263c301ac",
-            "md5": "5cc769a9d4cadb7cfe1d7451839f9733"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.1/solc-linux-amd64-0.5.2-1.0.1",
-            "version": "0.5.2",
-            "build": "commit.adb8a652",
-            "longVersion": "0.5.2+commit.adb8a652",
-            "sha256": "7afc8e869c0f57837d9d95c8edddd94e0706f8ab7333f9c2cfae19d55df0deea",
-            "md5": "181ef200b4c49b38117b5539c1ce62af"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.1/solc-linux-amd64-0.5.1-1.0.1",
-            "version": "0.5.1",
-            "build": "commit.4c8a42ab",
-            "longVersion": "0.5.1+commit.4c8a42ab",
-            "sha256": "348c503e2821b2295cad8d4a2598193ed12044cadf851fade933c8b77f9d17f1",
-            "md5": "73b091e91add77a22886a86187d8bf8e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.1/solc-linux-amd64-0.5.0-1.0.1",
-            "version": "0.5.0",
-            "build": "commit.86e0ff68",
-            "longVersion": "0.5.0+commit.86e0ff68",
-            "sha256": "959c249eb5102b04eedae1afb455f3032cb4cc7bfe875684d45b145509046757",
-            "md5": "d325643152b08579ebf8c06caed34cd8"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.1/solc-linux-amd64-0.4.26-1.0.1",
-            "version": "0.4.26",
-            "build": "commit.d42289a4",
-            "longVersion": "0.4.26+commit.d42289a4",
-            "sha256": "15f4d15d6dfffe545b055f0ffa37fdd291c7800565407f732e66925d28304af5",
-            "md5": "f33b19ec3fcde8257cc405ffe8df1339"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.1/solc-linux-amd64-0.4.25-1.0.1",
-            "version": "0.4.25",
-            "build": "commit.b436d681",
-            "longVersion": "0.4.25+commit.b436d681",
-            "sha256": "e9406ff147a5c46b28fbb36d96b9d92a0e268465856e8952b642aba970476b59",
-            "md5": "2bdb3bdfce2f6fcfab7cb0f74f3b34e5"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.1/solc-linux-amd64-0.4.24-1.0.1",
-            "version": "0.4.24",
-            "build": "commit.bd81feb0",
-            "longVersion": "0.4.24+commit.bd81feb0",
-            "sha256": "f51f7ffbceb6f1fceac5d79f4a3087e7e880ff320e04f119104572a81a2995f0",
-            "md5": "5e88f1027add08c121fe32901fffcd14"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.1/solc-linux-amd64-0.4.23-1.0.1",
-            "version": "0.4.23",
-            "build": "commit.af447a00",
-            "longVersion": "0.4.23+commit.af447a00",
-            "sha256": "98e44fc8ec6d717789b96b7645b49fd40f0b1f1bdad27cf3addd18e07db964fe",
-            "md5": "91c5f3c57bfe3f2fb146393054feaac3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.1/solc-linux-amd64-0.4.22-1.0.1",
-            "version": "0.4.22",
-            "build": "commit.a3e5264b",
-            "longVersion": "0.4.22+commit.a3e5264b",
-            "sha256": "f616746a7b2ec35d0e42e1765c3657a4e56312cb96acc6e6fb79acdbe282dbc5",
-            "md5": "5bcc66c8316eec133c649dc77e90684f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.1/solc-linux-amd64-0.4.21-1.0.1",
-            "version": "0.4.21",
-            "build": "commit.63a03d5e",
-            "longVersion": "0.4.21+commit.63a03d5e",
-            "sha256": "b2b789247cefecdea2e0bf58df82334ea17c9232a23a558e655d07c0ad482d9c",
-            "md5": "e2968e440dcbdd2d11d66f8274863a4f"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.1/solc-linux-amd64-0.4.20-1.0.1",
-            "version": "0.4.20",
-            "build": "commit.708cd109",
-            "longVersion": "0.4.20+commit.708cd109",
-            "sha256": "3116e9e2939bd9073e4c44e671186be2a0fa55bec83239f6b8484e4cb12e6f70",
-            "md5": "3a00dadf3bd50796f7c652a99ad9fab4"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.1/solc-linux-amd64-0.4.19-1.0.1",
-            "version": "0.4.19",
-            "build": "commit.7ff1bd60",
-            "longVersion": "0.4.19+commit.7ff1bd60",
-            "sha256": "d2db5c026335c74cf09bb8a449562ec3685e46a19c6cbd6b6e476cc7025a83b4",
-            "md5": "8c35d5f67016a20ce4e5bff0e36c8902"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.1/solc-linux-amd64-0.4.18-1.0.1",
-            "version": "0.4.18",
-            "build": "commit.905b735b",
-            "longVersion": "0.4.18+commit.905b735b",
-            "sha256": "1039bb6daae6b889686c216287b1c995b447f6e10ab990110dfcaf093619da89",
-            "md5": "e19de5405c3ec6a9838ddabd24e7f53c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.1/solc-linux-amd64-0.4.17-1.0.1",
-            "version": "0.4.17",
-            "build": "commit.00b04601",
-            "longVersion": "0.4.17+commit.00b04601",
-            "sha256": "2cdc1bf9cdea47bea12a19892b8dc33a208ffd67d9f4a2703e3c8290466feed9",
-            "md5": "af42d5c9124448d4e2398a14e90a019d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.0/solc-linux-amd64-0.8.25-1.0.0",
-            "version": "0.8.25",
-            "build": "commit.728f1683",
-            "longVersion": "0.8.25+commit.728f1683",
-            "sha256": "a62d68ce006cfdf906d674ea393d0cea9e99318df0c6cd1daa2137b3cd71276f",
-            "md5": "4ef3f582c74487b321834cfe81dc9d3a"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.0/solc-linux-amd64-0.8.24-1.0.0",
-            "version": "0.8.24",
-            "build": "commit.52d54a91",
-            "longVersion": "0.8.24+commit.52d54a91",
-            "sha256": "db2c9b6e5d426b739b853790755212a5a60a287cb53dd495c6fa9e1c3cd1311c",
-            "md5": "9eb6536826b7015c496b116ab5712ee3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.0/solc-linux-amd64-0.8.23-1.0.0",
-            "version": "0.8.23",
-            "build": "commit.c46cbc01",
-            "longVersion": "0.8.23+commit.c46cbc01",
-            "sha256": "fdb60ac58e5e57d2f1e479060d83df85be9c491cf2c34ac44a21fbc3056debc3",
-            "md5": "88093392a0b2ec6c1c71d7085104a978"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.0/solc-linux-amd64-0.8.22-1.0.0",
-            "version": "0.8.22",
-            "build": "commit.beb84e1c",
-            "longVersion": "0.8.22+commit.beb84e1c",
-            "sha256": "3c47507bd42476992ca15f3e4555e82b108fb3568235bbb627a295599e17793f",
-            "md5": "3276d8fedf77cbd901892a00bccb22eb"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.0/solc-linux-amd64-0.8.21-1.0.0",
-            "version": "0.8.21",
-            "build": "commit.bb862db2",
-            "longVersion": "0.8.21+commit.bb862db2",
-            "sha256": "c42dfada555f27d5c073f7c20416394fedb3078772fa9fd1f1856907a1aaf3d9",
-            "md5": "3b091ac9935760979b6db4306657225c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.0/solc-linux-amd64-0.8.20-1.0.0",
-            "version": "0.8.20",
-            "build": "commit.475d6d9f",
-            "longVersion": "0.8.20+commit.475d6d9f",
-            "sha256": "b269beafa101abfe00b5e7273560d35e965e2c700255f674aaa5ab4c257f7132",
-            "md5": "b19de2e5cb9d4b56eb746f49824567aa"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.0/solc-linux-amd64-0.8.19-1.0.0",
-            "version": "0.8.19",
-            "build": "commit.5e99f3d9",
-            "longVersion": "0.8.19+commit.5e99f3d9",
-            "sha256": "0a269523e04f312859ce407b57f06fad33d45faa1204326d047ec014b7d27b61",
-            "md5": "e51c5e457e5c83893eb4ad2b924737dc"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.0/solc-linux-amd64-0.8.18-1.0.0",
-            "version": "0.8.18",
-            "build": "commit.4850e071",
-            "longVersion": "0.8.18+commit.4850e071",
-            "sha256": "13815a61c8681c4a6c3d5ec8f25b6dbbfc8b92d1aeb07f09fd19bcf3ad2606cb",
-            "md5": "dd7d3008541ec2054f00e9155b7a2b58"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.0/solc-linux-amd64-0.8.17-1.0.0",
-            "version": "0.8.17",
-            "build": "commit.6c091780",
-            "longVersion": "0.8.17+commit.6c091780",
-            "sha256": "b9aab8be20cea2be74129778ebfbfe3a816d585076b36d8a50c48f41e20ea1ce",
-            "md5": "6e62574bafbe03b857e640e5f6962b26"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.0/solc-linux-amd64-0.8.16-1.0.0",
-            "version": "0.8.16",
-            "build": "commit.8e15a08d",
-            "longVersion": "0.8.16+commit.8e15a08d",
-            "sha256": "70abf42dd7ff627cdc41dbc533014358a1376d358551d1f57424b53f2e9061e9",
-            "md5": "c9251df8a8ad7ede40ac6b4c82eff7cd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.0/solc-linux-amd64-0.8.15-1.0.0",
-            "version": "0.8.15",
-            "build": "commit.d8159763",
-            "longVersion": "0.8.15+commit.d8159763",
-            "sha256": "00f54893fd2b9010aab12801c52dddcd03510d5526963d2d5b2915d53e253611",
-            "md5": "cb27a1561ae14fa1ced0e9dd7534526e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.0/solc-linux-amd64-0.8.14-1.0.0",
-            "version": "0.8.14",
-            "build": "commit.953831a6",
-            "longVersion": "0.8.14+commit.953831a6",
-            "sha256": "2f3768d4479961ae1c0427c277db3d20f04ab2e627f1e0169ca579f8f0382d58",
-            "md5": "b3741121b0b38daa6001dd73e5ca1b6e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.0/solc-linux-amd64-0.8.13-1.0.0",
-            "version": "0.8.13",
-            "build": "commit.218d7e3a",
-            "longVersion": "0.8.13+commit.218d7e3a",
-            "sha256": "85b376721f71be3e8ce612fd5328ebcf001358ce87066038a206a5aab195b47a",
-            "md5": "3b795ac430d0e1bc6de1900894e288b0"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.0/solc-linux-amd64-0.8.12-1.0.0",
-            "version": "0.8.12",
-            "build": "commit.4b7f7da7",
-            "longVersion": "0.8.12+commit.4b7f7da7",
-            "sha256": "5b63710744fe4320ea73c66d3d88dc24ff95b469a98c08ef5b0af1d8983a66da",
-            "md5": "96656d49d99e791476485a73eb2127e9"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.0/solc-linux-amd64-0.8.11-1.0.0",
-            "version": "0.8.11",
-            "build": "commit.16d17a5c",
-            "longVersion": "0.8.11+commit.16d17a5c",
-            "sha256": "aa9553ffd026b3a901c4807b9edd4549fca69ee371315b228cd9b21f7620e9bb",
-            "md5": "ac15bac41e849212b7037a21c09627f3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.0/solc-linux-amd64-0.8.10-1.0.0",
-            "version": "0.8.10",
-            "build": "commit.ac3397cb",
-            "longVersion": "0.8.10+commit.ac3397cb",
-            "sha256": "ae8375e8abb77b8f552e725a06a3d165c55b40d7c232122abf3de8797ec92fa8",
-            "md5": "73ce5c6b7d0463fa9b18ec5b41e6b8f7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.0/solc-linux-amd64-0.8.9-1.0.0",
-            "version": "0.8.9",
-            "build": "commit.1965fadf",
-            "longVersion": "0.8.9+commit.1965fadf",
-            "sha256": "78e2da50022564338b1a40200c7c1cbdf16dadaf270d053e4fd54e8e77952e6f",
-            "md5": "63a4145f5b65220d48d57594f7e52388"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.0/solc-linux-amd64-0.8.8-1.0.0",
-            "version": "0.8.8",
-            "build": "commit.129884bc",
-            "longVersion": "0.8.8+commit.129884bc",
-            "sha256": "b0499115d5191579f308a7e131bfba4d64fb1a4d3cbda84da298b0254ec5e262",
-            "md5": "362a2314b032430c114ca53bd7ef385e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.0/solc-linux-amd64-0.8.7-1.0.0",
-            "version": "0.8.7",
-            "build": "commit.b2de7db3",
-            "longVersion": "0.8.7+commit.b2de7db3",
-            "sha256": "b1ea8171f7e7b1d9c590059fbdcf07facb1e94f609167d20a9fc7bd5f8c4a90b",
-            "md5": "de0c52dfa453bc69c80b83e7736fce55"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.0/solc-linux-amd64-0.8.6-1.0.0",
-            "version": "0.8.6",
-            "build": "commit.ff11fd6f",
-            "longVersion": "0.8.6+commit.ff11fd6f",
-            "sha256": "7dc9fcd35c6a61f2cd4caea77f84df10b416e3090583f09cf4957879a257bec0",
-            "md5": "b8cfd153afe63e6afe6d08076710532c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.0/solc-linux-amd64-0.8.5-1.0.0",
-            "version": "0.8.5",
-            "build": "commit.c0ca130e",
-            "longVersion": "0.8.5+commit.c0ca130e",
-            "sha256": "3bcd8d1a6738a61ba75c2cbccbcf022beb381cf6ee7e2c9491fc8dc2483e9a90",
-            "md5": "6041a830b905731f3e189906ec18db30"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.0/solc-linux-amd64-0.8.4-1.0.0",
-            "version": "0.8.4",
-            "build": "commit.cc284d6e",
-            "longVersion": "0.8.4+commit.cc284d6e",
-            "sha256": "291223adbe4a85fdfbe72fe0f4cec7c5971a2d25d0dcbe75314088c7b014eb3d",
-            "md5": "d296f93f14d1dc857f618a1a99844224"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.0/solc-linux-amd64-0.8.3-1.0.0",
-            "version": "0.8.3",
-            "build": "commit.23c5ed97",
-            "longVersion": "0.8.3+commit.23c5ed97",
-            "sha256": "f332895e9dee18a5f9fc35a0d06d1e42bead6a30771f722e5ac99f21682d3821",
-            "md5": "ed835739fa39edbdb7de84117ec81584"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.0/solc-linux-amd64-0.8.2-1.0.0",
-            "version": "0.8.2",
-            "build": "commit.29d899d8",
-            "longVersion": "0.8.2+commit.29d899d8",
-            "sha256": "79a875d5895688ac354048841b49cda5c27797d17fa21307e7f817710d701983",
-            "md5": "746f9602317b42780fd8df7082ad3bfd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.0/solc-linux-amd64-0.8.1-1.0.0",
-            "version": "0.8.1",
-            "build": "commit.5d73d8d7",
-            "longVersion": "0.8.1+commit.5d73d8d7",
-            "sha256": "ace08c5ec57d5a365d0555d2d6b920521ac58c958196138623e1f32bbd638dc8",
-            "md5": "5fbf06c778c2c16fa11b2c2cd5915e4b"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.0/solc-linux-amd64-0.8.0-1.0.0",
-            "version": "0.8.0",
-            "build": "commit.ffd2038c",
-            "longVersion": "0.8.0+commit.ffd2038c",
-            "sha256": "1eca4d0fa3dda84298a658bfce69ec5ddb177b5bb9ad99b8a056574bb0163d59",
-            "md5": "d13aaf0a23ac54647e42660085ad65e0"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.0/solc-linux-amd64-0.7.6-1.0.0",
-            "version": "0.7.6",
-            "build": "commit.11a377df",
-            "longVersion": "0.7.6+commit.11a377df",
-            "sha256": "e7dc59bdd3227d3b7f3a895ebbd7ee93686ef4d77c24545e7a0b67a1d68a6460",
-            "md5": "0ecce2a86971f14bd30bfa9408827a00"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.0/solc-linux-amd64-0.7.5-1.0.0",
-            "version": "0.7.5",
-            "build": "commit.b5bc0301",
-            "longVersion": "0.7.5+commit.b5bc0301",
-            "sha256": "9e717d79e832aa6a69a0474d14eae2b5584cddf4117e863a8a1c3325668835a3",
-            "md5": "02cb7ea123a4d1bf79de094c4dda3234"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.0/solc-linux-amd64-0.7.4-1.0.0",
-            "version": "0.7.4",
-            "build": "commit.91ed041a",
-            "longVersion": "0.7.4+commit.91ed041a",
-            "sha256": "d5639369f0614545a4bf0df20c0218aff904ddf32974d5cdeb0a400eb6e14cb6",
-            "md5": "c5f8d27f4c3dfad97198763e6bc8c824"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.0/solc-linux-amd64-0.7.3-1.0.0",
-            "version": "0.7.3",
-            "build": "commit.02cf47c9",
-            "longVersion": "0.7.3+commit.02cf47c9",
-            "sha256": "4d20ad7400486d0abaa68d0cccbce9250e267bc7d16a64494e236120f2902ccd",
-            "md5": "d0746e90a812c36ac3ce029c18ded2c3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.0/solc-linux-amd64-0.7.2-1.0.0",
-            "version": "0.7.2",
-            "build": "commit.91ef3abf",
-            "longVersion": "0.7.2+commit.91ef3abf",
-            "sha256": "d3b344009cec3f8fcc6068ff9c1b14b5d9eb7cb34271f7bb32503c957ec7c34b",
-            "md5": "f605ddc2e87dd3dea06707697ad4b8a1"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.0/solc-linux-amd64-0.7.1-1.0.0",
-            "version": "0.7.1",
-            "build": "commit.29fce715",
-            "longVersion": "0.7.1+commit.29fce715",
-            "sha256": "f65101b99d49c7539206bcfe8b82315ed257d098eff523eda5ba26f8f464a28d",
-            "md5": "a3d89a6b0af3ae712315b8876dc5d494"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.0/solc-linux-amd64-0.7.0-1.0.0",
-            "version": "0.7.0",
-            "build": "commit.984391be",
-            "longVersion": "0.7.0+commit.984391be",
-            "sha256": "dc431d9c1ab60b1cc13196f91b200711284dfbba8f7483908215aa3808259ed4",
-            "md5": "9ce34ad24b7b389626e90f4fb9d24b55"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.0/solc-linux-amd64-0.6.12-1.0.0",
-            "version": "0.6.12",
-            "build": "commit.2074e101",
-            "longVersion": "0.6.12+commit.2074e101",
-            "sha256": "25b11e828fbc3115e72071cdd0804a63ddf067afa54e8b36b7fcfa12fcd298ca",
-            "md5": "ad66129d8cec1b0416bc7c2f90f032c8"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.0/solc-linux-amd64-0.6.11-1.0.0",
-            "version": "0.6.11",
-            "build": "commit.2a97c5ae",
-            "longVersion": "0.6.11+commit.2a97c5ae",
-            "sha256": "5e66f057e976be49377d8b54894bdb1ad8947f42fceb1c8a5c2c6c8a173f765e",
-            "md5": "31b8d69c91da840d29627234bc130656"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.0/solc-linux-amd64-0.6.10-1.0.0",
-            "version": "0.6.10",
-            "build": "commit.e2d92761",
-            "longVersion": "0.6.10+commit.e2d92761",
-            "sha256": "b5b167317343934c31f83df562b9b0bb5466bf8d829ab8a0aa5b610499bce78e",
-            "md5": "b91218f1524e0ff1100238166d0fb0fd"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.0/solc-linux-amd64-0.6.9-1.0.0",
-            "version": "0.6.9",
-            "build": "commit.a6babe6f",
-            "longVersion": "0.6.9+commit.a6babe6f",
-            "sha256": "3a6f90a25838551f559d49b9201cd4003ddc43af711d93467ed50b215d9bb747",
-            "md5": "3239060aa44087d3aff9c2553bf499d7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.0/solc-linux-amd64-0.6.8-1.0.0",
-            "version": "0.6.8",
-            "build": "commit.ea4019dc",
-            "longVersion": "0.6.8+commit.ea4019dc",
-            "sha256": "c250b3fc067ec222e8ab608d32f7904027a3be2ded0b9d49e0d6264c4aeea86b",
-            "md5": "6c894ec5c69fd630190b47b0fc198689"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.0/solc-linux-amd64-0.6.7-1.0.0",
-            "version": "0.6.7",
-            "build": "commit.f4b488b3",
-            "longVersion": "0.6.7+commit.f4b488b3",
-            "sha256": "96175b97f22fc3590ec1bfb50cb1731107a0c14618b97760794e2e8148147b55",
-            "md5": "6d7db7b3b8a93afbc159ff43c4ca795e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.0/solc-linux-amd64-0.6.6-1.0.0",
-            "version": "0.6.6",
-            "build": "commit.41fab514",
-            "longVersion": "0.6.6+commit.41fab514",
-            "sha256": "f4184c211219c32674dcb997bed576f4e194764e4fe09c069a7f60afb459503b",
-            "md5": "eff4bae8002409b1f23afbaf4b369aa7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.0/solc-linux-amd64-0.6.5-1.0.0",
-            "version": "0.6.5",
-            "build": "commit.aaa7268f",
-            "longVersion": "0.6.5+commit.aaa7268f",
-            "sha256": "65a7a495bea0c7d1eb715971366d3d4d054651defbc8098e5d2e03b2893b3049",
-            "md5": "e335048bbefcd853c03aea72db577231"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.0/solc-linux-amd64-0.6.4-1.0.0",
-            "version": "0.6.4",
-            "build": "commit.654472f7",
-            "longVersion": "0.6.4+commit.654472f7",
-            "sha256": "2a1ccfb644e1b4cb25fc0fdec32dfea2df54bd56cceacea6d8f4b293b3fe162b",
-            "md5": "c6a37057ce4bb73fca5d53418752fb66"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.0/solc-linux-amd64-0.6.3-1.0.0",
-            "version": "0.6.3",
-            "build": "commit.bbae0190",
-            "longVersion": "0.6.3+commit.bbae0190",
-            "sha256": "b64fd6e89e4c4eca95d55c162893b1fcf536d3bc40f9ca5357118f164a03d129",
-            "md5": "692cf8e2abfcfc1f17665ec479cbc0d3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.0/solc-linux-amd64-0.6.2-1.0.0",
-            "version": "0.6.2",
-            "build": "commit.d454ba9f",
-            "longVersion": "0.6.2+commit.d454ba9f",
-            "sha256": "482092297c75896f496be2bade87865d2831c8dc23ac8223e5de09c7b3d77149",
-            "md5": "93f2dce8cdd34126f744af7bf1f1f643"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.0/solc-linux-amd64-0.6.1-1.0.0",
-            "version": "0.6.1",
-            "build": "commit.edee8562",
-            "longVersion": "0.6.1+commit.edee8562",
-            "sha256": "b922eea7bc345b67a23562c3371c3c708d34221a602a266880bde635256569bc",
-            "md5": "5f66ef24b7182bb62888774d03110abf"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.0/solc-linux-amd64-0.6.0-1.0.0",
-            "version": "0.6.0",
-            "build": "commit.ec8fd52c",
-            "longVersion": "0.6.0+commit.ec8fd52c",
-            "sha256": "812083270e43ab5258344ee48e15e37c71066c10f99c8db4ac177a5a3cb9900e",
-            "md5": "ad6dfc99752112d14fbbd65c59fa8abc"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.0/solc-linux-amd64-0.5.17-1.0.0",
-            "version": "0.5.17",
-            "build": "commit.f5894a46",
-            "longVersion": "0.5.17+commit.f5894a46",
-            "sha256": "78be2b8d3ffe1e467d923f5425b103d83eda482afdc00b56ad0021c829b384ef",
-            "md5": "9c90f3c1362de29f90d24dccaa2c96fc"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.0/solc-linux-amd64-0.5.16-1.0.0",
-            "version": "0.5.16",
-            "build": "commit.a4404286",
-            "longVersion": "0.5.16+commit.a4404286",
-            "sha256": "d00b5a1141de84912576b2e8b7fc4c956eb8926f060b81f2b34c672ffdf2b6b4",
-            "md5": "326e30be1360f1c522c434054fd841eb"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.0/solc-linux-amd64-0.5.15-1.0.0",
-            "version": "0.5.15",
-            "build": "commit.d627745b",
-            "longVersion": "0.5.15+commit.d627745b",
-            "sha256": "387aa5d4793dea9a079b1b32a64f874735344a012ba1a13cf0e5c57607ba213d",
-            "md5": "603c12b5d262f5d4979e23788b2a3e75"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.0/solc-linux-amd64-0.5.14-1.0.0",
-            "version": "0.5.14",
-            "build": "commit.8c61a890",
-            "longVersion": "0.5.14+commit.8c61a890",
-            "sha256": "3d2ce1165b3e5910673105d048aa0a93bf638f8399089e1e88d57a437e7f66b9",
-            "md5": "383e272b00480b57ec18ba2c1c6fe9c5"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.0/solc-linux-amd64-0.5.13-1.0.0",
-            "version": "0.5.13",
-            "build": "commit.2279152e",
-            "longVersion": "0.5.13+commit.2279152e",
-            "sha256": "77982bee697e957e8a48b2e5a69e02e77d1667183ec552a848ace18ce4eb5acf",
-            "md5": "4c20a4e807fe1af774dbb8fa03182aa1"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.0/solc-linux-amd64-0.5.12-1.0.0",
-            "version": "0.5.12",
-            "build": "commit.9ba4eaaa",
-            "longVersion": "0.5.12+commit.9ba4eaaa",
-            "sha256": "a4b2139f8484fe2053606329c6c955c47d42184dfa3c13362c1acd7b2e9b1587",
-            "md5": "a52a75fbe2d9a8475205ada90274419e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.0/solc-linux-amd64-0.5.11-1.0.0",
-            "version": "0.5.11",
-            "build": "commit.d122d7a4",
-            "longVersion": "0.5.11+commit.d122d7a4",
-            "sha256": "8bfb90d4f1f63c1070bcc64da452c74e36f72f7344f100d26dd4a6c1f3439366",
-            "md5": "9f90565f41d484002f86e17be2a09b1d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.0/solc-linux-amd64-0.5.10-1.0.0",
-            "version": "0.5.10",
-            "build": "commit.bcd13cb8",
-            "longVersion": "0.5.10+commit.bcd13cb8",
-            "sha256": "3a4e54b0696d06a00a3f34a66402391d33669448e92ec808e63f80e284ab56ee",
-            "md5": "d5f0ae68e683227f7a69334c7a99461e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.0/solc-linux-amd64-0.5.9-1.0.0",
-            "version": "0.5.9",
-            "build": "commit.9c617e09",
-            "longVersion": "0.5.9+commit.9c617e09",
-            "sha256": "7aafe6850e5e1a42f74ee47cb0ec6df8242ae1bc7adce404c4a2689b9bcb31ff",
-            "md5": "b7fdaeddeb57af7d2d586dc220a909e2"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.0/solc-linux-amd64-0.5.8-1.0.0",
-            "version": "0.5.8",
-            "build": "commit.4d156757",
-            "longVersion": "0.5.8+commit.4d156757",
-            "sha256": "0d48948d464094d4f3bccde6992d7a6b7bb37a6d1a44545b5ea4d0ee8ef86bfd",
-            "md5": "52d0dbdf1f5005a781da65e80a3c6158"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.0/solc-linux-amd64-0.5.7-1.0.0",
-            "version": "0.5.7",
-            "build": "commit.fd31ba28",
-            "longVersion": "0.5.7+commit.fd31ba28",
-            "sha256": "19379b26162d6bf52fb78af9a9a9155aa0d29f2236646fa71513689575a36d95",
-            "md5": "a3aa08f1bda2433d4024557ec4164396"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.0/solc-linux-amd64-0.5.6-1.0.0",
-            "version": "0.5.6",
-            "build": "commit.444402ef",
-            "longVersion": "0.5.6+commit.444402ef",
-            "sha256": "08b1572bb66da44988e92ed5ad0c0155ed1ee64ae1190eb31682b1071b47b477",
-            "md5": "f622843386e91da729f5f119b58e07b7"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.0/solc-linux-amd64-0.5.5-1.0.0",
-            "version": "0.5.5",
-            "build": "commit.c570574b",
-            "longVersion": "0.5.5+commit.c570574b",
-            "sha256": "9186a80895baa67becaae61d909eb5c7f5bc0e5a0bd3f4e834faca97ee2ac292",
-            "md5": "b1984f0833031fbb7f622ebc67c00f29"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.0/solc-linux-amd64-0.5.4-1.0.0",
-            "version": "0.5.4",
-            "build": "commit.ce41b2d8",
-            "longVersion": "0.5.4+commit.ce41b2d8",
-            "sha256": "5d6da2247587706fa157ce713660aaded6f4b813991c62c95ef44cd43f1104d2",
-            "md5": "aa80eb0f1b0e7ffbc4b841b02d354a47"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.0/solc-linux-amd64-0.5.3-1.0.0",
-            "version": "0.5.3",
-            "build": "commit.4c83b22d",
-            "longVersion": "0.5.3+commit.4c83b22d",
-            "sha256": "fc1be2c4502b70e0edb0fcd001e9e988cb9d22f48d62ef5862ba3ffe52d68bde",
-            "md5": "8dc6d5bcc0b30397c5891bdc562c7394"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.0/solc-linux-amd64-0.5.2-1.0.0",
-            "version": "0.5.2",
-            "build": "commit.6a4c60c4",
-            "longVersion": "0.5.2+commit.6a4c60c4",
-            "sha256": "6d8d3514a95a5b181d93c69efdbbfef8957969150a1b5876deb4a7be0c00949c",
-            "md5": "581d4e1b0a51e6661b9e737709e2e511"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.0/solc-linux-amd64-0.5.1-1.0.0",
-            "version": "0.5.1",
-            "build": "commit.2a5b9858",
-            "longVersion": "0.5.1+commit.2a5b9858",
-            "sha256": "5a5d96842cc9e7bb719f2396935be01af32f981ee17056499728f409eb00e379",
-            "md5": "5da1c8d2d91a46614a54f685adeee07c"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.0/solc-linux-amd64-0.5.0-1.0.0",
-            "version": "0.5.0",
-            "build": "commit.9b091a85",
-            "longVersion": "0.5.0+commit.9b091a85",
-            "sha256": "557b39b9ca05e89dfbfebd7c4fb84de6d995a98952f4d9d3e6846a6b8892e315",
-            "md5": "a412c6a4b9fb2079344c76c3da128e25"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.0/solc-linux-amd64-0.4.26-1.0.0",
-            "version": "0.4.26",
-            "build": "commit.913a6e8b",
-            "longVersion": "0.4.26+commit.913a6e8b",
-            "sha256": "4f00dcd1943688fcc340187d5f678f56b7416425a0ad6f041afc385636e489e5",
-            "md5": "0e6155d4bf6cbd31f4efa1cef125ae9d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.0/solc-linux-amd64-0.4.25-1.0.0",
-            "version": "0.4.25",
-            "build": "commit.82a08142",
-            "longVersion": "0.4.25+commit.82a08142",
-            "sha256": "26fe83a9596a9c9412f9045ad9a227ab87a6a25ad727d73b2d12b62380132147",
-            "md5": "38b83aa76f97e5e4ebb27504d6198c51"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.0/solc-linux-amd64-0.4.24-1.0.0",
-            "version": "0.4.24",
-            "build": "commit.4bc4e42e",
-            "longVersion": "0.4.24+commit.4bc4e42e",
-            "sha256": "07e860c178d9463b6c18c488c53751d7114434e6ebaf68f578b2c37ade432d5d",
-            "md5": "98865d6be48d409258789ecdc76f3cc3"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.0/solc-linux-amd64-0.4.23-1.0.0",
-            "version": "0.4.23",
-            "build": "commit.6d5c9dcf",
-            "longVersion": "0.4.23+commit.6d5c9dcf",
-            "sha256": "b049bac217234f87386c49ab4d03795ccf99eda173a601a2daf87b43f0d6efcb",
-            "md5": "ed043b6025d287666b862721fd524546"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.0/solc-linux-amd64-0.4.22-1.0.0",
-            "version": "0.4.22",
-            "build": "commit.4e06d80c",
-            "longVersion": "0.4.22+commit.4e06d80c",
-            "sha256": "b629f5f10e435ebb032c5c67150a4a25385135e601c78bb159edfe758081d6d2",
-            "md5": "7d048a53007f61000d4ee08f279e18fa"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.0/solc-linux-amd64-0.4.21-1.0.0",
-            "version": "0.4.21",
-            "build": "commit.6e44b9f8",
-            "longVersion": "0.4.21+commit.6e44b9f8",
-            "sha256": "538c4955a95cf610ae63ba15b5cb04a6d1aebf92800d08cb6e817eedf78b731b",
-            "md5": "f268f694fc8645b9fbc07c9ce7394283"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.0/solc-linux-amd64-0.4.20-1.0.0",
-            "version": "0.4.20",
-            "build": "commit.b3908d23",
-            "longVersion": "0.4.20+commit.b3908d23",
-            "sha256": "83c16983bfea9a0d6db8c6350b72ea92df4783eec887ecddd18474b887205782",
-            "md5": "be6514bcb23641bb37e1e37c6b4d4b9d"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.0/solc-linux-amd64-0.4.19-1.0.0",
-            "version": "0.4.19",
-            "build": "commit.3966cb28",
-            "longVersion": "0.4.19+commit.3966cb28",
-            "sha256": "b69f3b914c99e4f39c788efcb70639c9739bb2de288716b5db97eb0720f7f52f",
-            "md5": "1e73c31247e48b0e3454f5a4c2aae5bb"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.0/solc-linux-amd64-0.4.18-1.0.0",
-            "version": "0.4.18",
-            "build": "commit.151d837e",
-            "longVersion": "0.4.18+commit.151d837e",
-            "sha256": "6e2da49cc8f13815e60c7c037d42e11b3ea7cf5502bed8ec84ec382c524707b9",
-            "md5": "b0ca6565ec247d6b8b205d0a48b47fb4"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.0/solc-linux-amd64-0.4.17-1.0.0",
-            "version": "0.4.17",
-            "build": "commit.cca45a37",
-            "longVersion": "0.4.17+commit.cca45a37",
-            "sha256": "5eaa3e431a3f6b7787c94d3ad16fbbf6a0f0ce70d1e02f20f723385f53d12af8",
-            "md5": "58c976ce069bfdf1118480af9d92df50"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.0/solc-linux-amd64-0.4.16-1.0.0",
-            "version": "0.4.16",
-            "build": "commit.3d30d40f",
-            "longVersion": "0.4.16+commit.3d30d40f",
-            "sha256": "d2d343bc646667ea77f6a8a4efe146a893e6a513874f68f24d6835cca72fb507",
-            "md5": "d9f338ff113e372a6d37a032a769c21e"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.0/solc-linux-amd64-0.4.15-1.0.0",
-            "version": "0.4.15",
-            "build": "commit.b30064a1",
-            "longVersion": "0.4.15+commit.b30064a1",
-            "sha256": "7af34aacb87332a732a6a5b7367cac2b65e2996c570043830e02a12ff7781499",
-            "md5": "968c8fe98513a15d27a60d8897e79ef6"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.0/solc-linux-amd64-0.4.14-1.0.0",
-            "version": "0.4.14",
-            "build": "commit.181e5386",
-            "longVersion": "0.4.14+commit.181e5386",
-            "sha256": "7af34aacb87332a732a6a5b7367cac2b65e2996c570043830e02a12ff7781499",
-            "md5": "968c8fe98513a15d27a60d8897e79ef6"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.0/solc-linux-amd64-0.4.13-1.0.0",
-            "version": "0.4.13",
-            "build": "commit.18f538df",
-            "longVersion": "0.4.13+commit.18f538df",
-            "sha256": "e2ed910dc1d7745fe9d949e7b7285c7a3db51ba35563b5f91f11e3ee21565832",
-            "md5": "eb5b471d4de7f747911fcb0017d3eb26"
-        },
-        {
-            "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.0/solc-linux-amd64-0.4.12-1.0.0",
-            "version": "0.4.12",
-            "build": "commit.3759ffdc",
-            "longVersion": "0.4.12+commit.3759ffdc",
-            "sha256": "e2ed910dc1d7745fe9d949e7b7285c7a3db51ba35563b5f91f11e3ee21565832",
-            "md5": "eb5b471d4de7f747911fcb0017d3eb26"
-        }
-    ]
+  "builds": [
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.30-1.0.2/solc-linux-amd64-0.8.30-1.0.2",
+      "version": "0.8.30",
+      "build": "commit.ef98d03b",
+      "longVersion": "0.8.30+commit.ef98d03b",
+      "sha256": "50159c23fede9c666801c22ce1509a5785a4f6eeba750728a524860be420f49c",
+      "md5": "90cb0d080ebaeb3debb70edd141d118a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.30-1.0.1/solc-linux-amd64-0.8.30-1.0.1",
+      "version": "0.8.30",
+      "build": "commit.00ac0bdc",
+      "longVersion": "0.8.30+commit.00ac0bdc",
+      "sha256": "4722097f68a6489a75c93ec3cd314314b8faaedb6a2574332ba2ab7f0c957f5c",
+      "md5": "54b432a4f8bb7234c09277a75a0a4cd2"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.29-1.0.2/solc-linux-amd64-0.8.29-1.0.2",
+      "version": "0.8.29",
+      "build": "commit.ad7f9a3a",
+      "longVersion": "0.8.29+commit.ad7f9a3a",
+      "sha256": "6266090290a8b6171e36d4ca7a9c4e5010d7d860ff6b51f56c4c0cbf21396a32",
+      "md5": "298d6010a1de3489ac712d5b8f3cda7d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.28-1.0.2/solc-linux-amd64-0.8.28-1.0.2",
+      "version": "0.8.28",
+      "build": "commit.bebe6332",
+      "longVersion": "0.8.28+commit.bebe6332",
+      "sha256": "2b611f666099ed075eda6c7053e4901d0a70c63658a973fba7659a524f5ffe4d",
+      "md5": "5863f663adfcc645a82e9047e16f0c1e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.27-1.0.2/solc-linux-amd64-0.8.27-1.0.2",
+      "version": "0.8.27",
+      "build": "commit.699f7ad2",
+      "longVersion": "0.8.27+commit.699f7ad2",
+      "sha256": "95f539cd2e2d9d77d07003337f6161eccca618947b5bd843dea298316aa1dcc1",
+      "md5": "b6bd8423d5fb95de82a8ca11e74f589a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.26-1.0.2/solc-linux-amd64-0.8.26-1.0.2",
+      "version": "0.8.26",
+      "build": "commit.6e3564fd",
+      "longVersion": "0.8.26+commit.6e3564fd",
+      "sha256": "95bb1c0e7bd23e3433fca0671a027d332eb698b395e8689a80076e3d62667bf4",
+      "md5": "bc56f79d55b294335ce4f0d2c1a4d68c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.2/solc-linux-amd64-0.8.25-1.0.2",
+      "version": "0.8.25",
+      "build": "commit.afa02b1b",
+      "longVersion": "0.8.25+commit.afa02b1b",
+      "sha256": "72a1ff7b1fc34a81da4883180ccb0cc2e154e19fb46b811350c60aac456d08ea",
+      "md5": "43b2192727b73be08bba51bee7f6aa77"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.2/solc-linux-amd64-0.8.24-1.0.2",
+      "version": "0.8.24",
+      "build": "commit.08961712",
+      "longVersion": "0.8.24+commit.08961712",
+      "sha256": "473508dc7108adf75bdc84325d57b19edde3f2cdf28f564a3086bd00e4a36871",
+      "md5": "31b42c3d2d087c1d7b633fd44349ff84"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.2/solc-linux-amd64-0.8.23-1.0.2",
+      "version": "0.8.23",
+      "build": "commit.46319df5",
+      "longVersion": "0.8.23+commit.46319df5",
+      "sha256": "68ac9751cb62fe3c4c3365acdd07b569201929a7e7a7cdd0f740719fdcf5b106",
+      "md5": "1dc4053e5dc4e97187383cc8cf66c2d1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.2/solc-linux-amd64-0.8.22-1.0.2",
+      "version": "0.8.22",
+      "build": "commit.31473d09",
+      "longVersion": "0.8.22+commit.31473d09",
+      "sha256": "c72042d546d73dd470471a7a7ff9eeb3ff2113bd3a7eb0afcf8ab92b036b42c9",
+      "md5": "6d33b689887f4474ddaabe36d212c4d7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.2/solc-linux-amd64-0.8.21-1.0.2",
+      "version": "0.8.21",
+      "build": "commit.d49e9f0d",
+      "longVersion": "0.8.21+commit.d49e9f0d",
+      "sha256": "c35dce96b9a44575a67ac0d660f5eccd4bd5cc4549c6b8fad904364fd86c7476",
+      "md5": "3610492d66b9bd62645b33ee7cb435b3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.2/solc-linux-amd64-0.8.20-1.0.2",
+      "version": "0.8.20",
+      "build": "commit.0850dd1f",
+      "longVersion": "0.8.20+commit.0850dd1f",
+      "sha256": "9516f4eea50d90d83972bea5a63f3dd8ffdc50543917a56176fe8329addc8756",
+      "md5": "766bb06ac7a0044d0227a69a67c39b5e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.2/solc-linux-amd64-0.8.19-1.0.2",
+      "version": "0.8.19",
+      "build": "commit.02dfbcaf",
+      "longVersion": "0.8.19+commit.02dfbcaf",
+      "sha256": "905b88f3895135f2b8fc02df0470c16b4fb3e8d384a79d10505439b62b7495c8",
+      "md5": "1d567e3617fe83baa62d216e88e94e9e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.2/solc-linux-amd64-0.8.18-1.0.2",
+      "version": "0.8.18",
+      "build": "commit.66dde314",
+      "longVersion": "0.8.18+commit.66dde314",
+      "sha256": "cca7b987d1edf82051b39cd748c40bba50efdc9077bed4932877486eee54a00f",
+      "md5": "a76e5bb1e54bc9343de9af0df388c3ac"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.2/solc-linux-amd64-0.8.17-1.0.2",
+      "version": "0.8.17",
+      "build": "commit.43d91776",
+      "longVersion": "0.8.17+commit.43d91776",
+      "sha256": "a9f4dac309a2186949cbc9a605762cc0b190a9dbb9b07c23ff2c5fdde3c527b5",
+      "md5": "f1f511d07f8bb0059afec0b6f3e60c80"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.2/solc-linux-amd64-0.8.16-1.0.2",
+      "version": "0.8.16",
+      "build": "commit.5143ff11",
+      "longVersion": "0.8.16+commit.5143ff11",
+      "sha256": "aebdbdaec39615f6e385a5e650e43758bb9ccb806604f7bc9664a78b4efa8e34",
+      "md5": "f52c80acf6207260fd35926bed03b2b5"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.2/solc-linux-amd64-0.8.15-1.0.2",
+      "version": "0.8.15",
+      "build": "commit.bd696a3c",
+      "longVersion": "0.8.15+commit.bd696a3c",
+      "sha256": "d4cbf9efeb6cdd7d5fc6bf80689a9790ea543f65116987cd6e895c4b5e888a20",
+      "md5": "8afb99b9dbcf90e0a0d35f07aec1abc9"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.2/solc-linux-amd64-0.8.14-1.0.2",
+      "version": "0.8.14",
+      "build": "commit.2722714a",
+      "longVersion": "0.8.14+commit.2722714a",
+      "sha256": "4822f4c4a0e8383c34016d9b36d0ca29029b5bb6ceb21eaa13fd871b545cd02d",
+      "md5": "ed3aa9820415225dcdc8bbf0eb1de0ee"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.2/solc-linux-amd64-0.8.13-1.0.2",
+      "version": "0.8.13",
+      "build": "commit.75685a9d",
+      "longVersion": "0.8.13+commit.75685a9d",
+      "sha256": "ed12803e37157583301ca5e21c2cbab04bbe1f6277481b2146d39ad19e4da251",
+      "md5": "fdbd1e98de0fb23b8e41260ebe587c54"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.2/solc-linux-amd64-0.8.12-1.0.2",
+      "version": "0.8.12",
+      "build": "commit.3a5516c0",
+      "longVersion": "0.8.12+commit.3a5516c0",
+      "sha256": "90959592d66561d1b1d304432a335d44db33a8e2f24df02b7fc37ee813ec9e44",
+      "md5": "749d5fcd346cb53189fc9d2583091dfc"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.2/solc-linux-amd64-0.8.11-1.0.2",
+      "version": "0.8.11",
+      "build": "commit.93ab3e11",
+      "longVersion": "0.8.11+commit.93ab3e11",
+      "sha256": "d8cf74f958eb789f965ffcff9bb94e4333a6b26f35292ae7881fce6fd5c31997",
+      "md5": "a5f006362be34731fe7255603142e13c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.2/solc-linux-amd64-0.8.10-1.0.2",
+      "version": "0.8.10",
+      "build": "commit.6d05b353",
+      "longVersion": "0.8.10+commit.6d05b353",
+      "sha256": "1abe77d3eef95367ff77b850685740a5a283d0b82ce09ee3a57177a1041a4b12",
+      "md5": "fe51ef06bd88b1b0be840344bbb94a6b"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.2/solc-linux-amd64-0.8.9-1.0.2",
+      "version": "0.8.9",
+      "build": "commit.f99fe163",
+      "longVersion": "0.8.9+commit.f99fe163",
+      "sha256": "794b1b1fb62213fe34d509f73972e532035aaea9c06e8dc3998e96fb9434ad81",
+      "md5": "fb09707b9b35bac0026106ddd6c90bcc"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.2/solc-linux-amd64-0.8.8-1.0.2",
+      "version": "0.8.8",
+      "build": "commit.df24bf13",
+      "longVersion": "0.8.8+commit.df24bf13",
+      "sha256": "4af92922ec08d61f135714233ee8f1635108b62f56d860c91d79055353c97b97",
+      "md5": "db9cc9e5d1b6e1f44aa3e1351d504082"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.2/solc-linux-amd64-0.8.7-1.0.2",
+      "version": "0.8.7",
+      "build": "commit.d50f5ead",
+      "longVersion": "0.8.7+commit.d50f5ead",
+      "sha256": "b8b30f2f3e2e437355fd7cae71b3f81ab30aa341cdb475856dc52dde81a6e0c6",
+      "md5": "aa1e62028c414d70538cacd4a20735cd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.2/solc-linux-amd64-0.8.6-1.0.2",
+      "version": "0.8.6",
+      "build": "commit.93c6ff68",
+      "longVersion": "0.8.6+commit.93c6ff68",
+      "sha256": "3ecf0bc4796ecb0f7df1d28c752c5bd4d28f298193fa35f1a82bd9de18b374de",
+      "md5": "3e2aaa67e33fa658dfe9b09980c89478"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.2/solc-linux-amd64-0.8.5-1.0.2",
+      "version": "0.8.5",
+      "build": "commit.d6a457f9",
+      "longVersion": "0.8.5+commit.d6a457f9",
+      "sha256": "d466284f4b2d0e80c6469ab4a77df8910a706f69bcf0fa8f6b846ee6f2c982ec",
+      "md5": "75299a98352830e56ff21b6a1e8ee007"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.2/solc-linux-amd64-0.8.4-1.0.2",
+      "version": "0.8.4",
+      "build": "commit.960de6be",
+      "longVersion": "0.8.4+commit.960de6be",
+      "sha256": "ae21e57b307e0174e24e3aabb1440a31e9665afba515b86e5915c2b6ea3f6902",
+      "md5": "769617ad6073b4427acff4cee28965d2"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.2/solc-linux-amd64-0.8.3-1.0.2",
+      "version": "0.8.3",
+      "build": "commit.2b64590a",
+      "longVersion": "0.8.3+commit.2b64590a",
+      "sha256": "56959361a0ae8991dbe1069a5663e8e889a6633f01211cb8e5bddd9e6b6fa80d",
+      "md5": "ac84990104492b4e13c1c55d07fab5f6"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.2/solc-linux-amd64-0.8.2-1.0.2",
+      "version": "0.8.2",
+      "build": "commit.39592d9c",
+      "longVersion": "0.8.2+commit.39592d9c",
+      "sha256": "d250a35067ec8eeccb461a8fbdebd3977a37631318e2a529c4bb1b3c2727a8f0",
+      "md5": "50fd04235d13c632344434afaf9fabc1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.2/solc-linux-amd64-0.8.1-1.0.2",
+      "version": "0.8.1",
+      "build": "commit.45be2fa3",
+      "longVersion": "0.8.1+commit.45be2fa3",
+      "sha256": "80ec6522f53f81e5a15158779078a6285fb50a384db9468b0cd3997703c7a611",
+      "md5": "3ea556497ea85742328c571d0ddfe0db"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.2/solc-linux-amd64-0.8.0-1.0.2",
+      "version": "0.8.0",
+      "build": "commit.be1db69a",
+      "longVersion": "0.8.0+commit.be1db69a",
+      "sha256": "888fb0ff0bf20933cd6d33ffab2878dbd2af07c1e01b58668c4cdc5336104b64",
+      "md5": "1e633bba64b389e4823daffc712f60b1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.2/solc-linux-amd64-0.7.6-1.0.2",
+      "version": "0.7.6",
+      "build": "commit.2a3b15f8",
+      "longVersion": "0.7.6+commit.2a3b15f8",
+      "sha256": "79046983b49c1539cc5cfb9ec27f36e9514fedec808e6ade87fe8ee1c4e9d58e",
+      "md5": "5b5180e346adee173f3af5349035be10"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.2/solc-linux-amd64-0.7.5-1.0.2",
+      "version": "0.7.5",
+      "build": "commit.73dfba2d",
+      "longVersion": "0.7.5+commit.73dfba2d",
+      "sha256": "c3e3cad9190fa3162cbd577f6a8f6aa1a6d72902b09e2c3bd7912afe66eb424c",
+      "md5": "38817ec528163037fdf0a14474576952"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.2/solc-linux-amd64-0.7.4-1.0.2",
+      "version": "0.7.4",
+      "build": "commit.5480eec0",
+      "longVersion": "0.7.4+commit.5480eec0",
+      "sha256": "d1800797875654c25d05cde92248f250cefa070f772f04fdb12590aa94cf4b2f",
+      "md5": "73eee42ab523fb4b8bc184569099ceb4"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.2/solc-linux-amd64-0.7.3-1.0.2",
+      "version": "0.7.3",
+      "build": "commit.6f47fc56",
+      "longVersion": "0.7.3+commit.6f47fc56",
+      "sha256": "104552c3edd865081fb8330f43ed90443680f5a3d4c223d13a7d37b31965b597",
+      "md5": "9e8a0ae75d2decb88a336dcc8b74dddf"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.2/solc-linux-amd64-0.7.2-1.0.2",
+      "version": "0.7.2",
+      "build": "commit.d0d89ec6",
+      "longVersion": "0.7.2+commit.d0d89ec6",
+      "sha256": "5172299c2818e0d235abe4ac3a066a1d5b072e60b4ffe748c943d7f75a638212",
+      "md5": "7f93713bef0d7a4e5a3dc0a826032d17"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.2/solc-linux-amd64-0.7.1-1.0.2",
+      "version": "0.7.1",
+      "build": "commit.0d65037b",
+      "longVersion": "0.7.1+commit.0d65037b",
+      "sha256": "62c41a1c890102ee9c55977a933acd20a5a0af0f7e65281f63a4506dbfbf5a83",
+      "md5": "a0de75b9b3723856990c62b34349c60f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.2/solc-linux-amd64-0.7.0-1.0.2",
+      "version": "0.7.0",
+      "build": "commit.40253ef2",
+      "longVersion": "0.7.0+commit.40253ef2",
+      "sha256": "86e481c1ede4f881f4e36c294ec80816e7bc3515738d1471cb72831da5a9d258",
+      "md5": "23b4c4de280a6bf434f639e2db14ec24"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.2/solc-linux-amd64-0.6.12-1.0.2",
+      "version": "0.6.12",
+      "build": "commit.33ef8a44",
+      "longVersion": "0.6.12+commit.33ef8a44",
+      "sha256": "0ca463a1d82e5b0df601ef39cac77cae3e6f41015aeedc5674236fc2cc27e17b",
+      "md5": "d28b127f674b7a61a3fcbda0216c9e42"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.2/solc-linux-amd64-0.6.11-1.0.2",
+      "version": "0.6.11",
+      "build": "commit.2569d996",
+      "longVersion": "0.6.11+commit.2569d996",
+      "sha256": "098a91aafb62b9c6d91121f3f852686b9dad55a5d7bf3c4c06b068a2cf045e4a",
+      "md5": "403ad2847dc4e46756ce04d7e9499cf9"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.2/solc-linux-amd64-0.6.10-1.0.2",
+      "version": "0.6.10",
+      "build": "commit.ed7476ee",
+      "longVersion": "0.6.10+commit.ed7476ee",
+      "sha256": "824258a2dd37e1c1219d7afcff965d4394e1b564ea35b3c8be5c9514b16a6d44",
+      "md5": "7a4def97541f8ce6da77e1b68514067b"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.2/solc-linux-amd64-0.6.9-1.0.2",
+      "version": "0.6.9",
+      "build": "commit.18e7a6b6",
+      "longVersion": "0.6.9+commit.18e7a6b6",
+      "sha256": "cc35202b96bd1a96995b2572a1075b9eafbd694d25ba6361f3cff62d2a5cc3b5",
+      "md5": "ad1f529e23f1a07eaf2215832d9a69b1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.2/solc-linux-amd64-0.6.8-1.0.2",
+      "version": "0.6.8",
+      "build": "commit.a9269b12",
+      "longVersion": "0.6.8+commit.a9269b12",
+      "sha256": "31fb28ec1c8966d3c6dcc3f608d488e87a3062759b4a05237ad3d5fbe873ada4",
+      "md5": "1794e8fcd69aa83dda6c5755015d9808"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.2/solc-linux-amd64-0.6.7-1.0.2",
+      "version": "0.6.7",
+      "build": "commit.8d19859e",
+      "longVersion": "0.6.7+commit.8d19859e",
+      "sha256": "fffe73cd57b8ed5d0c181ca0c9bf44e2f92a58935fcd78d6cb7e838a041c098e",
+      "md5": "8289189d7d53b6787fed5ba69f552404"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.2/solc-linux-amd64-0.6.6-1.0.2",
+      "version": "0.6.6",
+      "build": "commit.a96e523a",
+      "longVersion": "0.6.6+commit.a96e523a",
+      "sha256": "6bbed3d26530149d33b4d566027a6b440bfe031e4e5d69a015a3b487b386b794",
+      "md5": "ffdc89d0b424bca39d5064c5c7ae0e53"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.2/solc-linux-amd64-0.6.5-1.0.2",
+      "version": "0.6.5",
+      "build": "commit.f7d073dd",
+      "longVersion": "0.6.5+commit.f7d073dd",
+      "sha256": "5d615af8914f7ef5316cdc5c016c8b8f93313f78f07eb4c90c545c82e7372ed6",
+      "md5": "2b054e86fbb3976148ed7fe026a4c3af"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.2/solc-linux-amd64-0.6.4-1.0.2",
+      "version": "0.6.4",
+      "build": "commit.dc2d48cf",
+      "longVersion": "0.6.4+commit.dc2d48cf",
+      "sha256": "fb657a1f3e54d977b583234a5607b33ec345f9980fb3e0e405d93ec552b9f864",
+      "md5": "a4b3301ba8815395a089ee9430973f91"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.2/solc-linux-amd64-0.6.3-1.0.2",
+      "version": "0.6.3",
+      "build": "commit.533e22c1",
+      "longVersion": "0.6.3+commit.533e22c1",
+      "sha256": "539a1fb327c8f54d83e637ae813247579bfe35d376aa5bbb5977588518121820",
+      "md5": "b696eb3f82f355487779605a8117943f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.2/solc-linux-amd64-0.6.2-1.0.2",
+      "version": "0.6.2",
+      "build": "commit.d8de1db0",
+      "longVersion": "0.6.2+commit.d8de1db0",
+      "sha256": "aab1b977664a0d2abd92ac9b5aa694ae3b5d1ddf7f9dd978a5a9c4f70bd8638b",
+      "md5": "06a5326d3b0e4e22caa9ada572d6fd8a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.2/solc-linux-amd64-0.6.1-1.0.2",
+      "version": "0.6.1",
+      "build": "commit.44442ce9",
+      "longVersion": "0.6.1+commit.44442ce9",
+      "sha256": "6c252551bebbf10b7f66d6badc220b20e5f6514039be186990e91e9875204e37",
+      "md5": "db9db3a6c18748f3e8a1ed33787cbc08"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.2/solc-linux-amd64-0.6.0-1.0.2",
+      "version": "0.6.0",
+      "build": "commit.07467f11",
+      "longVersion": "0.6.0+commit.07467f11",
+      "sha256": "23e514ca10967ed01e42f7f222b951fbb2efa6c32c7b453e18952ea66d3ab379",
+      "md5": "8c5fad8cdb0647786581b5ef2bfbb86b"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.2/solc-linux-amd64-0.5.17-1.0.2",
+      "version": "0.5.17",
+      "build": "commit.a7233674",
+      "longVersion": "0.5.17+commit.a7233674",
+      "sha256": "73dc00e09d76c13e306c1d76d4afb4820ae10b90377453c88e8aafd866101b2a",
+      "md5": "478f9ffc4ded0cba4c418d8d40a53102"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.2/solc-linux-amd64-0.5.16-1.0.2",
+      "version": "0.5.16",
+      "build": "commit.c2e9466e",
+      "longVersion": "0.5.16+commit.c2e9466e",
+      "sha256": "457b9821b2e09b777c429fee48cc2e2499daaa0554b118c03344ce01aeb79aaa",
+      "md5": "5477ae351a05b7a3f2f5147b0fecfd55"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.2/solc-linux-amd64-0.5.15-1.0.2",
+      "version": "0.5.15",
+      "build": "commit.4804712c",
+      "longVersion": "0.5.15+commit.4804712c",
+      "sha256": "1e10c25a0014f7b7048f75eca5e22d93f3bfd222fd624e52ae85d28079d8fc22",
+      "md5": "2f2a4cce80d7d382c92dfff7041352e0"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.2/solc-linux-amd64-0.5.14-1.0.2",
+      "version": "0.5.14",
+      "build": "commit.8a906d19",
+      "longVersion": "0.5.14+commit.8a906d19",
+      "sha256": "5f9b9b76bdd512ef1eb0a5aafa7bfa1e994085f096e681a725c8f36672eba5e6",
+      "md5": "c2cab756181968d5f6c139762d18eb49"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.2/solc-linux-amd64-0.5.13-1.0.2",
+      "version": "0.5.13",
+      "build": "commit.015fd304",
+      "longVersion": "0.5.13+commit.015fd304",
+      "sha256": "04a3485f21abe7a8845934abea17306a051627bd8727ae2aedb70ceacbad94f3",
+      "md5": "540adee566f20bf44803d4b2cd43b982"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.2/solc-linux-amd64-0.5.12-1.0.2",
+      "version": "0.5.12",
+      "build": "commit.aa7461d7",
+      "longVersion": "0.5.12+commit.aa7461d7",
+      "sha256": "de0b85982dff312f223fccea8e15e8a0a379075989661ae2eb2f0656318b6545",
+      "md5": "61bad2e034c051bd7c7a8898e4eeec10"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.2/solc-linux-amd64-0.5.11-1.0.2",
+      "version": "0.5.11",
+      "build": "commit.3c0623a7",
+      "longVersion": "0.5.11+commit.3c0623a7",
+      "sha256": "b485ae815c3598cbb0be1afff55332a67109b931fb1cac0d563a3a43d25df8de",
+      "md5": "7a71b7acc8e89eb117ae873c5136cdb7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.2/solc-linux-amd64-0.5.10-1.0.2",
+      "version": "0.5.10",
+      "build": "commit.c92eaccc",
+      "longVersion": "0.5.10+commit.c92eaccc",
+      "sha256": "191dccde1ff5b105244d16c80fc157bf6b268e0b4f17bf2e2ab9120ce7047fe8",
+      "md5": "eb0637ced5fe63a508d0e350d362f08a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.2/solc-linux-amd64-0.5.9-1.0.2",
+      "version": "0.5.9",
+      "build": "commit.fe8b3fd3",
+      "longVersion": "0.5.9+commit.fe8b3fd3",
+      "sha256": "747d733a6090fcdcfbde9abd5f0deeac5c23531153c1fc82dfa5e5c5774d99df",
+      "md5": "752027c1dba8ea5c33fdb7a1123be42a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.2/solc-linux-amd64-0.5.8-1.0.2",
+      "version": "0.5.8",
+      "build": "commit.f3b9e94b",
+      "longVersion": "0.5.8+commit.f3b9e94b",
+      "sha256": "25732f603fafbd8bca9624c080430d61ee6300c5f8b6f9aa33e6cf6a855ef5e4",
+      "md5": "bc8e9d53d156f55bd5b41ea1c4199b17"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.2/solc-linux-amd64-0.5.7-1.0.2",
+      "version": "0.5.7",
+      "build": "commit.d134911b",
+      "longVersion": "0.5.7+commit.d134911b",
+      "sha256": "2c7a48b2313ca6be7f24103e76202bf6d13c92d3ffb94e355b7fb35b735a93d6",
+      "md5": "2ccf0f6e77bbf0fde1305d9d008482ea"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.2/solc-linux-amd64-0.5.6-1.0.2",
+      "version": "0.5.6",
+      "build": "commit.2b4fd19b",
+      "longVersion": "0.5.6+commit.2b4fd19b",
+      "sha256": "038746756e98fa94086da304254d348ed24bd37f6b1dd9f95f1da872e1ac4464",
+      "md5": "76a289fb3fd5c62e1b70ca3751448b9a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.2/solc-linux-amd64-0.5.5-1.0.2",
+      "version": "0.5.5",
+      "build": "commit.4febab45",
+      "longVersion": "0.5.5+commit.4febab45",
+      "sha256": "c90f33026a61eacf002817b0c08a475061b1d1c6a54f74e5bcee54decedef05f",
+      "md5": "79e7a405d32677e7a87d74b7a76c8f37"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.2/solc-linux-amd64-0.5.4-1.0.2",
+      "version": "0.5.4",
+      "build": "commit.2ee857e6",
+      "longVersion": "0.5.4+commit.2ee857e6",
+      "sha256": "079c983e3edbd07cc173224038f56420c5a3d2fb3778108cf1d8decf3e2aa150",
+      "md5": "2c448341a9d4683fff37083cb2e05e72"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.2/solc-linux-amd64-0.5.3-1.0.2",
+      "version": "0.5.3",
+      "build": "commit.17a77a4e",
+      "longVersion": "0.5.3+commit.17a77a4e",
+      "sha256": "d454b5503370d6ce98e454336a143d4a94dbf256ba4d395cbe2849aaa4972095",
+      "md5": "6f540991fe49c8bb2bb4b5c77d7b98e8"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.2/solc-linux-amd64-0.5.2-1.0.2",
+      "version": "0.5.2",
+      "build": "commit.60bd553c",
+      "longVersion": "0.5.2+commit.60bd553c",
+      "sha256": "79759458964d7936071ed68c370b7ee9bbe9de947e9256f30574a41741dd446a",
+      "md5": "edff5963a16fd5c07a307057cad0618c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.2/solc-linux-amd64-0.5.1-1.0.2",
+      "version": "0.5.1",
+      "build": "commit.1f310a97",
+      "longVersion": "0.5.1+commit.1f310a97",
+      "sha256": "31c94455c2a448c2715ac8fda00149ba4240c3c93cc0fb9e8cdc160a552aab19",
+      "md5": "fcf324bef780cd4f0af57aa517546f0b"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.2/solc-linux-amd64-0.5.0-1.0.2",
+      "version": "0.5.0",
+      "build": "commit.59f6dc0e",
+      "longVersion": "0.5.0+commit.59f6dc0e",
+      "sha256": "7cd728768c33304217c2ba60aa7a0b211c9755d36d23f20c0faa78b387dba5fc",
+      "md5": "996ba174624d1239773473e6c823ca46"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.2/solc-linux-amd64-0.4.26-1.0.2",
+      "version": "0.4.26",
+      "build": "commit.4e0a9691",
+      "longVersion": "0.4.26+commit.4e0a9691",
+      "sha256": "582fc2447170a8bd5be130e1f2a1fa73406cdf1fd9f044fccab28a21c0c822b5",
+      "md5": "4386374993fbc7a61c62c7aed8a91619"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.2/solc-linux-amd64-0.4.25-1.0.2",
+      "version": "0.4.25",
+      "build": "commit.cce67d88",
+      "longVersion": "0.4.25+commit.cce67d88",
+      "sha256": "45e2f792ad73dc8b61cd9992122e067f206528eb27e0058d2f9527db04ba5c84",
+      "md5": "033a58bfee1718b2569bbefc702e04f3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.2/solc-linux-amd64-0.4.24-1.0.2",
+      "version": "0.4.24",
+      "build": "commit.49e684ac",
+      "longVersion": "0.4.24+commit.49e684ac",
+      "sha256": "c25cf251b7b29ea39969d612b69fffeb0c230f566c65d8103c4d4b5e63f87052",
+      "md5": "c3aca8c96ca73b98f0bf2c43bd9da304"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.2/solc-linux-amd64-0.4.23-1.0.2",
+      "version": "0.4.23",
+      "build": "commit.9f1db7e6",
+      "longVersion": "0.4.23+commit.9f1db7e6",
+      "sha256": "e3d1a5de4f369f597233368f5adca3bfd8560023878d2c9180723330cd3c0217",
+      "md5": "0e64bea534620e29ce2f92ac813b031f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.2/solc-linux-amd64-0.4.22-1.0.2",
+      "version": "0.4.22",
+      "build": "commit.dbfa9f8e",
+      "longVersion": "0.4.22+commit.dbfa9f8e",
+      "sha256": "2db94bbf77e50725d1a0de213380429bd8ee510fb54d21c16caf73a287b5181b",
+      "md5": "f986de8b318c0886a2a032a903f3b3fa"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.2/solc-linux-amd64-0.4.21-1.0.2",
+      "version": "0.4.21",
+      "build": "commit.81b2e283",
+      "longVersion": "0.4.21+commit.81b2e283",
+      "sha256": "529d2305e716b5c7a388b49403831728cd369546b408dee68694dcf4a621193e",
+      "md5": "805ef2cb60f3214b8f7d8788bb58575e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.2/solc-linux-amd64-0.4.20-1.0.2",
+      "version": "0.4.20",
+      "build": "commit.f935083e",
+      "longVersion": "0.4.20+commit.f935083e",
+      "sha256": "d609e9784d8dca68ba81ee4b9a2e1fc98dd4ca4782ef1f335407f4aca413204f",
+      "md5": "c7a2757b2ebff76eba5e40149afb0e92"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.2/solc-linux-amd64-0.4.19-1.0.2",
+      "version": "0.4.19",
+      "build": "commit.81b0ed04",
+      "longVersion": "0.4.19+commit.81b0ed04",
+      "sha256": "deece50037405a9e44bffed30687091eac51c8af05571ed4054d883166e073ee",
+      "md5": "d03241155046ea5544d9d3b17be91d6d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.2/solc-linux-amd64-0.4.18-1.0.2",
+      "version": "0.4.18",
+      "build": "commit.f756e231",
+      "longVersion": "0.4.18+commit.f756e231",
+      "sha256": "a556b27d0905f86b62824e15b36fc9de31764a2a8c77cc9c5c9e31aa7933d7b0",
+      "md5": "161fa29a0d31f9a2befda27854daff43"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.2/solc-linux-amd64-0.4.17-1.0.2",
+      "version": "0.4.17",
+      "build": "commit.fb2eb561",
+      "longVersion": "0.4.17+commit.fb2eb561",
+      "sha256": "871e438ce387a9f7b4f77583341c2d4cdaaacda4b31b4421a6a415e9191ad1af",
+      "md5": "b3a719e11f0fba3c4f0e98c443611c5d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.2/solc-linux-amd64-0.4.16-1.0.2",
+      "version": "0.4.16",
+      "build": "commit.ea20c4e1",
+      "longVersion": "0.4.16+commit.ea20c4e1",
+      "sha256": "123185adb5e9980c5a3a1b5fe02d9b33fa5c79f707184196b37c3ecde251492c",
+      "md5": "2a38f28b97d2792b6a87bd63074fa0a6"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.2/solc-linux-amd64-0.4.15-1.0.2",
+      "version": "0.4.15",
+      "build": "commit.54594c47",
+      "longVersion": "0.4.15+commit.54594c47",
+      "sha256": "cce1af6afbaa4720f580fa09d66db3ce87db04e78ccad9cc3df96dec21f24f50",
+      "md5": "6f527b7ab4c25066bb0a53c7ef729cbb"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.2/solc-linux-amd64-0.4.14-1.0.2",
+      "version": "0.4.14",
+      "build": "commit.45b3d487",
+      "longVersion": "0.4.14+commit.45b3d487",
+      "sha256": "ff41c40d812ef1ff8c68abe3bb559f4fb341dbc8e4bd7031d7d82611c3ae2123",
+      "md5": "c4c66cfe2f37e0518aea381c8c228215"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.2/solc-linux-amd64-0.4.13-1.0.2",
+      "version": "0.4.13",
+      "build": "commit.f9bd9222",
+      "longVersion": "0.4.13+commit.f9bd9222",
+      "sha256": "592782943cd0ff71c72245b93451b07aee69cd2ea5272fec79d8635fd1251383",
+      "md5": "1adeefc1dab34055d07e8eda544fca44"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.2/solc-linux-amd64-0.4.12-1.0.2",
+      "version": "0.4.12",
+      "build": "commit.5398a434",
+      "longVersion": "0.4.12+commit.5398a434",
+      "sha256": "70db07ead63c54012d0fbaa4b1b5d08f390442252ae429fa77ce8a5901bb07b1",
+      "md5": "2107fd55fe0b17917f685c664be26977"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.29-1.0.1/solc-linux-amd64-0.8.29-1.0.1",
+      "version": "0.8.29",
+      "build": "commit.1d178b8e",
+      "longVersion": "0.8.29+commit.1d178b8e",
+      "sha256": "b57887d5a0adcb9419f65bf65092664f514522fba69f3c5a36d2bad105e02d53",
+      "md5": "a71ad1ca1b3b35adbee4c22afe928f77"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.28-1.0.1/solc-linux-amd64-0.8.28-1.0.1",
+      "version": "0.8.28",
+      "build": "commit.acc7d8f9",
+      "longVersion": "0.8.28+commit.acc7d8f9",
+      "sha256": "cebf505bd1874f7ce3a6e7de3545f7f7fd52b4ba7bccb54f710c7daf7ae42edd",
+      "md5": "24cba354d1a934d82b87570f45623932"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/mlir-0.8.26-tag/solc-linux-amd64-0.8.26-mlir",
+      "version": "0.8.26",
+      "build": "commit.64a757c8",
+      "longVersion": "0.8.26+commit.64a757c8",
+      "sha256": "cefb3312191b8921444b1c48e80634d5cb350773075281e2507aa701c6fed4f7",
+      "md5": "5b5b3c37c431e120eb6390060457596c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.27-1.0.1/solc-linux-amd64-0.8.27-1.0.1",
+      "version": "0.8.27",
+      "build": "commit.fd3a7203",
+      "longVersion": "0.8.27+commit.fd3a7203",
+      "sha256": "416acec4e16861535b56ae5487e9ec7ccc2bf3c5ec7c7f4fe2bb35e2a2b0677e",
+      "md5": "0f97ee0f1ac2e8eb73e0b7c8b10ee045"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.1/solc-linux-amd64-0.4.16-1.0.1",
+      "version": "0.4.16",
+      "build": "commit.cf588aa9",
+      "longVersion": "0.4.16+commit.cf588aa9",
+      "sha256": "0767922d2764fc52789a715a443b937a515d4d6de858da2f9f82089acf082083",
+      "md5": "42b8ec6101b09fb70ba93023f8561336"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.1/solc-linux-amd64-0.4.15-1.0.1",
+      "version": "0.4.15",
+      "build": "commit.e3ad3748",
+      "longVersion": "0.4.15+commit.e3ad3748",
+      "sha256": "84c8684200e2b1b43535f512a7e55ca65264ee9b1d9a3f53488bb213b23a2e0b",
+      "md5": "28003a927ee6a9f70d6ee0d97235798f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.1/solc-linux-amd64-0.4.14-1.0.1",
+      "version": "0.4.14",
+      "build": "commit.58dce8e6",
+      "longVersion": "0.4.14+commit.58dce8e6",
+      "sha256": "dfb4763302a991ed81c1d8c65b7363184ac70ae0fe62da1333cfa80890d0692e",
+      "md5": "eb0ed854fafccb63e91f40aeb2a3c8a7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.1/solc-linux-amd64-0.4.13-1.0.1",
+      "version": "0.4.13",
+      "build": "commit.2e10cee7",
+      "longVersion": "0.4.13+commit.2e10cee7",
+      "sha256": "e732d00f3b0172aeb0058f3cfc8ae6cd6d1b75323b07e5309cfaedf77f5124ae",
+      "md5": "fb3d57daa56fdb0f7a5c4b7ae78d3fd6"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.1/solc-linux-amd64-0.4.12-1.0.1",
+      "version": "0.4.12",
+      "build": "commit.42a88949",
+      "longVersion": "0.4.12+commit.42a88949",
+      "sha256": "0b0afdfe19f1095929375aaefa9dd9474b6871904a5a0152f94434d91308d209",
+      "md5": "762b00390f51efb66f55899238add760"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.26-1.0.1/solc-linux-amd64-0.8.26-1.0.1",
+      "version": "0.8.26",
+      "build": "commit.905b735b",
+      "longVersion": "0.8.26+commit.905b735b",
+      "sha256": "2b41b671a9efa54a55ea76c9cd19f2bffed0f9c03d0d55766c0ec9b730b2e590",
+      "md5": "457c5cc28d26da0f3e6712bdb0080549"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.1/solc-linux-amd64-0.8.25-1.0.1",
+      "version": "0.8.25",
+      "build": "commit.47b979f3",
+      "longVersion": "0.8.25+commit.47b979f3",
+      "sha256": "30c4ae71baf42004b390cb124a3137db1c699d7c030731d5d3e7a1ed3a5dacb1",
+      "md5": "9990fabe93c5b145d1c5379dace17e0c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.1/solc-linux-amd64-0.8.24-1.0.1",
+      "version": "0.8.24",
+      "build": "commit.3a2587f6",
+      "longVersion": "0.8.24+commit.3a2587f6",
+      "sha256": "0dbecbf68e17103ef1634ddd5b53b6b06d2f72cc41e2ff5829af7b75bce181b9",
+      "md5": "ba4f21555697b2fe0a7e882e3cc2d199"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.1/solc-linux-amd64-0.8.23-1.0.1",
+      "version": "0.8.23",
+      "build": "commit.b42ca2a3",
+      "longVersion": "0.8.23+commit.b42ca2a3",
+      "sha256": "18a7e49d1422a85431357c348420c931abc0d0641039823fafa748708b0aba9f",
+      "md5": "4717c42dbf6a54ae2ac05371e90ed710"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.1/solc-linux-amd64-0.8.22-1.0.1",
+      "version": "0.8.22",
+      "build": "commit.d3b5c2a5",
+      "longVersion": "0.8.22+commit.d3b5c2a5",
+      "sha256": "109c31c80b83f863ab4507048a905931b37c1d6ccf0f00634ba2c09340a8ec08",
+      "md5": "12c36d9b46ce18781409a58590fe5bd2"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.1/solc-linux-amd64-0.8.21-1.0.1",
+      "version": "0.8.21",
+      "build": "commit.ec5dde33",
+      "longVersion": "0.8.21+commit.ec5dde33",
+      "sha256": "3c79a880211c47441bc691c392af7541ce6cfe5f7018c57ad8d99ce4087da2dc",
+      "md5": "ca6ac844fcda9f8bf2fb049ade14e9b2"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.1/solc-linux-amd64-0.8.20-1.0.1",
+      "version": "0.8.20",
+      "build": "commit.9f2a5241",
+      "longVersion": "0.8.20+commit.9f2a5241",
+      "sha256": "657d3602edf434056262a3355bf91af364fa81706f2f10592dfdbe073e064542",
+      "md5": "6af18ece395e1aa9723cc916d6453b6e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.1/solc-linux-amd64-0.8.19-1.0.1",
+      "version": "0.8.19",
+      "build": "commit.580a8fe5",
+      "longVersion": "0.8.19+commit.580a8fe5",
+      "sha256": "c7e2afb67887ce542bbf4c6c9c5a2984642891d85d5c656b0219b4ab4ce15516",
+      "md5": "ec6c02142f16440b270afac5eda04614"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.1/solc-linux-amd64-0.8.18-1.0.1",
+      "version": "0.8.18",
+      "build": "commit.84357b55",
+      "longVersion": "0.8.18+commit.84357b55",
+      "sha256": "3be2ef30df22bc399d20a8c151a537c2d7ddf2a82fd7c5c01092d88e6b523158",
+      "md5": "e3bee867f65e82bd668d0eca9e6c39d7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.1/solc-linux-amd64-0.8.17-1.0.1",
+      "version": "0.8.17",
+      "build": "commit.439a1047",
+      "longVersion": "0.8.17+commit.439a1047",
+      "sha256": "15156d359816513ef69a87c5fa6b797a90774700d8cbf0685fa9abe5f614b20d",
+      "md5": "3329bbea3cf805391c45e61a74123e95"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.1/solc-linux-amd64-0.8.16-1.0.1",
+      "version": "0.8.16",
+      "build": "commit.2d04f2ab",
+      "longVersion": "0.8.16+commit.2d04f2ab",
+      "sha256": "07899fad3cd742ed13fe051fe19e0d29881027b13cdf39cc2d70c3ed15aa1cf2",
+      "md5": "8799396023181ddd3f96e97b4fa2cdd7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.1/solc-linux-amd64-0.8.15-1.0.1",
+      "version": "0.8.15",
+      "build": "commit.74e5d21d",
+      "longVersion": "0.8.15+commit.74e5d21d",
+      "sha256": "7ab3b9c40d70022705d59c3432719860fd573a075a425940c4aab30cc8898d3f",
+      "md5": "341b4997bacd832a461178b82d7e6db5"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.1/solc-linux-amd64-0.8.14-1.0.1",
+      "version": "0.8.14",
+      "build": "commit.ac205588",
+      "longVersion": "0.8.14+commit.ac205588",
+      "sha256": "158f79a1c50986ef5dafffaea2f6e1dc74073a6e4ddb283fa752c389eac52e10",
+      "md5": "1b379b517fef808dd172ccc20d845faa"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.1/solc-linux-amd64-0.8.13-1.0.1",
+      "version": "0.8.13",
+      "build": "commit.dc7bb5d3",
+      "longVersion": "0.8.13+commit.dc7bb5d3",
+      "sha256": "6b318a31e89c8d99f605f63e94dbc6fdb887e1acd725c8751b249fcb9e1384d5",
+      "md5": "2478cd830733996410ea00af2bb546ea"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.1/solc-linux-amd64-0.8.12-1.0.1",
+      "version": "0.8.12",
+      "build": "commit.8774d16c",
+      "longVersion": "0.8.12+commit.8774d16c",
+      "sha256": "f347ecbfcc46ff38de02a7f8b1b09ceabbd9b78b20c0ab6c36207adc0d71af2e",
+      "md5": "a104f734a05194cb7281969386cb6279"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.1/solc-linux-amd64-0.8.11-1.0.1",
+      "version": "0.8.11",
+      "build": "commit.4611d937",
+      "longVersion": "0.8.11+commit.4611d937",
+      "sha256": "7f2d506f8b3824f25423761a4ed82c073375370876cb2180729c4276c60dd599",
+      "md5": "d3c80d43ce7025aafff952625af53191"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.1/solc-linux-amd64-0.8.10-1.0.1",
+      "version": "0.8.10",
+      "build": "commit.6eff489a",
+      "longVersion": "0.8.10+commit.6eff489a",
+      "sha256": "cb5cede7fbda1149164c04f9017c5e0ee534708ef78beae202342259b993d381",
+      "md5": "2e19a194bc94733f0a212e9d439c9cc7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.1/solc-linux-amd64-0.8.9-1.0.1",
+      "version": "0.8.9",
+      "build": "commit.182f38a0",
+      "longVersion": "0.8.9+commit.182f38a0",
+      "sha256": "122aaead40af9a4c91ea503e690cc5783550f2b5ca5fb45a47e4b9233ecc3eed",
+      "md5": "433e411d86a12c7c82a696313f4a3098"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.1/solc-linux-amd64-0.8.8-1.0.1",
+      "version": "0.8.8",
+      "build": "commit.94d96e66",
+      "longVersion": "0.8.8+commit.94d96e66",
+      "sha256": "a7574015ad937c2ee4e60787f071a6a1e60dda6829ffbc8e00413039b8cefb0c",
+      "md5": "79d33f35fde3c03e2fb5d6884e2e4350"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.1/solc-linux-amd64-0.8.7-1.0.1",
+      "version": "0.8.7",
+      "build": "commit.7bc31051",
+      "longVersion": "0.8.7+commit.7bc31051",
+      "sha256": "9558574e60b500965ddeb6278a724f714bb96b8603244f4fe1321a503ecc115c",
+      "md5": "1f55ae8802978cf055ee0c84bfb83cb9"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.1/solc-linux-amd64-0.8.6-1.0.1",
+      "version": "0.8.6",
+      "build": "commit.1ad37205",
+      "longVersion": "0.8.6+commit.1ad37205",
+      "sha256": "fb7cf72c3ac419a153796b756e1d59b207e4dfd8bc2d681cd2b9047b2e45b82c",
+      "md5": "30cffb0686fe0fe1d01e091a0e2ebc4a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.1/solc-linux-amd64-0.8.5-1.0.1",
+      "version": "0.8.5",
+      "build": "commit.e9911bde",
+      "longVersion": "0.8.5+commit.e9911bde",
+      "sha256": "b449bb21631e7aa001d1a9e93d50696835e4004cce9afa65d1cf7da82d34873f",
+      "md5": "fba66e40898583bbed6dbba618e2904d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.1/solc-linux-amd64-0.8.4-1.0.1",
+      "version": "0.8.4",
+      "build": "commit.414f455d",
+      "longVersion": "0.8.4+commit.414f455d",
+      "sha256": "6704206c6097f734bf0d3acafd393a5803f34cd259e4ea4042156274422b21fc",
+      "md5": "f2f87e74706665f742750417e8edc430"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.1/solc-linux-amd64-0.8.3-1.0.1",
+      "version": "0.8.3",
+      "build": "commit.5190db56",
+      "longVersion": "0.8.3+commit.5190db56",
+      "sha256": "48174b22ab6a4e3a10a8c4014576986fd03d55480c659cef0e0b511eb550001d",
+      "md5": "b1816aaf15579410eeb4ce52e1462a4f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.1/solc-linux-amd64-0.8.2-1.0.1",
+      "version": "0.8.2",
+      "build": "commit.fd3b12ff",
+      "longVersion": "0.8.2+commit.fd3b12ff",
+      "sha256": "7ab54e0739e42d29ba7295d17fa90cf60778646f8db1867b18189133b04943b5",
+      "md5": "4f0f3ffbd82925d0c100083363ce6a94"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.1/solc-linux-amd64-0.8.1-1.0.1",
+      "version": "0.8.1",
+      "build": "commit.58ae5c5d",
+      "longVersion": "0.8.1+commit.58ae5c5d",
+      "sha256": "7a9853e04d96279c721f29d217b5be514dddeaf4d035a23c2e5105d3609ee367",
+      "md5": "752fccad2fa2512148b75fcf35c11a4c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.1/solc-linux-amd64-0.8.0-1.0.1",
+      "version": "0.8.0",
+      "build": "commit.653de846",
+      "longVersion": "0.8.0+commit.653de846",
+      "sha256": "2c6bd827eb7eeb315bd2f1f7495853fd9ccd27d20d02f2252d8156162e4ba363",
+      "md5": "2e746def211357e654f539aa9b14cc79"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.1/solc-linux-amd64-0.7.6-1.0.1",
+      "version": "0.7.6",
+      "build": "commit.90d53997",
+      "longVersion": "0.7.6+commit.90d53997",
+      "sha256": "c6d3ddc9fc230753f3baa891272ae8625561755e91e3a8acb821f989c08feff1",
+      "md5": "95a2c5e746202f5958fce8c25907ff69"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.1/solc-linux-amd64-0.7.5-1.0.1",
+      "version": "0.7.5",
+      "build": "commit.80350332",
+      "longVersion": "0.7.5+commit.80350332",
+      "sha256": "24b9dac420255a4da72d6e33135a2765fc73db96d51cf098717f0795ccd63211",
+      "md5": "8cfff7392b29116a61dc65761d0ebccd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.1/solc-linux-amd64-0.7.4-1.0.1",
+      "version": "0.7.4",
+      "build": "commit.5047983b",
+      "longVersion": "0.7.4+commit.5047983b",
+      "sha256": "f4af3a540b966bb09f1e419577891f99f1e6b6eb9c8c97afc63e34c5d43035db",
+      "md5": "8abf4ada6a2afad2cb3b513ce92af61f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.1/solc-linux-amd64-0.7.3-1.0.1",
+      "version": "0.7.3",
+      "build": "commit.6924a502",
+      "longVersion": "0.7.3+commit.6924a502",
+      "sha256": "725934b75818c9193150d9192b5a59dc03e7fc81019cbff57c41580d2275085b",
+      "md5": "2ad18e246a02dad0b85e4f1939b0e6da"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.1/solc-linux-amd64-0.7.2-1.0.1",
+      "version": "0.7.2",
+      "build": "commit.88d1104e",
+      "longVersion": "0.7.2+commit.88d1104e",
+      "sha256": "087c1b6fa1bcacf5ba9761804fe97d5981b432c7ef994aaa04edd2c275c26ad5",
+      "md5": "a7844ad77553a2830e228f284d34fe53"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.1/solc-linux-amd64-0.7.1-1.0.1",
+      "version": "0.7.1",
+      "build": "commit.703e7aab",
+      "longVersion": "0.7.1+commit.703e7aab",
+      "sha256": "f894adefcce94336b6daaab6f1bc85be34931ff0f6ee1ddc0b138fa974aac793",
+      "md5": "782996432906c517cbff528e721badff"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.1/solc-linux-amd64-0.7.0-1.0.1",
+      "version": "0.7.0",
+      "build": "commit.fc4b0321",
+      "longVersion": "0.7.0+commit.fc4b0321",
+      "sha256": "4cfd1e60b4d9a5d1aab50588c988d19fcfd9cea86a85d294ea3822cd2eff6760",
+      "md5": "3b96240c9966504f31e5c89cbfbd331f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.1/solc-linux-amd64-0.6.12-1.0.1",
+      "version": "0.6.12",
+      "build": "commit.148869f1",
+      "longVersion": "0.6.12+commit.148869f1",
+      "sha256": "b9308050c10329a97124cec97a00b596bdaff5e197b3fa7f266a66224565ca62",
+      "md5": "19e15f08be9561e9420a9bce96b9f305"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.1/solc-linux-amd64-0.6.11-1.0.1",
+      "version": "0.6.11",
+      "build": "commit.41a5f1c1",
+      "longVersion": "0.6.11+commit.41a5f1c1",
+      "sha256": "5929433ab1f05170988c14650aa7cb5486be1076806309ae2c9c299d4371d51b",
+      "md5": "71d560e4384c7299ddc5f84af3b96e38"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.1/solc-linux-amd64-0.6.10-1.0.1",
+      "version": "0.6.10",
+      "build": "commit.b116c857",
+      "longVersion": "0.6.10+commit.b116c857",
+      "sha256": "e15da02e421f8e044f7f09d9eb1ef29872e707314fed28f4bedd23126fa63f7f",
+      "md5": "a3731a19e06e35b4a5e2ba238ff1b379"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.1/solc-linux-amd64-0.6.9-1.0.1",
+      "version": "0.6.9",
+      "build": "commit.d1775e38",
+      "longVersion": "0.6.9+commit.d1775e38",
+      "sha256": "a2001f407191d5f8da2ae9646ca5fd60eba420323bf3a0d3ab92d0f221b27de2",
+      "md5": "ade1464f863404766b21c3c9b5c774cd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.1/solc-linux-amd64-0.6.8-1.0.1",
+      "version": "0.6.8",
+      "build": "commit.c0fdd5da",
+      "longVersion": "0.6.8+commit.c0fdd5da",
+      "sha256": "53547a36dc1a953a4a4135227745d8a547798e262b357e4c0e0bc8ebc6605822",
+      "md5": "e6a76cd2eb48ce58bc95fcb59b647354"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.1/solc-linux-amd64-0.6.7-1.0.1",
+      "version": "0.6.7",
+      "build": "commit.9abea9d1",
+      "longVersion": "0.6.7+commit.9abea9d1",
+      "sha256": "4cd4c1f35c4f85f4548044ede09e20747af6f421117f62b922b2ecedf7f7a2ca",
+      "md5": "4f71d9b2f137badac3cbe57248a910a9"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.1/solc-linux-amd64-0.6.6-1.0.1",
+      "version": "0.6.6",
+      "build": "commit.8469fa3b",
+      "longVersion": "0.6.6+commit.8469fa3b",
+      "sha256": "67d5e6d1dd82c2809aadd89b67d9013f056d82a2848b1b6e3717220387aada86",
+      "md5": "bae691ffd1b57a7ebe77a668a91bee0d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.1/solc-linux-amd64-0.6.5-1.0.1",
+      "version": "0.6.5",
+      "build": "commit.7e46561e",
+      "longVersion": "0.6.5+commit.7e46561e",
+      "sha256": "e2627c75d62f65a1c122df649eb98c635f068b295c9306f0bdbd267192d54737",
+      "md5": "ecba283df56ae6b84c978a9b1adec4d7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.1/solc-linux-amd64-0.6.4-1.0.1",
+      "version": "0.6.4",
+      "build": "commit.aab18a82",
+      "longVersion": "0.6.4+commit.aab18a82",
+      "sha256": "1a65c9b317a0191d5fb61ce52eeedfe594710add7c28a7e975d999ee1a253a73",
+      "md5": "c74d47ca9067023cf1e867ce203af308"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.1/solc-linux-amd64-0.6.3-1.0.1",
+      "version": "0.6.3",
+      "build": "commit.df6d4b77",
+      "longVersion": "0.6.3+commit.df6d4b77",
+      "sha256": "f5aa8a9e1862048989e8e3ac6db8e57a7d555f3d88dbfbf927def3dd83d8f269",
+      "md5": "cab501eb89621c8eb8aedf8afc210fcf"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.1/solc-linux-amd64-0.6.2-1.0.1",
+      "version": "0.6.2",
+      "build": "commit.88a26618",
+      "longVersion": "0.6.2+commit.88a26618",
+      "sha256": "a6378d7966a2fd64de71828cff5b8a399ca2635b9915437613b62f6402d2bd45",
+      "md5": "86ec6d5039a3d86cc7ee255453402027"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.1/solc-linux-amd64-0.6.1-1.0.1",
+      "version": "0.6.1",
+      "build": "commit.81a285c8",
+      "longVersion": "0.6.1+commit.81a285c8",
+      "sha256": "59f028b77262cba5726b52d125749a95df9b011c85e35a019c8ccdc887ac6214",
+      "md5": "d64dd3de7d03eae639d1eb6833c1b490"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.1/solc-linux-amd64-0.6.0-1.0.1",
+      "version": "0.6.0",
+      "build": "commit.6708c82c",
+      "longVersion": "0.6.0+commit.6708c82c",
+      "sha256": "4f679fc52655785fac18ed81c5907812d7c802d58949be7d6e067514a34a3eb0",
+      "md5": "d8063a10ee1d96dc08e2576427be67a3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.1/solc-linux-amd64-0.5.17-1.0.1",
+      "version": "0.5.17",
+      "build": "commit.dba8cb1c",
+      "longVersion": "0.5.17+commit.dba8cb1c",
+      "sha256": "4154d385fbba14dc85e536d05cffba60cff3690ec1bd51c42c86afbe5c71fdc1",
+      "md5": "fd078f9f45926be36a695687aae9e0ee"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.1/solc-linux-amd64-0.5.16-1.0.1",
+      "version": "0.5.16",
+      "build": "commit.b9534989",
+      "longVersion": "0.5.16+commit.b9534989",
+      "sha256": "6ba2d2f50d25343bf997959a11668b8a82271afef2104738d53b47bfd82d5e74",
+      "md5": "e32b35f5f305f4a49f34e26dde9dd27f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.1/solc-linux-amd64-0.5.15-1.0.1",
+      "version": "0.5.15",
+      "build": "commit.ceea502f",
+      "longVersion": "0.5.15+commit.ceea502f",
+      "sha256": "32765ff28bfd06329037ba670eafafd9c154cae0398c959abf582a83cebd9a91",
+      "md5": "61c41ac07787eebd3e3617f905b26530"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.1/solc-linux-amd64-0.5.14-1.0.1",
+      "version": "0.5.14",
+      "build": "commit.57a29b35",
+      "longVersion": "0.5.14+commit.57a29b35",
+      "sha256": "b249b6281e3495c9f231811421b506f265a180aee8c97f6e9a44fc4867c3658a",
+      "md5": "17ae29a460c6f08d539c654d6f0040f3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.1/solc-linux-amd64-0.5.13-1.0.1",
+      "version": "0.5.13",
+      "build": "commit.ca5fba33",
+      "longVersion": "0.5.13+commit.ca5fba33",
+      "sha256": "d9412a6f33f05947cd50d7df79d03f10fc062c1af500da7095c21372938bd717",
+      "md5": "c50565c44755d79b3ba72c2ea75b2b6c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.1/solc-linux-amd64-0.5.12-1.0.1",
+      "version": "0.5.12",
+      "build": "commit.2133f4dc",
+      "longVersion": "0.5.12+commit.2133f4dc",
+      "sha256": "fca6b64d55b236e6ad1e0e79f730798bfa21ab8f63c803700c01a8559d3fcf44",
+      "md5": "23f6a5b13b33752a47a2d0bd61488200"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.1/solc-linux-amd64-0.5.11-1.0.1",
+      "version": "0.5.11",
+      "build": "commit.a7973e18",
+      "longVersion": "0.5.11+commit.a7973e18",
+      "sha256": "0895d9b8110064fff010911d3cdea82b4ee398b8f5b97fbf7707040415c0da80",
+      "md5": "643cb3e5d53c14f4d65bff2b17ea68ea"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.1/solc-linux-amd64-0.5.10-1.0.1",
+      "version": "0.5.10",
+      "build": "commit.6dd3d4b5",
+      "longVersion": "0.5.10+commit.6dd3d4b5",
+      "sha256": "3361e92b7a598003aa2d05395e96109380b03104892c34cdb4cd5eb20156d83d",
+      "md5": "fefb0c0174be685cf39c41bc6ad96a3e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.1/solc-linux-amd64-0.5.9-1.0.1",
+      "version": "0.5.9",
+      "build": "commit.fd720a17",
+      "longVersion": "0.5.9+commit.fd720a17",
+      "sha256": "5db286b9a2333a2ed03332219daef0a9e7b6caef468e355b132c31e16a884c9f",
+      "md5": "334bd17745238eb16b8ab373f8163519"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.1/solc-linux-amd64-0.5.8-1.0.1",
+      "version": "0.5.8",
+      "build": "commit.6a1ba12d",
+      "longVersion": "0.5.8+commit.6a1ba12d",
+      "sha256": "bb8fd10173913162aed7b90a7ed03338b0e3824703adf40226c4cb0fcfe82692",
+      "md5": "5a75eedfe40d22b2f6032213c0e26fd3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.1/solc-linux-amd64-0.5.7-1.0.1",
+      "version": "0.5.7",
+      "build": "commit.4f8a32da",
+      "longVersion": "0.5.7+commit.4f8a32da",
+      "sha256": "9a074793017bd90baa45d6e542dd93ccb81b3a31aa786c0dc319bfe1a3b41fa0",
+      "md5": "5c330ed1ce33675be446cdd74cafc480"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.1/solc-linux-amd64-0.5.6-1.0.1",
+      "version": "0.5.6",
+      "build": "commit.08b90bf7",
+      "longVersion": "0.5.6+commit.08b90bf7",
+      "sha256": "668b4878374af83e0ada63cbaf9331716b46b80e2f65204f0de3d2adf7844ac8",
+      "md5": "729f88f85ae692ec9c0842b0b1445ef7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.1/solc-linux-amd64-0.5.5-1.0.1",
+      "version": "0.5.5",
+      "build": "commit.878d203c",
+      "longVersion": "0.5.5+commit.878d203c",
+      "sha256": "2c214e4e83b2386fe784401bb8afc6dbf73ad1d868fb9d3de1e829a6bfb28603",
+      "md5": "62f904f4f651e5859a9c6e4ce69facdd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.1/solc-linux-amd64-0.5.4-1.0.1",
+      "version": "0.5.4",
+      "build": "commit.9389ec4d",
+      "longVersion": "0.5.4+commit.9389ec4d",
+      "sha256": "f64c9d369daa369905764f7e39ac340138b6a36f6daaa2ead01fe7489011fe79",
+      "md5": "96d3901ac7205f7a1ebd2407e6976788"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.1/solc-linux-amd64-0.5.3-1.0.1",
+      "version": "0.5.3",
+      "build": "commit.7453343e",
+      "longVersion": "0.5.3+commit.7453343e",
+      "sha256": "0fee9d7b488a517b0c58dfc6de4086db466d54a8698a48a53f210ac263c301ac",
+      "md5": "5cc769a9d4cadb7cfe1d7451839f9733"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.1/solc-linux-amd64-0.5.2-1.0.1",
+      "version": "0.5.2",
+      "build": "commit.adb8a652",
+      "longVersion": "0.5.2+commit.adb8a652",
+      "sha256": "7afc8e869c0f57837d9d95c8edddd94e0706f8ab7333f9c2cfae19d55df0deea",
+      "md5": "181ef200b4c49b38117b5539c1ce62af"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.1/solc-linux-amd64-0.5.1-1.0.1",
+      "version": "0.5.1",
+      "build": "commit.4c8a42ab",
+      "longVersion": "0.5.1+commit.4c8a42ab",
+      "sha256": "348c503e2821b2295cad8d4a2598193ed12044cadf851fade933c8b77f9d17f1",
+      "md5": "73b091e91add77a22886a86187d8bf8e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.1/solc-linux-amd64-0.5.0-1.0.1",
+      "version": "0.5.0",
+      "build": "commit.86e0ff68",
+      "longVersion": "0.5.0+commit.86e0ff68",
+      "sha256": "959c249eb5102b04eedae1afb455f3032cb4cc7bfe875684d45b145509046757",
+      "md5": "d325643152b08579ebf8c06caed34cd8"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.1/solc-linux-amd64-0.4.26-1.0.1",
+      "version": "0.4.26",
+      "build": "commit.d42289a4",
+      "longVersion": "0.4.26+commit.d42289a4",
+      "sha256": "15f4d15d6dfffe545b055f0ffa37fdd291c7800565407f732e66925d28304af5",
+      "md5": "f33b19ec3fcde8257cc405ffe8df1339"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.1/solc-linux-amd64-0.4.25-1.0.1",
+      "version": "0.4.25",
+      "build": "commit.b436d681",
+      "longVersion": "0.4.25+commit.b436d681",
+      "sha256": "e9406ff147a5c46b28fbb36d96b9d92a0e268465856e8952b642aba970476b59",
+      "md5": "2bdb3bdfce2f6fcfab7cb0f74f3b34e5"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.1/solc-linux-amd64-0.4.24-1.0.1",
+      "version": "0.4.24",
+      "build": "commit.bd81feb0",
+      "longVersion": "0.4.24+commit.bd81feb0",
+      "sha256": "f51f7ffbceb6f1fceac5d79f4a3087e7e880ff320e04f119104572a81a2995f0",
+      "md5": "5e88f1027add08c121fe32901fffcd14"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.1/solc-linux-amd64-0.4.23-1.0.1",
+      "version": "0.4.23",
+      "build": "commit.af447a00",
+      "longVersion": "0.4.23+commit.af447a00",
+      "sha256": "98e44fc8ec6d717789b96b7645b49fd40f0b1f1bdad27cf3addd18e07db964fe",
+      "md5": "91c5f3c57bfe3f2fb146393054feaac3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.1/solc-linux-amd64-0.4.22-1.0.1",
+      "version": "0.4.22",
+      "build": "commit.a3e5264b",
+      "longVersion": "0.4.22+commit.a3e5264b",
+      "sha256": "f616746a7b2ec35d0e42e1765c3657a4e56312cb96acc6e6fb79acdbe282dbc5",
+      "md5": "5bcc66c8316eec133c649dc77e90684f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.1/solc-linux-amd64-0.4.21-1.0.1",
+      "version": "0.4.21",
+      "build": "commit.63a03d5e",
+      "longVersion": "0.4.21+commit.63a03d5e",
+      "sha256": "b2b789247cefecdea2e0bf58df82334ea17c9232a23a558e655d07c0ad482d9c",
+      "md5": "e2968e440dcbdd2d11d66f8274863a4f"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.1/solc-linux-amd64-0.4.20-1.0.1",
+      "version": "0.4.20",
+      "build": "commit.708cd109",
+      "longVersion": "0.4.20+commit.708cd109",
+      "sha256": "3116e9e2939bd9073e4c44e671186be2a0fa55bec83239f6b8484e4cb12e6f70",
+      "md5": "3a00dadf3bd50796f7c652a99ad9fab4"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.1/solc-linux-amd64-0.4.19-1.0.1",
+      "version": "0.4.19",
+      "build": "commit.7ff1bd60",
+      "longVersion": "0.4.19+commit.7ff1bd60",
+      "sha256": "d2db5c026335c74cf09bb8a449562ec3685e46a19c6cbd6b6e476cc7025a83b4",
+      "md5": "8c35d5f67016a20ce4e5bff0e36c8902"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.1/solc-linux-amd64-0.4.18-1.0.1",
+      "version": "0.4.18",
+      "build": "commit.905b735b",
+      "longVersion": "0.4.18+commit.905b735b",
+      "sha256": "1039bb6daae6b889686c216287b1c995b447f6e10ab990110dfcaf093619da89",
+      "md5": "e19de5405c3ec6a9838ddabd24e7f53c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.1/solc-linux-amd64-0.4.17-1.0.1",
+      "version": "0.4.17",
+      "build": "commit.00b04601",
+      "longVersion": "0.4.17+commit.00b04601",
+      "sha256": "2cdc1bf9cdea47bea12a19892b8dc33a208ffd67d9f4a2703e3c8290466feed9",
+      "md5": "af42d5c9124448d4e2398a14e90a019d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.25-1.0.0/solc-linux-amd64-0.8.25-1.0.0",
+      "version": "0.8.25",
+      "build": "commit.728f1683",
+      "longVersion": "0.8.25+commit.728f1683",
+      "sha256": "a62d68ce006cfdf906d674ea393d0cea9e99318df0c6cd1daa2137b3cd71276f",
+      "md5": "4ef3f582c74487b321834cfe81dc9d3a"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.24-1.0.0/solc-linux-amd64-0.8.24-1.0.0",
+      "version": "0.8.24",
+      "build": "commit.52d54a91",
+      "longVersion": "0.8.24+commit.52d54a91",
+      "sha256": "db2c9b6e5d426b739b853790755212a5a60a287cb53dd495c6fa9e1c3cd1311c",
+      "md5": "9eb6536826b7015c496b116ab5712ee3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.23-1.0.0/solc-linux-amd64-0.8.23-1.0.0",
+      "version": "0.8.23",
+      "build": "commit.c46cbc01",
+      "longVersion": "0.8.23+commit.c46cbc01",
+      "sha256": "fdb60ac58e5e57d2f1e479060d83df85be9c491cf2c34ac44a21fbc3056debc3",
+      "md5": "88093392a0b2ec6c1c71d7085104a978"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.22-1.0.0/solc-linux-amd64-0.8.22-1.0.0",
+      "version": "0.8.22",
+      "build": "commit.beb84e1c",
+      "longVersion": "0.8.22+commit.beb84e1c",
+      "sha256": "3c47507bd42476992ca15f3e4555e82b108fb3568235bbb627a295599e17793f",
+      "md5": "3276d8fedf77cbd901892a00bccb22eb"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.21-1.0.0/solc-linux-amd64-0.8.21-1.0.0",
+      "version": "0.8.21",
+      "build": "commit.bb862db2",
+      "longVersion": "0.8.21+commit.bb862db2",
+      "sha256": "c42dfada555f27d5c073f7c20416394fedb3078772fa9fd1f1856907a1aaf3d9",
+      "md5": "3b091ac9935760979b6db4306657225c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.20-1.0.0/solc-linux-amd64-0.8.20-1.0.0",
+      "version": "0.8.20",
+      "build": "commit.475d6d9f",
+      "longVersion": "0.8.20+commit.475d6d9f",
+      "sha256": "b269beafa101abfe00b5e7273560d35e965e2c700255f674aaa5ab4c257f7132",
+      "md5": "b19de2e5cb9d4b56eb746f49824567aa"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.19-1.0.0/solc-linux-amd64-0.8.19-1.0.0",
+      "version": "0.8.19",
+      "build": "commit.5e99f3d9",
+      "longVersion": "0.8.19+commit.5e99f3d9",
+      "sha256": "0a269523e04f312859ce407b57f06fad33d45faa1204326d047ec014b7d27b61",
+      "md5": "e51c5e457e5c83893eb4ad2b924737dc"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.18-1.0.0/solc-linux-amd64-0.8.18-1.0.0",
+      "version": "0.8.18",
+      "build": "commit.4850e071",
+      "longVersion": "0.8.18+commit.4850e071",
+      "sha256": "13815a61c8681c4a6c3d5ec8f25b6dbbfc8b92d1aeb07f09fd19bcf3ad2606cb",
+      "md5": "dd7d3008541ec2054f00e9155b7a2b58"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.17-1.0.0/solc-linux-amd64-0.8.17-1.0.0",
+      "version": "0.8.17",
+      "build": "commit.6c091780",
+      "longVersion": "0.8.17+commit.6c091780",
+      "sha256": "b9aab8be20cea2be74129778ebfbfe3a816d585076b36d8a50c48f41e20ea1ce",
+      "md5": "6e62574bafbe03b857e640e5f6962b26"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.16-1.0.0/solc-linux-amd64-0.8.16-1.0.0",
+      "version": "0.8.16",
+      "build": "commit.8e15a08d",
+      "longVersion": "0.8.16+commit.8e15a08d",
+      "sha256": "70abf42dd7ff627cdc41dbc533014358a1376d358551d1f57424b53f2e9061e9",
+      "md5": "c9251df8a8ad7ede40ac6b4c82eff7cd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.15-1.0.0/solc-linux-amd64-0.8.15-1.0.0",
+      "version": "0.8.15",
+      "build": "commit.d8159763",
+      "longVersion": "0.8.15+commit.d8159763",
+      "sha256": "00f54893fd2b9010aab12801c52dddcd03510d5526963d2d5b2915d53e253611",
+      "md5": "cb27a1561ae14fa1ced0e9dd7534526e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.14-1.0.0/solc-linux-amd64-0.8.14-1.0.0",
+      "version": "0.8.14",
+      "build": "commit.953831a6",
+      "longVersion": "0.8.14+commit.953831a6",
+      "sha256": "2f3768d4479961ae1c0427c277db3d20f04ab2e627f1e0169ca579f8f0382d58",
+      "md5": "b3741121b0b38daa6001dd73e5ca1b6e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.13-1.0.0/solc-linux-amd64-0.8.13-1.0.0",
+      "version": "0.8.13",
+      "build": "commit.218d7e3a",
+      "longVersion": "0.8.13+commit.218d7e3a",
+      "sha256": "85b376721f71be3e8ce612fd5328ebcf001358ce87066038a206a5aab195b47a",
+      "md5": "3b795ac430d0e1bc6de1900894e288b0"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.12-1.0.0/solc-linux-amd64-0.8.12-1.0.0",
+      "version": "0.8.12",
+      "build": "commit.4b7f7da7",
+      "longVersion": "0.8.12+commit.4b7f7da7",
+      "sha256": "5b63710744fe4320ea73c66d3d88dc24ff95b469a98c08ef5b0af1d8983a66da",
+      "md5": "96656d49d99e791476485a73eb2127e9"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.11-1.0.0/solc-linux-amd64-0.8.11-1.0.0",
+      "version": "0.8.11",
+      "build": "commit.16d17a5c",
+      "longVersion": "0.8.11+commit.16d17a5c",
+      "sha256": "aa9553ffd026b3a901c4807b9edd4549fca69ee371315b228cd9b21f7620e9bb",
+      "md5": "ac15bac41e849212b7037a21c09627f3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.10-1.0.0/solc-linux-amd64-0.8.10-1.0.0",
+      "version": "0.8.10",
+      "build": "commit.ac3397cb",
+      "longVersion": "0.8.10+commit.ac3397cb",
+      "sha256": "ae8375e8abb77b8f552e725a06a3d165c55b40d7c232122abf3de8797ec92fa8",
+      "md5": "73ce5c6b7d0463fa9b18ec5b41e6b8f7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.9-1.0.0/solc-linux-amd64-0.8.9-1.0.0",
+      "version": "0.8.9",
+      "build": "commit.1965fadf",
+      "longVersion": "0.8.9+commit.1965fadf",
+      "sha256": "78e2da50022564338b1a40200c7c1cbdf16dadaf270d053e4fd54e8e77952e6f",
+      "md5": "63a4145f5b65220d48d57594f7e52388"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.8-1.0.0/solc-linux-amd64-0.8.8-1.0.0",
+      "version": "0.8.8",
+      "build": "commit.129884bc",
+      "longVersion": "0.8.8+commit.129884bc",
+      "sha256": "b0499115d5191579f308a7e131bfba4d64fb1a4d3cbda84da298b0254ec5e262",
+      "md5": "362a2314b032430c114ca53bd7ef385e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.7-1.0.0/solc-linux-amd64-0.8.7-1.0.0",
+      "version": "0.8.7",
+      "build": "commit.b2de7db3",
+      "longVersion": "0.8.7+commit.b2de7db3",
+      "sha256": "b1ea8171f7e7b1d9c590059fbdcf07facb1e94f609167d20a9fc7bd5f8c4a90b",
+      "md5": "de0c52dfa453bc69c80b83e7736fce55"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.6-1.0.0/solc-linux-amd64-0.8.6-1.0.0",
+      "version": "0.8.6",
+      "build": "commit.ff11fd6f",
+      "longVersion": "0.8.6+commit.ff11fd6f",
+      "sha256": "7dc9fcd35c6a61f2cd4caea77f84df10b416e3090583f09cf4957879a257bec0",
+      "md5": "b8cfd153afe63e6afe6d08076710532c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.5-1.0.0/solc-linux-amd64-0.8.5-1.0.0",
+      "version": "0.8.5",
+      "build": "commit.c0ca130e",
+      "longVersion": "0.8.5+commit.c0ca130e",
+      "sha256": "3bcd8d1a6738a61ba75c2cbccbcf022beb381cf6ee7e2c9491fc8dc2483e9a90",
+      "md5": "6041a830b905731f3e189906ec18db30"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.4-1.0.0/solc-linux-amd64-0.8.4-1.0.0",
+      "version": "0.8.4",
+      "build": "commit.cc284d6e",
+      "longVersion": "0.8.4+commit.cc284d6e",
+      "sha256": "291223adbe4a85fdfbe72fe0f4cec7c5971a2d25d0dcbe75314088c7b014eb3d",
+      "md5": "d296f93f14d1dc857f618a1a99844224"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.3-1.0.0/solc-linux-amd64-0.8.3-1.0.0",
+      "version": "0.8.3",
+      "build": "commit.23c5ed97",
+      "longVersion": "0.8.3+commit.23c5ed97",
+      "sha256": "f332895e9dee18a5f9fc35a0d06d1e42bead6a30771f722e5ac99f21682d3821",
+      "md5": "ed835739fa39edbdb7de84117ec81584"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.2-1.0.0/solc-linux-amd64-0.8.2-1.0.0",
+      "version": "0.8.2",
+      "build": "commit.29d899d8",
+      "longVersion": "0.8.2+commit.29d899d8",
+      "sha256": "79a875d5895688ac354048841b49cda5c27797d17fa21307e7f817710d701983",
+      "md5": "746f9602317b42780fd8df7082ad3bfd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.1-1.0.0/solc-linux-amd64-0.8.1-1.0.0",
+      "version": "0.8.1",
+      "build": "commit.5d73d8d7",
+      "longVersion": "0.8.1+commit.5d73d8d7",
+      "sha256": "ace08c5ec57d5a365d0555d2d6b920521ac58c958196138623e1f32bbd638dc8",
+      "md5": "5fbf06c778c2c16fa11b2c2cd5915e4b"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.8.0-1.0.0/solc-linux-amd64-0.8.0-1.0.0",
+      "version": "0.8.0",
+      "build": "commit.ffd2038c",
+      "longVersion": "0.8.0+commit.ffd2038c",
+      "sha256": "1eca4d0fa3dda84298a658bfce69ec5ddb177b5bb9ad99b8a056574bb0163d59",
+      "md5": "d13aaf0a23ac54647e42660085ad65e0"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.6-1.0.0/solc-linux-amd64-0.7.6-1.0.0",
+      "version": "0.7.6",
+      "build": "commit.11a377df",
+      "longVersion": "0.7.6+commit.11a377df",
+      "sha256": "e7dc59bdd3227d3b7f3a895ebbd7ee93686ef4d77c24545e7a0b67a1d68a6460",
+      "md5": "0ecce2a86971f14bd30bfa9408827a00"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.5-1.0.0/solc-linux-amd64-0.7.5-1.0.0",
+      "version": "0.7.5",
+      "build": "commit.b5bc0301",
+      "longVersion": "0.7.5+commit.b5bc0301",
+      "sha256": "9e717d79e832aa6a69a0474d14eae2b5584cddf4117e863a8a1c3325668835a3",
+      "md5": "02cb7ea123a4d1bf79de094c4dda3234"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.4-1.0.0/solc-linux-amd64-0.7.4-1.0.0",
+      "version": "0.7.4",
+      "build": "commit.91ed041a",
+      "longVersion": "0.7.4+commit.91ed041a",
+      "sha256": "d5639369f0614545a4bf0df20c0218aff904ddf32974d5cdeb0a400eb6e14cb6",
+      "md5": "c5f8d27f4c3dfad97198763e6bc8c824"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.3-1.0.0/solc-linux-amd64-0.7.3-1.0.0",
+      "version": "0.7.3",
+      "build": "commit.02cf47c9",
+      "longVersion": "0.7.3+commit.02cf47c9",
+      "sha256": "4d20ad7400486d0abaa68d0cccbce9250e267bc7d16a64494e236120f2902ccd",
+      "md5": "d0746e90a812c36ac3ce029c18ded2c3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.2-1.0.0/solc-linux-amd64-0.7.2-1.0.0",
+      "version": "0.7.2",
+      "build": "commit.91ef3abf",
+      "longVersion": "0.7.2+commit.91ef3abf",
+      "sha256": "d3b344009cec3f8fcc6068ff9c1b14b5d9eb7cb34271f7bb32503c957ec7c34b",
+      "md5": "f605ddc2e87dd3dea06707697ad4b8a1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.1-1.0.0/solc-linux-amd64-0.7.1-1.0.0",
+      "version": "0.7.1",
+      "build": "commit.29fce715",
+      "longVersion": "0.7.1+commit.29fce715",
+      "sha256": "f65101b99d49c7539206bcfe8b82315ed257d098eff523eda5ba26f8f464a28d",
+      "md5": "a3d89a6b0af3ae712315b8876dc5d494"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.7.0-1.0.0/solc-linux-amd64-0.7.0-1.0.0",
+      "version": "0.7.0",
+      "build": "commit.984391be",
+      "longVersion": "0.7.0+commit.984391be",
+      "sha256": "dc431d9c1ab60b1cc13196f91b200711284dfbba8f7483908215aa3808259ed4",
+      "md5": "9ce34ad24b7b389626e90f4fb9d24b55"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.12-1.0.0/solc-linux-amd64-0.6.12-1.0.0",
+      "version": "0.6.12",
+      "build": "commit.2074e101",
+      "longVersion": "0.6.12+commit.2074e101",
+      "sha256": "25b11e828fbc3115e72071cdd0804a63ddf067afa54e8b36b7fcfa12fcd298ca",
+      "md5": "ad66129d8cec1b0416bc7c2f90f032c8"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.11-1.0.0/solc-linux-amd64-0.6.11-1.0.0",
+      "version": "0.6.11",
+      "build": "commit.2a97c5ae",
+      "longVersion": "0.6.11+commit.2a97c5ae",
+      "sha256": "5e66f057e976be49377d8b54894bdb1ad8947f42fceb1c8a5c2c6c8a173f765e",
+      "md5": "31b8d69c91da840d29627234bc130656"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.10-1.0.0/solc-linux-amd64-0.6.10-1.0.0",
+      "version": "0.6.10",
+      "build": "commit.e2d92761",
+      "longVersion": "0.6.10+commit.e2d92761",
+      "sha256": "b5b167317343934c31f83df562b9b0bb5466bf8d829ab8a0aa5b610499bce78e",
+      "md5": "b91218f1524e0ff1100238166d0fb0fd"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.9-1.0.0/solc-linux-amd64-0.6.9-1.0.0",
+      "version": "0.6.9",
+      "build": "commit.a6babe6f",
+      "longVersion": "0.6.9+commit.a6babe6f",
+      "sha256": "3a6f90a25838551f559d49b9201cd4003ddc43af711d93467ed50b215d9bb747",
+      "md5": "3239060aa44087d3aff9c2553bf499d7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.8-1.0.0/solc-linux-amd64-0.6.8-1.0.0",
+      "version": "0.6.8",
+      "build": "commit.ea4019dc",
+      "longVersion": "0.6.8+commit.ea4019dc",
+      "sha256": "c250b3fc067ec222e8ab608d32f7904027a3be2ded0b9d49e0d6264c4aeea86b",
+      "md5": "6c894ec5c69fd630190b47b0fc198689"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.7-1.0.0/solc-linux-amd64-0.6.7-1.0.0",
+      "version": "0.6.7",
+      "build": "commit.f4b488b3",
+      "longVersion": "0.6.7+commit.f4b488b3",
+      "sha256": "96175b97f22fc3590ec1bfb50cb1731107a0c14618b97760794e2e8148147b55",
+      "md5": "6d7db7b3b8a93afbc159ff43c4ca795e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.6-1.0.0/solc-linux-amd64-0.6.6-1.0.0",
+      "version": "0.6.6",
+      "build": "commit.41fab514",
+      "longVersion": "0.6.6+commit.41fab514",
+      "sha256": "f4184c211219c32674dcb997bed576f4e194764e4fe09c069a7f60afb459503b",
+      "md5": "eff4bae8002409b1f23afbaf4b369aa7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.5-1.0.0/solc-linux-amd64-0.6.5-1.0.0",
+      "version": "0.6.5",
+      "build": "commit.aaa7268f",
+      "longVersion": "0.6.5+commit.aaa7268f",
+      "sha256": "65a7a495bea0c7d1eb715971366d3d4d054651defbc8098e5d2e03b2893b3049",
+      "md5": "e335048bbefcd853c03aea72db577231"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.4-1.0.0/solc-linux-amd64-0.6.4-1.0.0",
+      "version": "0.6.4",
+      "build": "commit.654472f7",
+      "longVersion": "0.6.4+commit.654472f7",
+      "sha256": "2a1ccfb644e1b4cb25fc0fdec32dfea2df54bd56cceacea6d8f4b293b3fe162b",
+      "md5": "c6a37057ce4bb73fca5d53418752fb66"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.3-1.0.0/solc-linux-amd64-0.6.3-1.0.0",
+      "version": "0.6.3",
+      "build": "commit.bbae0190",
+      "longVersion": "0.6.3+commit.bbae0190",
+      "sha256": "b64fd6e89e4c4eca95d55c162893b1fcf536d3bc40f9ca5357118f164a03d129",
+      "md5": "692cf8e2abfcfc1f17665ec479cbc0d3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.2-1.0.0/solc-linux-amd64-0.6.2-1.0.0",
+      "version": "0.6.2",
+      "build": "commit.d454ba9f",
+      "longVersion": "0.6.2+commit.d454ba9f",
+      "sha256": "482092297c75896f496be2bade87865d2831c8dc23ac8223e5de09c7b3d77149",
+      "md5": "93f2dce8cdd34126f744af7bf1f1f643"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.1-1.0.0/solc-linux-amd64-0.6.1-1.0.0",
+      "version": "0.6.1",
+      "build": "commit.edee8562",
+      "longVersion": "0.6.1+commit.edee8562",
+      "sha256": "b922eea7bc345b67a23562c3371c3c708d34221a602a266880bde635256569bc",
+      "md5": "5f66ef24b7182bb62888774d03110abf"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.6.0-1.0.0/solc-linux-amd64-0.6.0-1.0.0",
+      "version": "0.6.0",
+      "build": "commit.ec8fd52c",
+      "longVersion": "0.6.0+commit.ec8fd52c",
+      "sha256": "812083270e43ab5258344ee48e15e37c71066c10f99c8db4ac177a5a3cb9900e",
+      "md5": "ad6dfc99752112d14fbbd65c59fa8abc"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.17-1.0.0/solc-linux-amd64-0.5.17-1.0.0",
+      "version": "0.5.17",
+      "build": "commit.f5894a46",
+      "longVersion": "0.5.17+commit.f5894a46",
+      "sha256": "78be2b8d3ffe1e467d923f5425b103d83eda482afdc00b56ad0021c829b384ef",
+      "md5": "9c90f3c1362de29f90d24dccaa2c96fc"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.16-1.0.0/solc-linux-amd64-0.5.16-1.0.0",
+      "version": "0.5.16",
+      "build": "commit.a4404286",
+      "longVersion": "0.5.16+commit.a4404286",
+      "sha256": "d00b5a1141de84912576b2e8b7fc4c956eb8926f060b81f2b34c672ffdf2b6b4",
+      "md5": "326e30be1360f1c522c434054fd841eb"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.15-1.0.0/solc-linux-amd64-0.5.15-1.0.0",
+      "version": "0.5.15",
+      "build": "commit.d627745b",
+      "longVersion": "0.5.15+commit.d627745b",
+      "sha256": "387aa5d4793dea9a079b1b32a64f874735344a012ba1a13cf0e5c57607ba213d",
+      "md5": "603c12b5d262f5d4979e23788b2a3e75"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.14-1.0.0/solc-linux-amd64-0.5.14-1.0.0",
+      "version": "0.5.14",
+      "build": "commit.8c61a890",
+      "longVersion": "0.5.14+commit.8c61a890",
+      "sha256": "3d2ce1165b3e5910673105d048aa0a93bf638f8399089e1e88d57a437e7f66b9",
+      "md5": "383e272b00480b57ec18ba2c1c6fe9c5"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.13-1.0.0/solc-linux-amd64-0.5.13-1.0.0",
+      "version": "0.5.13",
+      "build": "commit.2279152e",
+      "longVersion": "0.5.13+commit.2279152e",
+      "sha256": "77982bee697e957e8a48b2e5a69e02e77d1667183ec552a848ace18ce4eb5acf",
+      "md5": "4c20a4e807fe1af774dbb8fa03182aa1"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.12-1.0.0/solc-linux-amd64-0.5.12-1.0.0",
+      "version": "0.5.12",
+      "build": "commit.9ba4eaaa",
+      "longVersion": "0.5.12+commit.9ba4eaaa",
+      "sha256": "a4b2139f8484fe2053606329c6c955c47d42184dfa3c13362c1acd7b2e9b1587",
+      "md5": "a52a75fbe2d9a8475205ada90274419e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.11-1.0.0/solc-linux-amd64-0.5.11-1.0.0",
+      "version": "0.5.11",
+      "build": "commit.d122d7a4",
+      "longVersion": "0.5.11+commit.d122d7a4",
+      "sha256": "8bfb90d4f1f63c1070bcc64da452c74e36f72f7344f100d26dd4a6c1f3439366",
+      "md5": "9f90565f41d484002f86e17be2a09b1d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.10-1.0.0/solc-linux-amd64-0.5.10-1.0.0",
+      "version": "0.5.10",
+      "build": "commit.bcd13cb8",
+      "longVersion": "0.5.10+commit.bcd13cb8",
+      "sha256": "3a4e54b0696d06a00a3f34a66402391d33669448e92ec808e63f80e284ab56ee",
+      "md5": "d5f0ae68e683227f7a69334c7a99461e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.9-1.0.0/solc-linux-amd64-0.5.9-1.0.0",
+      "version": "0.5.9",
+      "build": "commit.9c617e09",
+      "longVersion": "0.5.9+commit.9c617e09",
+      "sha256": "7aafe6850e5e1a42f74ee47cb0ec6df8242ae1bc7adce404c4a2689b9bcb31ff",
+      "md5": "b7fdaeddeb57af7d2d586dc220a909e2"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.8-1.0.0/solc-linux-amd64-0.5.8-1.0.0",
+      "version": "0.5.8",
+      "build": "commit.4d156757",
+      "longVersion": "0.5.8+commit.4d156757",
+      "sha256": "0d48948d464094d4f3bccde6992d7a6b7bb37a6d1a44545b5ea4d0ee8ef86bfd",
+      "md5": "52d0dbdf1f5005a781da65e80a3c6158"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.7-1.0.0/solc-linux-amd64-0.5.7-1.0.0",
+      "version": "0.5.7",
+      "build": "commit.fd31ba28",
+      "longVersion": "0.5.7+commit.fd31ba28",
+      "sha256": "19379b26162d6bf52fb78af9a9a9155aa0d29f2236646fa71513689575a36d95",
+      "md5": "a3aa08f1bda2433d4024557ec4164396"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.6-1.0.0/solc-linux-amd64-0.5.6-1.0.0",
+      "version": "0.5.6",
+      "build": "commit.444402ef",
+      "longVersion": "0.5.6+commit.444402ef",
+      "sha256": "08b1572bb66da44988e92ed5ad0c0155ed1ee64ae1190eb31682b1071b47b477",
+      "md5": "f622843386e91da729f5f119b58e07b7"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.5-1.0.0/solc-linux-amd64-0.5.5-1.0.0",
+      "version": "0.5.5",
+      "build": "commit.c570574b",
+      "longVersion": "0.5.5+commit.c570574b",
+      "sha256": "9186a80895baa67becaae61d909eb5c7f5bc0e5a0bd3f4e834faca97ee2ac292",
+      "md5": "b1984f0833031fbb7f622ebc67c00f29"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.4-1.0.0/solc-linux-amd64-0.5.4-1.0.0",
+      "version": "0.5.4",
+      "build": "commit.ce41b2d8",
+      "longVersion": "0.5.4+commit.ce41b2d8",
+      "sha256": "5d6da2247587706fa157ce713660aaded6f4b813991c62c95ef44cd43f1104d2",
+      "md5": "aa80eb0f1b0e7ffbc4b841b02d354a47"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.3-1.0.0/solc-linux-amd64-0.5.3-1.0.0",
+      "version": "0.5.3",
+      "build": "commit.4c83b22d",
+      "longVersion": "0.5.3+commit.4c83b22d",
+      "sha256": "fc1be2c4502b70e0edb0fcd001e9e988cb9d22f48d62ef5862ba3ffe52d68bde",
+      "md5": "8dc6d5bcc0b30397c5891bdc562c7394"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.2-1.0.0/solc-linux-amd64-0.5.2-1.0.0",
+      "version": "0.5.2",
+      "build": "commit.6a4c60c4",
+      "longVersion": "0.5.2+commit.6a4c60c4",
+      "sha256": "6d8d3514a95a5b181d93c69efdbbfef8957969150a1b5876deb4a7be0c00949c",
+      "md5": "581d4e1b0a51e6661b9e737709e2e511"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.1-1.0.0/solc-linux-amd64-0.5.1-1.0.0",
+      "version": "0.5.1",
+      "build": "commit.2a5b9858",
+      "longVersion": "0.5.1+commit.2a5b9858",
+      "sha256": "5a5d96842cc9e7bb719f2396935be01af32f981ee17056499728f409eb00e379",
+      "md5": "5da1c8d2d91a46614a54f685adeee07c"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.5.0-1.0.0/solc-linux-amd64-0.5.0-1.0.0",
+      "version": "0.5.0",
+      "build": "commit.9b091a85",
+      "longVersion": "0.5.0+commit.9b091a85",
+      "sha256": "557b39b9ca05e89dfbfebd7c4fb84de6d995a98952f4d9d3e6846a6b8892e315",
+      "md5": "a412c6a4b9fb2079344c76c3da128e25"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.26-1.0.0/solc-linux-amd64-0.4.26-1.0.0",
+      "version": "0.4.26",
+      "build": "commit.913a6e8b",
+      "longVersion": "0.4.26+commit.913a6e8b",
+      "sha256": "4f00dcd1943688fcc340187d5f678f56b7416425a0ad6f041afc385636e489e5",
+      "md5": "0e6155d4bf6cbd31f4efa1cef125ae9d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.25-1.0.0/solc-linux-amd64-0.4.25-1.0.0",
+      "version": "0.4.25",
+      "build": "commit.82a08142",
+      "longVersion": "0.4.25+commit.82a08142",
+      "sha256": "26fe83a9596a9c9412f9045ad9a227ab87a6a25ad727d73b2d12b62380132147",
+      "md5": "38b83aa76f97e5e4ebb27504d6198c51"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.24-1.0.0/solc-linux-amd64-0.4.24-1.0.0",
+      "version": "0.4.24",
+      "build": "commit.4bc4e42e",
+      "longVersion": "0.4.24+commit.4bc4e42e",
+      "sha256": "07e860c178d9463b6c18c488c53751d7114434e6ebaf68f578b2c37ade432d5d",
+      "md5": "98865d6be48d409258789ecdc76f3cc3"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.23-1.0.0/solc-linux-amd64-0.4.23-1.0.0",
+      "version": "0.4.23",
+      "build": "commit.6d5c9dcf",
+      "longVersion": "0.4.23+commit.6d5c9dcf",
+      "sha256": "b049bac217234f87386c49ab4d03795ccf99eda173a601a2daf87b43f0d6efcb",
+      "md5": "ed043b6025d287666b862721fd524546"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.22-1.0.0/solc-linux-amd64-0.4.22-1.0.0",
+      "version": "0.4.22",
+      "build": "commit.4e06d80c",
+      "longVersion": "0.4.22+commit.4e06d80c",
+      "sha256": "b629f5f10e435ebb032c5c67150a4a25385135e601c78bb159edfe758081d6d2",
+      "md5": "7d048a53007f61000d4ee08f279e18fa"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.21-1.0.0/solc-linux-amd64-0.4.21-1.0.0",
+      "version": "0.4.21",
+      "build": "commit.6e44b9f8",
+      "longVersion": "0.4.21+commit.6e44b9f8",
+      "sha256": "538c4955a95cf610ae63ba15b5cb04a6d1aebf92800d08cb6e817eedf78b731b",
+      "md5": "f268f694fc8645b9fbc07c9ce7394283"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.20-1.0.0/solc-linux-amd64-0.4.20-1.0.0",
+      "version": "0.4.20",
+      "build": "commit.b3908d23",
+      "longVersion": "0.4.20+commit.b3908d23",
+      "sha256": "83c16983bfea9a0d6db8c6350b72ea92df4783eec887ecddd18474b887205782",
+      "md5": "be6514bcb23641bb37e1e37c6b4d4b9d"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.19-1.0.0/solc-linux-amd64-0.4.19-1.0.0",
+      "version": "0.4.19",
+      "build": "commit.3966cb28",
+      "longVersion": "0.4.19+commit.3966cb28",
+      "sha256": "b69f3b914c99e4f39c788efcb70639c9739bb2de288716b5db97eb0720f7f52f",
+      "md5": "1e73c31247e48b0e3454f5a4c2aae5bb"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.18-1.0.0/solc-linux-amd64-0.4.18-1.0.0",
+      "version": "0.4.18",
+      "build": "commit.151d837e",
+      "longVersion": "0.4.18+commit.151d837e",
+      "sha256": "6e2da49cc8f13815e60c7c037d42e11b3ea7cf5502bed8ec84ec382c524707b9",
+      "md5": "b0ca6565ec247d6b8b205d0a48b47fb4"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.17-1.0.0/solc-linux-amd64-0.4.17-1.0.0",
+      "version": "0.4.17",
+      "build": "commit.cca45a37",
+      "longVersion": "0.4.17+commit.cca45a37",
+      "sha256": "5eaa3e431a3f6b7787c94d3ad16fbbf6a0f0ce70d1e02f20f723385f53d12af8",
+      "md5": "58c976ce069bfdf1118480af9d92df50"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.16-1.0.0/solc-linux-amd64-0.4.16-1.0.0",
+      "version": "0.4.16",
+      "build": "commit.3d30d40f",
+      "longVersion": "0.4.16+commit.3d30d40f",
+      "sha256": "d2d343bc646667ea77f6a8a4efe146a893e6a513874f68f24d6835cca72fb507",
+      "md5": "d9f338ff113e372a6d37a032a769c21e"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.15-1.0.0/solc-linux-amd64-0.4.15-1.0.0",
+      "version": "0.4.15",
+      "build": "commit.b30064a1",
+      "longVersion": "0.4.15+commit.b30064a1",
+      "sha256": "7af34aacb87332a732a6a5b7367cac2b65e2996c570043830e02a12ff7781499",
+      "md5": "968c8fe98513a15d27a60d8897e79ef6"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.14-1.0.0/solc-linux-amd64-0.4.14-1.0.0",
+      "version": "0.4.14",
+      "build": "commit.181e5386",
+      "longVersion": "0.4.14+commit.181e5386",
+      "sha256": "7af34aacb87332a732a6a5b7367cac2b65e2996c570043830e02a12ff7781499",
+      "md5": "968c8fe98513a15d27a60d8897e79ef6"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.13-1.0.0/solc-linux-amd64-0.4.13-1.0.0",
+      "version": "0.4.13",
+      "build": "commit.18f538df",
+      "longVersion": "0.4.13+commit.18f538df",
+      "sha256": "e2ed910dc1d7745fe9d949e7b7285c7a3db51ba35563b5f91f11e3ee21565832",
+      "md5": "eb5b471d4de7f747911fcb0017d3eb26"
+    },
+    {
+      "path": "https://github.com/matter-labs/era-solidity/releases/download/0.4.12-1.0.0/solc-linux-amd64-0.4.12-1.0.0",
+      "version": "0.4.12",
+      "build": "commit.3759ffdc",
+      "longVersion": "0.4.12+commit.3759ffdc",
+      "sha256": "e2ed910dc1d7745fe9d949e7b7285c7a3db51ba35563b5f91f11e3ee21565832",
+      "md5": "eb5b471d4de7f747911fcb0017d3eb26"
+    }
+  ]
 }
