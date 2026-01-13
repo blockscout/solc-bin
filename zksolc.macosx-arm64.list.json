@@ -1,6 +1,34 @@
 {
   "builds": [
     {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.15/zksolc-macosx-arm64-v1.5.15",
+      "version": "1.5.15",
+      "longVersion": "1.5.15",
+      "sha256": "3a69fe4561c3042b53910384e872ab0a1fa6a37eeee46f0014106bef5b0f4f61",
+      "md5": "139d597954bccb8137884601885c908f"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.14/zksolc-macosx-arm64-v1.5.14",
+      "version": "1.5.14",
+      "longVersion": "1.5.14",
+      "sha256": "e780ac623f4b614b0cb9ad51794edd1cabba96c6c5e8605fcf6c515ba7ed9c63",
+      "md5": "9c8981d2aac57cc329c809b96b3eb5e5"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.13/zksolc-macosx-arm64-v1.5.13",
+      "version": "1.5.13",
+      "longVersion": "1.5.13",
+      "sha256": "9ae886de89eb3f148e036f06d8a839b1473f909b4a3c9240dace4c227dba40d7",
+      "md5": "84c0090c14dba4583053c420da2bb658"
+    },
+    {
+      "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.12/zksolc-macosx-arm64-v1.5.12",
+      "version": "1.5.12",
+      "longVersion": "1.5.12",
+      "sha256": "cce4d9fbaf9176665371a00de02b237cba29b805abcd81b2add55f7961448bc9",
+      "md5": "cb3661566ff4e5275a579067f116ed80"
+    },
+    {
       "path": "https://github.com/matter-labs/zksolc-bin/releases/download/v1.5.11/zksolc-macosx-arm64-v1.5.11",
       "version": "1.5.11",
       "longVersion": "1.5.11",
