@@ -1,0 +1,46 @@
+name: check-missing-versions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Configure aws
+        run: |
+          aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
+          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
+          aws configure set region ""
+
+      - name: Fetch remote versions
+        run: |
+          wget -q -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
+          # Parse versions from list.txt (format: soljson-VERSION.js)
+          sed 's/soljson-//; s/.js//' /tmp/list.txt | sort > /tmp/remote_versions.txt
+          echo "Found $(wc -l < /tmp/remote_versions.txt) remote versions"
+
+      - name: Fetch GCS versions
+        run: |
+          # List all directories in the bucket (each version is a directory)
+          aws s3 --endpoint-url https://storage.googleapis.com ls s3://${{ secrets.BUCKET }}/ | awk '{print $2}' | sed 's/\///' | sort > /tmp/gcs_versions.txt
+          echo "Found $(wc -l < /tmp/gcs_versions.txt) versions in GCS"
+
+      - name: Find missing versions
+        run: |
+          # Find versions in remote but not in GCS
+          comm -23 /tmp/remote_versions.txt /tmp/gcs_versions.txt > /tmp/missing_versions.txt
+
+          missing_count=$(wc -l < /tmp/missing_versions.txt)
+          echo "========================================"
+          echo "Missing versions: $missing_count"
+          echo "========================================"
+
+          if [ "$missing_count" -gt 0 ]; then
+            echo ""
+            echo "Versions available remotely but not in GCS:"
+            echo ""
+            cat /tmp/missing_versions.txt
+          else
+            echo "All remote versions are present in GCS"
+          fi
