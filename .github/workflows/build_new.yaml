@@ -14,11 +14,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ libboost-all-dev
-      - name: Install AWS CLI
-        run: |
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
       - name: Configure aws
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
