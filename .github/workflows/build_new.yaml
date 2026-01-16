@@ -10,11 +10,16 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - name: Configure aws
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure gsutil credentials
         run: |
-          aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
-          aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
-          aws configure set region ""
+          cat > ~/.boto << EOF
+          [Credentials]
+          gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}
+          gs_secret_access_key = ${{ secrets.ACCESS_KEY }}
+          EOF
 
       - name: Check version
         run: |
@@ -24,7 +29,7 @@ jobs:
           echo "Latest version: $last_version"
 
           # Check if already in GCS
-          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null 2>&1 && echo true || echo false)
+          exists=$(gsutil -q stat gs://${{ secrets.BUCKET }}/$last_version/solc > /dev/null 2>&1 && echo true || echo false)
           echo "Already in GCS: $exists"
 
           # Check if pre-built binary is available
@@ -90,6 +95,6 @@ jobs:
       - name: Upload file to bucket
         if: env.ALREADY_EXISTS == 'false'
         run: |
-          aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
-          aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
-          aws s3 --endpoint-url https://storage.googleapis.com cp sha256.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
+          gsutil cp build/solc/solc gs://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
+          gsutil cp md5.hash gs://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
+          gsutil cp sha256.hash gs://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
