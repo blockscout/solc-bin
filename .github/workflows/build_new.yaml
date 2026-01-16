@@ -10,38 +10,68 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - name: Prerequisites
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ libboost-all-dev
       - name: Configure aws
         run: |
           aws configure set aws_secret_access_key ${{ secrets.ACCESS_KEY }}
           aws configure set aws_access_key_id ${{ secrets.ACCESS_KEY_ID }}
           aws configure set region ""
-      - name: Version
+
+      - name: Check version
         run: |
-          wget -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
+          # Get latest version from ethereum/solc-bin
+          wget -q -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
           last_version=$(head -n 1 /tmp/list.txt | sed 's/soljson-//' | sed 's/.js//')
-          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null && echo true || echo false)
+          echo "Latest version: $last_version"
+
+          # Check if already in GCS
+          exists=$(aws s3 --endpoint-url https://storage.googleapis.com ls --recursive s3://${{ secrets.BUCKET }}/$last_version > /dev/null 2>&1 && echo true || echo false)
+          echo "Already in GCS: $exists"
+
+          # Check if pre-built binary is available
+          prebuilt_path="solc-linux-amd64-${last_version}"
+          prebuilt_url="https://binaries.soliditylang.org/linux-amd64/${prebuilt_path}"
+          prebuilt_available=$(curl -s -o /dev/null -w "%{http_code}" "$prebuilt_url" | grep -q "200" && echo true || echo false)
+          echo "Pre-built available: $prebuilt_available"
+
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
           echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
+          echo "PREBUILT_AVAILABLE=${prebuilt_available}" >> $GITHUB_ENV
+          echo "PREBUILT_URL=${prebuilt_url}" >> $GITHUB_ENV
+
+      - name: Download pre-built binary
+        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'true'
+        run: |
+          echo "Downloading pre-built binary from $PREBUILT_URL"
+          mkdir -p build/solc
+          curl -L -o build/solc/solc "$PREBUILT_URL"
+          chmod +x build/solc/solc
+          echo "Downloaded successfully"
+          ./build/solc/solc --version
+
+      - name: Prerequisites
+        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ libboost-all-dev
+
       - name: Checkout
         uses: actions/checkout@v3
-        if: "env.ALREADY_EXISTS == 'false'"
+        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
           fetch-depth: 0
+
       - name: Checkout hash
-        if: "env.ALREADY_EXISTS == 'false'"
+        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         run: |
           commit_hash=$(echo $SOLC_VERSION | awk -F "commit." '{ print $2 }')
           git checkout ${commit_hash}
+
       - name: Build
-        if: "env.ALREADY_EXISTS == 'false'"
+        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         run: |
-          mkdir build
+          mkdir -p build
           cd build
 
           if [[ $SOLC_VERSION != *"nightly"* ]];then
@@ -50,13 +80,15 @@ jobs:
 
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
           make -j2
+
       - name: Hash
-        if: "env.ALREADY_EXISTS == 'false'"
+        if: env.ALREADY_EXISTS == 'false'
         run: |
           md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
           sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
+
       - name: Upload file to bucket
-        if: "env.ALREADY_EXISTS == 'false'"
+        if: env.ALREADY_EXISTS == 'false'
         run: |
           aws s3 --endpoint-url https://storage.googleapis.com cp build/solc/solc s3://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
           aws s3 --endpoint-url https://storage.googleapis.com cp md5.hash s3://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
