@@ -31,8 +31,9 @@ jobs:
           curl -sL -o /tmp/list.json https://raw.githubusercontent.com/argotorg/solc-bin/gh-pages/linux-amd64/list.json
 
           echo "=== Parsing versions ==="
-          # Extract path, longVersion, and sha256 for each build
-          jq -r '.builds[] | "\(.longVersion)|\(.path)|\(.sha256)"' /tmp/list.json > /tmp/official_versions.txt
+          # Extract version (from path), path, and sha256 for each build
+          # path format: solc-linux-amd64-v0.8.33+commit.64118f21 -> version: v0.8.33+commit.64118f21
+          jq -r '.builds[] | "\(.path | sub("solc-linux-amd64-"; ""))|\(.path)|\(.sha256)"' /tmp/list.json > /tmp/official_versions.txt
 
           total_official=$(wc -l < /tmp/official_versions.txt)
           echo "Total official versions: $total_official"
