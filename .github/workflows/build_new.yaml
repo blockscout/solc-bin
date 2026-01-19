@@ -15,11 +15,11 @@ jobs:
 
       - name: Configure gsutil credentials
         run: |
-          cat > ~/.boto << EOF
-          [Credentials]
-          gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}
-          gs_secret_access_key = ${{ secrets.ACCESS_KEY }}
-          EOF
+          cat > ~/.boto << 'EOF'
+[Credentials]
+gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}
+gs_secret_access_key = ${{ secrets.ACCESS_KEY }}
+EOF
 
       - name: Check version
         run: |
@@ -29,7 +29,12 @@ jobs:
           echo "Latest version: $last_version"
 
           # Check if already in GCS
-          exists=$(gsutil -q stat gs://${{ secrets.BUCKET }}/$last_version/solc > /dev/null 2>&1 && echo true || echo false)
+          echo "Checking if gs://${{ secrets.BUCKET }}/$last_version/solc exists..."
+          if gsutil stat gs://${{ secrets.BUCKET }}/$last_version/solc; then
+            exists=true
+          else
+            exists=false
+          fi
           echo "Already in GCS: $exists"
 
           # Check if pre-built binary is available
