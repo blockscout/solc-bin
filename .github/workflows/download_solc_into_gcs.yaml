@@ -135,29 +135,28 @@ jobs:
             sha256sum solc | cut -d' ' -f1 > sha256.hash
             md5sum solc | cut -d' ' -f1 > md5.hash
 
-            # Upload to GCS (commented out for testing)
+            # Upload to GCS
             echo "Uploading to gs://${{ secrets.BUCKET }}/$version/"
-            # if ! gsutil cp solc "gs://${{ secrets.BUCKET }}/$version/solc"; then
-            #   echo "ERROR: Failed to upload solc binary for $version"
-            #   failure_count=$((failure_count + 1))
-            #   failed_versions="$failed_versions $version"
-            #   continue
-            # fi
+            if ! gsutil cp solc "gs://${{ secrets.BUCKET }}/$version/solc"; then
+              echo "ERROR: Failed to upload solc binary for $version"
+              failure_count=$((failure_count + 1))
+              failed_versions="$failed_versions $version"
+              continue
+            fi
 
-            # if ! gsutil cp md5.hash "gs://${{ secrets.BUCKET }}/$version/md5.hash"; then
-            #   echo "ERROR: Failed to upload md5.hash for $version"
-            #   failure_count=$((failure_count + 1))
-            #   failed_versions="$failed_versions $version"
-            #   continue
-            # fi
+            if ! gsutil cp md5.hash "gs://${{ secrets.BUCKET }}/$version/md5.hash"; then
+              echo "ERROR: Failed to upload md5.hash for $version"
+              failure_count=$((failure_count + 1))
+              failed_versions="$failed_versions $version"
+              continue
+            fi
 
-            # if ! gsutil cp sha256.hash "gs://${{ secrets.BUCKET }}/$version/sha256.hash"; then
-            #   echo "ERROR: Failed to upload sha256.hash for $version"
-            #   failure_count=$((failure_count + 1))
-            #   failed_versions="$failed_versions $version"
-            #   continue
-            # fi
-            echo "[DRY RUN] Would upload solc, md5.hash, sha256.hash to gs://${{ secrets.BUCKET }}/$version/"
+            if ! gsutil cp sha256.hash "gs://${{ secrets.BUCKET }}/$version/sha256.hash"; then
+              echo "ERROR: Failed to upload sha256.hash for $version"
+              failure_count=$((failure_count + 1))
+              failed_versions="$failed_versions $version"
+              continue
+            fi
 
             echo "Successfully uploaded $version"
             success_count=$((success_count + 1))
