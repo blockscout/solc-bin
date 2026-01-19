@@ -9,8 +9,8 @@ on:
         type: boolean
         default: false
   schedule:
-    # every day at 23:30 (same as build_new.yaml)
-    - cron: "30 23 * * *"
+    # every day at 23:25 (5 minutes before build_new.yaml)
+    - cron: "25 23 * * *"
 
 jobs:
   sync:
