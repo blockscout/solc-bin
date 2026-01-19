@@ -2,98 +2,158 @@ name: build-solc
 
 on:
   workflow_dispatch:
-  schedule:
-    # every day at 23:30
-    - cron: "30 23 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v2
-
-      - name: Configure gsutil credentials
+      - name: Get latest version
         run: |
-          echo "[Credentials]" > ~/.boto
-          echo "gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}" >> ~/.boto
-          echo "gs_secret_access_key = ${{ secrets.ACCESS_KEY }}" >> ~/.boto
-
-      - name: Check version
-        run: |
-          # Get latest version from ethereum/solc-bin
+          echo "=== Fetching version list from ethereum/solc-bin ==="
           wget -q -O /tmp/list.txt https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt
-          last_version=$(head -n 1 /tmp/list.txt | sed 's/soljson-//' | sed 's/.js//')
-          echo "Latest version: $last_version"
 
-          # Check if already in GCS
-          echo "Checking if gs://${{ secrets.BUCKET }}/$last_version/solc exists..."
-          exists=$(gsutil ls gs://${{ secrets.BUCKET }}/$last_version/solc > /dev/null && echo true || echo false)
-          echo "Already in GCS: $exists"
+          echo "=== First 5 entries in list.txt ==="
+          head -n 5 /tmp/list.txt
 
-          # Check if pre-built binary is available
-          prebuilt_path="solc-linux-amd64-${last_version}"
-          prebuilt_url="https://binaries.soliditylang.org/linux-amd64/${prebuilt_path}"
-          prebuilt_available=$(curl -s -o /dev/null -w "%{http_code}" "$prebuilt_url" | grep -q "200" && echo true || echo false)
-          echo "Pre-built available: $prebuilt_available"
+          echo ""
+          echo "=== Parsing latest version ==="
+          raw_version=$(head -n 1 /tmp/list.txt)
+          echo "Raw version string: $raw_version"
 
+          last_version=$(echo "$raw_version" | sed 's/soljson-//' | sed 's/.js//')
+          echo "Parsed version: $last_version"
+
+          commit_hash=$(echo "$last_version" | awk -F "commit." '{ print $2 }')
+          echo "Commit hash: $commit_hash"
+
+          is_nightly="false"
+          if [[ $last_version == *"nightly"* ]]; then
+            is_nightly="true"
+          fi
+          echo "Is nightly build: $is_nightly"
+
+          echo ""
+          echo "=== Setting environment variables ==="
           echo "SOLC_VERSION=${last_version}" >> $GITHUB_ENV
-          echo "ALREADY_EXISTS=${exists}" >> $GITHUB_ENV
-          echo "PREBUILT_AVAILABLE=${prebuilt_available}" >> $GITHUB_ENV
-          echo "PREBUILT_URL=${prebuilt_url}" >> $GITHUB_ENV
-
-      - name: Download pre-built binary
-        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'true'
-        run: |
-          echo "Downloading pre-built binary from $PREBUILT_URL"
-          mkdir -p build/solc
-          curl -L -o build/solc/solc "$PREBUILT_URL"
-          chmod +x build/solc/solc
-          echo "Downloaded successfully"
-          ./build/solc/solc --version
+          echo "COMMIT_HASH=${commit_hash}" >> $GITHUB_ENV
+          echo "IS_NIGHTLY=${is_nightly}" >> $GITHUB_ENV
+          echo "SOLC_VERSION=${last_version}"
+          echo "COMMIT_HASH=${commit_hash}"
+          echo "IS_NIGHTLY=${is_nightly}"
 
       - name: Prerequisites
-        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         run: |
+          echo "=== Installing build dependencies ==="
           sudo apt-get update
           sudo apt-get install -y git cmake build-essential cvc4 curl wget libc6-dev libclang-dev pkg-config unzip gcc g++ libboost-all-dev
 
+          echo ""
+          echo "=== Installed versions ==="
+          cmake --version
+          g++ --version | head -n 1
+          git --version
+
       - name: Checkout
         uses: actions/checkout@v3
-        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         with:
           repository: ethereum/solidity
           submodules: 'recursive'
           fetch-depth: 0
 
       - name: Checkout hash
-        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         run: |
-          commit_hash=$(echo $SOLC_VERSION | awk -F "commit." '{ print $2 }')
-          git checkout ${commit_hash}
+          echo "=== Current git status ==="
+          echo "Current branch: $(git branch --show-current)"
+          echo "Current commit: $(git rev-parse HEAD)"
+
+          echo ""
+          echo "=== Checking out commit: $COMMIT_HASH ==="
+          git checkout ${COMMIT_HASH}
+
+          echo ""
+          echo "=== After checkout ==="
+          echo "Current commit: $(git rev-parse HEAD)"
+          echo "Commit message: $(git log -1 --pretty=%s)"
+          echo "Commit date: $(git log -1 --pretty=%cd)"
+
+          echo ""
+          echo "=== Checking prerelease.txt existence ==="
+          if [[ -f prerelease.txt ]]; then
+            echo "prerelease.txt EXISTS with content:"
+            cat prerelease.txt
+          else
+            echo "prerelease.txt DOES NOT EXIST"
+          fi
 
       - name: Build
-        if: env.ALREADY_EXISTS == 'false' && env.PREBUILT_AVAILABLE == 'false'
         run: |
+          echo "=== Build configuration ==="
+          echo "SOLC_VERSION: $SOLC_VERSION"
+          echo "IS_NIGHTLY: $IS_NIGHTLY"
+
           mkdir -p build
           cd build
 
-          if [[ $SOLC_VERSION != *"nightly"* ]];then
+          echo ""
+          echo "=== Handling prerelease.txt ==="
+          if [[ $IS_NIGHTLY == "false" ]]; then
+            echo "Non-nightly build detected, creating prerelease.txt"
             touch ../prerelease.txt
+            echo "prerelease.txt created"
+          else
+            echo "Nightly build detected, not creating prerelease.txt"
           fi
 
+          echo ""
+          echo "=== Checking prerelease.txt after handling ==="
+          if [[ -f ../prerelease.txt ]]; then
+            echo "prerelease.txt EXISTS"
+            ls -la ../prerelease.txt
+          else
+            echo "prerelease.txt DOES NOT EXIST"
+          fi
+
+          echo ""
+          echo "=== Running cmake ==="
+          echo "CMAKE_BUILD_TYPE=Release"
+          echo "USE_Z3=OFF"
+          echo "USE_CVC4=OFF"
           cmake .. -DCMAKE_BUILD_TYPE=Release -DUSE_Z3=OFF -DUSE_CVC4=OFF
+
+          echo ""
+          echo "=== Starting build with make -j2 ==="
           make -j2
 
-      - name: Hash
-        if: env.ALREADY_EXISTS == 'false'
-        run: |
-          md5sum -b build/solc/solc | cut -d " " -f1 > md5.hash
-          sha256sum -b build/solc/solc | cut -d " " -f1 > sha256.hash
+          echo ""
+          echo "=== Build complete ==="
+          ls -la solc/solc
 
-      - name: Upload file to bucket
-        if: env.ALREADY_EXISTS == 'false'
+      - name: Show version
         run: |
-          gsutil cp build/solc/solc gs://${{ secrets.BUCKET }}/$SOLC_VERSION/solc
-          gsutil cp md5.hash gs://${{ secrets.BUCKET }}/$SOLC_VERSION/md5.hash
-          gsutil cp sha256.hash gs://${{ secrets.BUCKET }}/$SOLC_VERSION/sha256.hash
+          echo "=== Built solc binary information ==="
+          ls -la ./build/solc/solc
+          file ./build/solc/solc
+
+          echo ""
+          echo "=== solc --version output ==="
+          ./build/solc/solc --version
+
+          echo ""
+          echo "=== Parsing version string ==="
+          version_output=$(./build/solc/solc --version)
+          echo "Full output:"
+          echo "$version_output"
+
+          echo ""
+          echo "=== Checking for .mod suffix ==="
+          if echo "$version_output" | grep -q "\.mod\."; then
+            echo "WARNING: Version contains .mod suffix (dirty build)"
+          else
+            echo "OK: Version does not contain .mod suffix"
+          fi
+
+          echo ""
+          echo "=== Expected vs Actual ==="
+          echo "Expected version: $SOLC_VERSION"
+          echo "Actual version from binary:"
+          ./build/solc/solc --version | grep "Version:"
