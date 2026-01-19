@@ -28,7 +28,7 @@ jobs:
 
           # Check if already in GCS
           echo "Checking if gs://${{ secrets.BUCKET }}/$last_version/solc exists..."
-          exists=$(gsutil ls gs://${{ secrets.BUCKET }}/$last_version/solc && echo true || echo false)
+          exists=$(gsutil ls gs://${{ secrets.BUCKET }}/$last_version/solc > /dev/null && echo true || echo false)
           echo "Already in GCS: $exists"
 
           # Check if pre-built binary is available
