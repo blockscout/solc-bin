@@ -15,11 +15,9 @@ jobs:
 
       - name: Configure gsutil credentials
         run: |
-          cat > ~/.boto << 'EOF'
-[Credentials]
-gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}
-gs_secret_access_key = ${{ secrets.ACCESS_KEY }}
-EOF
+          echo "[Credentials]" > ~/.boto
+          echo "gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}" >> ~/.boto
+          echo "gs_secret_access_key = ${{ secrets.ACCESS_KEY }}" >> ~/.boto
 
       - name: Check version
         run: |
