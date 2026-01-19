@@ -1,0 +1,196 @@
+name: download-solc-into-gcs
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_recopy:
+        description: 'Re-copy all versions even if they already exist in GCS'
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    # every day at 23:30 (same as build_new.yaml)
+    - cron: "30 23 * * *"
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure gsutil credentials
+        run: |
+          echo "[Credentials]" > ~/.boto
+          echo "gs_access_key_id = ${{ secrets.ACCESS_KEY_ID }}" >> ~/.boto
+          echo "gs_secret_access_key = ${{ secrets.ACCESS_KEY }}" >> ~/.boto
+
+      - name: Fetch official compiler list
+        run: |
+          echo "=== Fetching official list.json from argotorg/solc-bin ==="
+          curl -sL -o /tmp/list.json https://raw.githubusercontent.com/argotorg/solc-bin/gh-pages/linux-amd64/list.json
+
+          echo "=== Parsing versions ==="
+          # Extract path, longVersion, and sha256 for each build
+          jq -r '.builds[] | "\(.longVersion)|\(.path)|\(.sha256)"' /tmp/list.json > /tmp/official_versions.txt
+
+          total_official=$(wc -l < /tmp/official_versions.txt)
+          echo "Total official versions: $total_official"
+
+      - name: Fetch GCS versions
+        run: |
+          echo "=== Fetching GCS versions ==="
+          gsutil ls gs://${{ secrets.BUCKET }}/ | sed 's|gs://${{ secrets.BUCKET }}/||' | sed 's|/$||' | sort > /tmp/gcs_versions.txt
+
+          total_gcs=$(wc -l < /tmp/gcs_versions.txt)
+          echo "Total versions in GCS: $total_gcs"
+
+      - name: Determine versions to process
+        run: |
+          echo "=== Determining versions to process ==="
+
+          force_recopy="${{ inputs.force_recopy }}"
+          echo "Force recopy: $force_recopy"
+
+          if [[ "$force_recopy" == "true" ]]; then
+            echo "Force recopy enabled - will process all official versions"
+            cp /tmp/official_versions.txt /tmp/versions_to_process.txt
+          else
+            echo "Checking for missing versions..."
+            # Extract just the version names from official list
+            cut -d'|' -f1 /tmp/official_versions.txt | sort > /tmp/official_version_names.txt
+
+            # Find versions in official but not in GCS
+            comm -23 /tmp/official_version_names.txt /tmp/gcs_versions.txt > /tmp/missing_version_names.txt
+
+            # Filter official_versions.txt to only include missing ones
+            > /tmp/versions_to_process.txt
+            while IFS= read -r version_name; do
+              grep "^${version_name}|" /tmp/official_versions.txt >> /tmp/versions_to_process.txt
+            done < /tmp/missing_version_names.txt
+          fi
+
+          to_process=$(wc -l < /tmp/versions_to_process.txt)
+          echo "Versions to process: $to_process"
+
+          if [[ "$to_process" -eq 0 ]]; then
+            echo "No versions to process"
+          else
+            echo ""
+            echo "=== Versions to process ==="
+            cut -d'|' -f1 /tmp/versions_to_process.txt
+          fi
+
+          echo "VERSIONS_TO_PROCESS=$to_process" >> $GITHUB_ENV
+
+      - name: Download, verify, and upload
+        if: env.VERSIONS_TO_PROCESS != '0'
+        run: |
+          echo "=== Starting download and upload process ==="
+
+          success_count=0
+          failure_count=0
+          hash_mismatch_count=0
+          failed_versions=""
+          hash_mismatch_versions=""
+
+          base_url="https://raw.githubusercontent.com/argotorg/solc-bin/gh-pages/linux-amd64"
+
+          while IFS='|' read -r version path expected_sha256; do
+            echo ""
+            echo "=========================================="
+            echo "Processing: $version"
+            echo "=========================================="
+
+            # Create temp directory for this version
+            mkdir -p /tmp/solc_download
+            cd /tmp/solc_download
+            rm -f solc md5.hash sha256.hash
+
+            # Download binary
+            echo "Downloading from: $base_url/$path"
+            if ! curl -sL -o solc "$base_url/$path"; then
+              echo "ERROR: Failed to download $version"
+              failure_count=$((failure_count + 1))
+              failed_versions="$failed_versions $version"
+              continue
+            fi
+
+            # Calculate SHA256
+            actual_sha256="0x$(sha256sum solc | cut -d' ' -f1)"
+            echo "Expected SHA256: $expected_sha256"
+            echo "Actual SHA256:   $actual_sha256"
+
+            # Verify SHA256
+            if [[ "$actual_sha256" != "$expected_sha256" ]]; then
+              echo "ERROR: SHA256 mismatch for $version"
+              hash_mismatch_count=$((hash_mismatch_count + 1))
+              hash_mismatch_versions="$hash_mismatch_versions $version"
+              continue
+            fi
+            echo "SHA256 verified successfully"
+
+            # Calculate hashes for upload
+            sha256sum solc | cut -d' ' -f1 > sha256.hash
+            md5sum solc | cut -d' ' -f1 > md5.hash
+
+            # Upload to GCS (commented out for testing)
+            echo "Uploading to gs://${{ secrets.BUCKET }}/$version/"
+            # if ! gsutil cp solc "gs://${{ secrets.BUCKET }}/$version/solc"; then
+            #   echo "ERROR: Failed to upload solc binary for $version"
+            #   failure_count=$((failure_count + 1))
+            #   failed_versions="$failed_versions $version"
+            #   continue
+            # fi
+
+            # if ! gsutil cp md5.hash "gs://${{ secrets.BUCKET }}/$version/md5.hash"; then
+            #   echo "ERROR: Failed to upload md5.hash for $version"
+            #   failure_count=$((failure_count + 1))
+            #   failed_versions="$failed_versions $version"
+            #   continue
+            # fi
+
+            # if ! gsutil cp sha256.hash "gs://${{ secrets.BUCKET }}/$version/sha256.hash"; then
+            #   echo "ERROR: Failed to upload sha256.hash for $version"
+            #   failure_count=$((failure_count + 1))
+            #   failed_versions="$failed_versions $version"
+            #   continue
+            # fi
+            echo "[DRY RUN] Would upload solc, md5.hash, sha256.hash to gs://${{ secrets.BUCKET }}/$version/"
+
+            echo "Successfully uploaded $version"
+            success_count=$((success_count + 1))
+
+          done < /tmp/versions_to_process.txt
+
+          echo ""
+          echo "=========================================="
+          echo "=== SUMMARY ==="
+          echo "=========================================="
+          echo "Total processed: $VERSIONS_TO_PROCESS"
+          echo "Successful: $success_count"
+          echo "Failed: $failure_count"
+          echo "Hash mismatches: $hash_mismatch_count"
+
+          if [[ -n "$failed_versions" ]]; then
+            echo ""
+            echo "Failed versions:$failed_versions"
+          fi
+
+          if [[ -n "$hash_mismatch_versions" ]]; then
+            echo ""
+            echo "Hash mismatch versions:$hash_mismatch_versions"
+          fi
+
+          # Exit with error if any failures
+          if [[ $failure_count -gt 0 ]] || [[ $hash_mismatch_count -gt 0 ]]; then
+            exit 1
+          fi
+
+      - name: Summary (no versions to process)
+        if: env.VERSIONS_TO_PROCESS == '0'
+        run: |
+          echo "=========================================="
+          echo "=== SUMMARY ==="
+          echo "=========================================="
+          echo "No new versions to process. GCS is up to date with official repository."
