@@ -2,10 +2,7 @@ name: build-solc
 
 on:
   workflow_dispatch:
-  schedule:
-    # every day at 23:30
-    - cron: "30 23 * * *"
-
+  
 jobs:
   build:
     runs-on: ubuntu-24.04
