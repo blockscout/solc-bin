@@ -1,0 +1,31 @@
+name: build-solar-list
+
+on:
+  workflow_dispatch:
+  schedule:
+    # every day at 23:30
+    - cron: "30 23 * * *"
+
+# Releases are created to host the executables, and the lists are committed.
+permissions:
+  contents: write
+
+jobs:
+  build:
+    # Solar is run to read its version, so this must be one of the platforms in solar/solar_fetch.sh
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build solar lists
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLISH: "true"
+          WORK_DIR: ${{ runner.temp }}/solar-bin
+        run: solar/solar_fetch.sh
+
+      # Runs even if some release could not be added, to keep the ones that were.
+      - uses: EndBug/add-and-commit@v9
+        if: always()
+        with:
+          add: 'solar.linux-amd64.list.json solar.macosx-arm64.list.json'
