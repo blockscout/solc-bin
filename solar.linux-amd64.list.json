@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "path": "https://github.com/blockscout/solc-bin/releases/download/solar-v0.3.0/solar-linux-amd64",
+      "version": "0.8.38",
+      "build": "commit.e7a91fc7.solar.0.3.0",
+      "longVersion": "0.8.38+commit.e7a91fc7.solar.0.3.0",
+      "sha256": "fb4a0aaa5a765ae045ef003c68982420f78f7629c40b1497d2bd0fcae4945fc2",
+      "md5": "a67523108dfa4ab2a67901d37899ccf7"
+    }
+  ]
+}
