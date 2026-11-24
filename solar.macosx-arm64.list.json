@@ -1,6 +1,14 @@
 {
   "builds": [
     {
+      "path": "https://github.com/blockscout/solc-bin/releases/download/solar-v0.3.1/solar-macosx-arm64",
+      "version": "0.8.39",
+      "build": "commit.a849fe3d.solar.0.3.1",
+      "longVersion": "0.8.39+commit.a849fe3d.solar.0.3.1",
+      "sha256": "8ed4b2c2123659d18a572b54d5ed3cc2a7a0558bcf1fbc6078d671eb70bcc6b0",
+      "md5": "c204174934ef915747b1010072868823"
+    },
+    {
       "path": "https://github.com/blockscout/solc-bin/releases/download/solar-v0.3.0/solar-macosx-arm64",
       "version": "0.8.38",
       "build": "commit.e7a91fc7.solar.0.3.0",
